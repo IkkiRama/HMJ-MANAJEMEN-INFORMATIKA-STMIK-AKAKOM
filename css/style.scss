@@ -403,7 +403,8 @@ header {
             padding: 20px;
             background-color: #fff;
             border-radius: 0.5rem;
-            box-shadow: var(--shadow-header);
+            // box-shadow: var(--shadow-header);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1);
 
             h2 {
                 font-weight: 650;
@@ -963,7 +964,6 @@ footer {
     width: 100%;
     height: 8vh;
     background-color: var(--biru-cerah);
-    color: var(--putih);
 }
 
 footer .container {
@@ -976,6 +976,16 @@ footer .container {
     text-align: left;
     background-color: var(--hero);
     // background-color: #221E41;
+}
+
+footer .container p {
+    color: var(--putih);
+}
+
+footer .container p span {
+    color: #FE4F63;
+    font-size: 23px;
+    margin: 0 0.1rem;
 }
 
 /* footer end */

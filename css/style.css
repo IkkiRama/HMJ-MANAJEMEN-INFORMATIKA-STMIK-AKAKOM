@@ -451,8 +451,8 @@ header .container .menu span:nth-child(3) {
   padding: 20px;
   background-color: #fff;
   border-radius: 0.5rem;
-  -webkit-box-shadow: var(--shadow-header);
-          box-shadow: var(--shadow-header);
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .containerFitur .fitur .perFitur h2 {
@@ -1085,7 +1085,6 @@ footer {
   width: 100%;
   height: 8vh;
   background-color: var(--biru-cerah);
-  color: var(--putih);
 }
 
 footer .container {
@@ -1103,6 +1102,16 @@ footer .container {
           align-items: center;
   text-align: left;
   background-color: var(--hero);
+}
+
+footer .container p {
+  color: var(--putih);
+}
+
+footer .container p span {
+  color: #FE4F63;
+  font-size: 23px;
+  margin: 0 0.1rem;
 }
 
 /* footer end */

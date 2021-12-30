@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="1050px" viewBox="0 0 1920 1050" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Group-5">
+<g id="group-3">
+<path d="M0,0 L1920,0 L1920,1050 L100,1050 C44.772,1050 0,1005.228 0,950 L0,0 Z" id="Path" fill="#6937FF"></path>
+<g id="Group" transform="translate(106.000000, 944.000000) scale(-1, 1) rotate(-180.000000) translate(-106.000000, -944.000000) translate(40.000000, 878.000000)" fill="#7C51FF">
+<circle id="Oval" opacity="0.75" cx="7.5" cy="85.5" r="7.5"></circle>
+<circle id="Oval" cx="7.5" cy="46.5" r="7.5"></circle>
+<circle id="Oval" opacity="0.5" cx="7.5" cy="124.5" r="7.5"></circle>
+<circle id="Oval" cx="46.5" cy="7.5" r="7.5"></circle>
+<circle id="Oval" opacity="0.5" cx="46.5" cy="85.5" r="7.5"></circle>
+<circle id="Oval" opacity="0.75" cx="46.5" cy="46.5" r="7.5"></circle>
+<circle id="Oval" opacity="0.75" cx="85.5" cy="7.5" r="7.5"></circle>
+<circle id="Oval" opacity="0.5" cx="85.5" cy="46.5" r="7.5"></circle>
+<circle id="Oval" opacity="0.5" cx="124.5" cy="7.5" r="7.5"></circle>
+</g>
+</g>
+<g id="rectangle-copy-12" transform="translate(1361.000000, 357.000000)" stroke="#7C51FF">
+<polygon id="Path" points="558.5 0.416 0.046 692.5 558.5 692.5"></polygon>
+</g>
+</g>
+</g>
+</svg>

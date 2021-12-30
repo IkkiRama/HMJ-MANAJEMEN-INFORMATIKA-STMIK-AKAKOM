@@ -4,6 +4,7 @@
     --background-header: linear-gradient(to right, #450b7c, #563cc9);
     --kuningCerah: rgb(255, 160, 17);
     --putih-mandan-ireng: rgb(231, 231, 231);
+    --bg-mandanGelap: #F6F8FD;
 
     --hero: #111827;
 
@@ -197,6 +198,10 @@ section {
 
 .text-dark {
     color: var(--hitam-santai) !important;
+}
+
+.bg-agakGelap {
+    background-color: var(--bg-mandanGelap);
 }
 
 .bg-biru-cerah {
