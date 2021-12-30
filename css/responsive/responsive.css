@@ -1,1 +1,79 @@
-/* No CSS *//*# sourceMappingURL=responsive.css.map */
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1500px;
+  }
+  section,
+  footer,
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .containerKerjasama .container {
+    border-top-left-radius: 100px;
+  }
+}
+
+@media (max-width: 1000px) {
+  header,
+  section {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  header,
+  section,
+  footer {
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 700px) {
+  header .container nav {
+    display: none;
+  }
+  header .container .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .containerNavMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+  .containerNavMobile .navMobile {
+    width: 60%;
+  }
+}
+
+@media (max-width: 500px) {
+  header,
+  section,
+  footer {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .containerNavMobile .navMobile {
+    width: 70%;
+  }
+}
+
+@media (max-width: 350px) {
+  .containerNavMobile .navMobile {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

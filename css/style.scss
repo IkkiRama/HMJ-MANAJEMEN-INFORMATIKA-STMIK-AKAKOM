@@ -1,3 +1,59 @@
+:root {
+    --shadow-header: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+    --background-heroHome: linear-gradient(to top right, #450b7c, #563cc9, #49e9fb);
+    --background-header: linear-gradient(to right, #450b7c, #563cc9);
+    --kuningCerah: rgb(255, 160, 17);
+    --putih-mandan-ireng: rgb(231, 231, 231);
+
+    --hero: #111827;
+
+    --hitam-santai: #302f2f;
+    --putih: #fff;
+    --putih-f2: #f2f2f2;
+    --putih-900: #F2F4F7;
+    --ungu: #963EFF;
+    --kuning: #FCE354;
+    --biru-cerah: #1352FF;
+    --border: 2px solid #e4e4e7;
+
+
+    /* btn */
+    --danger: #dc3545;
+    --primary: #007bff;
+    --warning: #ffc107;
+    --dark: rgb(55 65 81);
+
+
+    --danger-hover: #c52939;
+    --primary-hover: #0070e7;
+    --warning-hover: #e2ab06;
+    --dark-hover: #2F3949;
+
+    --border-table: 1px solid #dee2e6;
+    --table-dark: #343a40;
+    --tr: rgba(0, 0, 0, 0.05);
+
+
+    --outline-input: #0176f4bd;
+    --outline-button: #63aeffbd;
+    --outline-warning: #ffe601f1;
+    --outline-white: rgb(207, 207, 207);
+    --outline-dark: #717172;
+
+
+
+
+    --tw-gradient-to: #06b6d4;
+    --tw-gradient-from: #0d6efd;
+    --tw-gradient-stops: #0d6efd,
+        #22d3ee,
+        #06b6d4;
+    // rgba(34, 211, 238, 0)
+    // --tw-gradient-stops: var(--tw-gradient-from, #22d3ee, var(--tw-gradient-to, rgba(34, 211, 238, 0)));
+}
+
+
+
 #scroll-top {
     position: fixed;
     bottom: 1.5rem;
@@ -85,120 +141,81 @@ header {
         align-items: center;
         justify-content: space-between;
 
-        .kanan {
-            // width: 100%;
+        .logo {
+            // margin-right: 20px;
             display: flex;
             align-items: center;
+            justify-content: center;
 
-            .logo {
-                margin-right: 20px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                img {
-                    width: 40px;
-                    height: 40px;
-                    margin-right: 10px;
-                }
-
-                h1 {
-                    font-size: 1.4rem;
-                    line-height: 22px;
-                    color: var(--putih);
-                    font-weight: 700;
-
-                    span {
-                        background: linear-gradient(to right, var(--tw-gradient-stops));
-                        background-clip: text;
-                        -moz-background-clip: text;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
+            img {
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
             }
 
-            nav {
-                ul {
-                    display: flex;
+            // h1 {
+            //     font-size: 1.4rem;
+            //     line-height: 22px;
+            //     color: var(--putih);
+            //     font-weight: 700;
 
-                    li {
-                        margin: 0 10px;
+            //     span {
+            //         background: linear-gradient(to right, var(--tw-gradient-stops));
+            //         background-clip: text;
+            //         -moz-background-clip: text;
+            //         -webkit-background-clip: text;
+            //         -webkit-text-fill-color: transparent;
+            //     }
+            // }
+        }
 
-                        a {
-                            font-weight: 500;
-                            color: rgb(218, 218, 218);
+        nav {
+            ul {
+                display: flex;
 
-                            &.active {
-                                color: var(--putih);
-                            }
+                li {
+                    margin: 0 10px;
+
+                    a {
+                        font-weight: 500;
+                        color: rgb(218, 218, 218);
+
+                        &.active {
+                            color: var(--putih);
                         }
                     }
                 }
             }
         }
 
-        .kiri {
-            height: 100%;
-            display: flex;
-            align-items: center;
 
-            .icon {
-                margin-right: 10px;
-                color: var(--putih);
+        .menu {
+            width: 30px;
+            height: 20px;
+            display: none;
+            align-items: end;
+            justify-content: space-between;
+            flex-direction: column;
+            position: relative;
+
+            input {
+                width: 100%;
+                height: 130%;
+                position: absolute;
+                top: -3px;
+                opacity: 0;
                 cursor: pointer;
             }
 
-            .garis {
-                margin: 0 10px;
-                font-size: 1.4rem;
-                color: var(--putih);
-            }
+            span {
+                width: 100%;
+                height: 4px;
+                border-radius: 10px;
+                background-color: var(--putih);
 
-            .auth {
 
-                a {
-                    margin: 0 10px;
-                    color: var(--putih);
-                }
-            }
-
-            .profil {
-                width: 30px;
-                height: 30px;
-                margin-left: 10px;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 50%;
-                    object-fit: cover;
-                }
-            }
-
-            .menu {
-                width: 30px;
-                height: 20px;
-                display: none;
-                align-items: center;
-                justify-content: space-between;
-                flex-direction: column;
-                position: relative;
-                cursor: pointer;
-
-                input {
-                    width: 100%;
-                    height: 130%;
-                    position: absolute;
-                    top: -3px;
-                    opacity: 0;
-                }
-
-                span {
-                    width: 100%;
-                    height: 3px;
-                    border-radius: 10px;
-                    background-color: var(--putih);
+                &:nth-child(3) {
+                    width: 80%;
                 }
             }
         }
@@ -206,20 +223,42 @@ header {
     }
 }
 
+.containerNavMobile.active {
+    transform: translateX(0);
+}
+
 .containerNavMobile {
     width: 100%;
     height: 100vh;
     display: none;
     position: fixed;
+    transition: .5s;
     justify-content: end;
+    transform: translateX(120%);
     background-color: rgba(0, 0, 0, 0.1);
 
     .navMobile {
-        width: 40%;
-        background-color: var(--putih);
+        width: 45%;
+        height: 100%;
+        overflow-y: auto;
         padding-left: 20px;
         padding-bottom: 20px;
         padding-right: 20px;
+        box-shadow: var(--shadow-header);
+        background-color: var(--putih);
+
+        li {
+            margin: 10px 0;
+
+            a {
+                font-weight: 600;
+                color: #525252;
+
+                &.active {
+                    color: #353535;
+                }
+            }
+        }
     }
 }
 
@@ -250,6 +289,10 @@ header {
                 line-height: 60px;
                 color: var(--putih);
                 margin-bottom: 20px;
+
+                &.title-tentangKami {
+                    font-size: 2rem;
+                }
 
                 span {
                     background: linear-gradient(to right, var(--tw-gradient-stops));
@@ -340,6 +383,66 @@ header {
         line-height: 30px;
     }
 }
+
+
+.containerFitur {
+    width: 100%;
+    height: 100%;
+
+    .fitur {
+        width: 100%;
+        height: 100%;
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        .perFitur {
+            width: calc(90%/3);
+            max-height: 300px;
+            margin: 0.9rem;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 0.5rem;
+            box-shadow: var(--shadow-header);
+
+            h2 {
+                font-weight: 650;
+                margin: 30px 0 10px 0;
+                font-size: 1.4rem;
+                // color: #302f2f;
+            }
+
+            p {
+                color: #6f6f74;
+            }
+
+            .icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.4rem;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #ffa011;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .containerTopik {
@@ -1324,58 +1427,3 @@ footer .container {
 }
 
 // page PrivacyPolicy end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media(min-width:1500px) {
-    .container {
-        max-width: 1500px;
-    }
-
-    section,
-    footer,
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .containerKerjasama .container {
-        border-top-left-radius: 100px;
-    }
-}

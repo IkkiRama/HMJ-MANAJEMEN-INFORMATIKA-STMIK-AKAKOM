@@ -195,9 +195,19 @@ section {
     color: var(--putih);
 }
 
+.text-dark {
+    color: var(--hitam-santai) !important;
+}
+
 .bg-biru-cerah {
     background-color: var(--biru-cerah);
 }
+
+.bg-white {
+    background-color: var(--putih) !important;
+}
+
+
 
 
 
