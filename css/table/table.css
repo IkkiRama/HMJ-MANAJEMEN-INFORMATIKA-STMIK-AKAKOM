@@ -1,0 +1,52 @@
+.table-detail {
+  width: 50%;
+}
+
+.table-detail th {
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--hitam-santai);
+}
+
+table thead th {
+  color: var(--putih);
+  padding: 0.75rem;
+  background-color: var(--table-dark);
+  border-bottom: 2px solid var(--hitam-santai);
+}
+
+table tfoot tr th {
+  text-align: left;
+}
+
+.table-detail tr th,
+table tfoot tr td,
+table tfoot tr th,
+table tbody tr th,
+table tbody tr td {
+  padding: 0.75rem;
+  border: var(--border-table);
+}
+
+table tfoot tr:hover,
+table tbody tr:hover,
+table tbody tr:nth-child(odd) {
+  background-color: var(--tr);
+}
+
+table img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+table .btn {
+  margin: 5px;
+  padding: .3rem .75rem;
+}
+/*# sourceMappingURL=table.css.map */

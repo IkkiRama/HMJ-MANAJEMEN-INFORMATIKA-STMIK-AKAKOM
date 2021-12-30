@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../../font/200.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../../font/300.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../../font/400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../../font/500.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../../font/600.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../../font/700.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../../font/800.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../../font/900.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Viga';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../../font/viga.woff2") format("woff2");
+}
+/*# sourceMappingURL=font.css.map */

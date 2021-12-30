@@ -1,0 +1,1502 @@
+#scroll-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1rem;
+  z-index: 1000;
+  -webkit-transform: translateY(150%);
+          transform: translateY(150%);
+  -webkit-transition: 3s;
+  transition: 3s;
+  cursor: pointer;
+}
+
+#scroll-top img {
+  width: 4rem;
+  /* animation: float 3s linear infinite; */
+}
+
+#scroll-top.show {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+#scroll-top.show img {
+  -webkit-animation: float 3s linear infinite;
+          animation: float 3s linear infinite;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+  50% {
+    -webkit-transform: translateY(-2rem);
+            transform: translateY(-2rem);
+  }
+  100% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+  50% {
+    -webkit-transform: translateY(-2rem);
+            transform: translateY(-2rem);
+  }
+  100% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+}
+
+.searchBox form {
+  margin-bottom: 20px;
+}
+
+.searchBox form .form-group .input-group button {
+  width: 20%;
+}
+
+.searchBox .suggesti {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.searchBox .suggesti .perSuggesti {
+  padding: 5px;
+}
+
+header.scroll {
+  -webkit-box-shadow: var(--shadow-header);
+          box-shadow: var(--shadow-header);
+}
+
+header {
+  width: 100%;
+  min-height: 10vh;
+  max-height: 100%;
+  padding: 0 100px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: var(--hero);
+  z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 !important;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .container .kanan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .kanan .logo {
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .container .kanan .logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+header .container .kanan .logo h1 {
+  font-size: 1.4rem;
+  line-height: 22px;
+  color: var(--putih);
+  font-weight: 700;
+}
+
+header .container .kanan .logo h1 span {
+  background: -webkit-gradient(linear, left top, right top, from(var(--tw-gradient-stops)));
+  background: linear-gradient(to right, var(--tw-gradient-stops));
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header .container .kanan nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container .kanan nav ul li {
+  margin: 0 10px;
+}
+
+header .container .kanan nav ul li a {
+  font-weight: 500;
+  color: #dadada;
+}
+
+header .container .kanan nav ul li a.active {
+  color: var(--putih);
+}
+
+header .container .kiri {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .kiri .icon {
+  margin-right: 10px;
+  color: var(--putih);
+  cursor: pointer;
+}
+
+header .container .kiri .garis {
+  margin: 0 10px;
+  font-size: 1.4rem;
+  color: var(--putih);
+}
+
+header .container .kiri .auth a {
+  margin: 0 10px;
+  color: var(--putih);
+}
+
+header .container .kiri .profil {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+header .container .kiri .profil img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header .container .kiri .menu {
+  width: 30px;
+  height: 20px;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+
+header .container .kiri .menu input {
+  width: 100%;
+  height: 130%;
+  position: absolute;
+  top: -3px;
+  opacity: 0;
+}
+
+header .container .kiri .menu span {
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  background-color: var(--putih);
+}
+
+.containerNavMobile {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.containerNavMobile .navMobile {
+  width: 40%;
+  background-color: var(--putih);
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.bg-gradient-to-r {
+  background: -webkit-gradient(linear, left top, right top, from(var(--tw-gradient-stops))) !important;
+  background: linear-gradient(to right, var(--tw-gradient-stops)) !important;
+  color: var(--putih);
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--hero);
+}
+
+.hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero .container .caption {
+  width: 60%;
+}
+
+.hero .container .caption h1 {
+  font-size: 3rem;
+  line-height: 60px;
+  color: var(--putih);
+  margin-bottom: 20px;
+}
+
+.hero .container .caption h1 span {
+  background: -webkit-gradient(linear, left top, right top, from(var(--tw-gradient-stops)));
+  background: linear-gradient(to right, var(--tw-gradient-stops));
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero .container .caption p {
+  font-size: 1.2rem;
+  color: var(--putih);
+  margin: 20px 0;
+}
+
+.hero .container .img {
+  width: 40%;
+}
+
+.hero .container .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.series {
+  width: 100%;
+  height: 100%;
+}
+
+.series .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.series .container .perSeries {
+  width: calc(90%/3);
+  margin: 30px 10px;
+}
+
+.series .container .perSeries img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  background-color: var(--putih-900);
+}
+
+.series .container .perSeries .keterangan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.series .container .perSeries .keterangan p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.series .container .perSeries h2 {
+  font-size: 1rem;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.title h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.title p {
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+
+.containerTopik {
+  width: 100%;
+  height: 100%;
+}
+
+.containerTopik .container .topik {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 50px;
+  border-radius: 10px;
+  background-color: var(--putih-mandan-ireng);
+}
+
+.containerTopik .container .topik .perTopik {
+  padding: 7px 20px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 7px;
+  background-color: var(--putih);
+}
+
+.containerTopik .container .topik .perTopik:hover p {
+  color: var(--biru-cerah);
+}
+
+.containerTopik .container .topik .perTopik span {
+  padding: 10px;
+  font-size: .9rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 20px;
+  background-color: var(--putih-f2);
+}
+
+.containerFAQ {
+  width: 100%;
+  height: 100%;
+}
+
+.containerFAQ .container .FAQ {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.containerFAQ .container .FAQ.pageFAQ {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.containerFAQ .container .FAQ .kiri,
+.containerFAQ .container .FAQ .kanan {
+  width: 50%;
+  height: 100%;
+  margin: 0 10px;
+}
+
+.perFAQ {
+  width: 100%;
+  height: 100%;
+}
+
+.perFAQ .pertanyaan {
+  padding: 20px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 7px;
+  border-bottom: var(--border);
+  background-color: var(--putih-900);
+}
+
+.perFAQ .pertanyaan p {
+  font-weight: 600;
+}
+
+.perFAQ .pertanyaan .icon {
+  color: var(--hitam-santai);
+  fill: var(--hitam-santai);
+  font-size: 1.4rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.perFAQ .pertanyaan .icon.active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.perFAQ .jawaban {
+  padding: 20px;
+  display: none;
+}
+
+.perFAQ .jawaban.show {
+  display: inline-block;
+}
+
+.search {
+  width: 100%;
+  height: 100%;
+  background-color: var(--putih-f2);
+}
+
+.search .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.search .container h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.search .container p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.search .container .searchAlert {
+  font-size: .9rem;
+}
+
+.search .container form .form-group {
+  width: 700px;
+}
+
+.search .container form .form-group button {
+  width: 20%;
+}
+
+.facebook {
+  background-color: #1F79FD !important;
+}
+
+.youtube {
+  background-color: #E11D48 !important;
+}
+
+.discord {
+  background-color: #6366F1 !important;
+}
+
+.instagram {
+  background: -webkit-gradient(linear, right top, left bottom, from(#7A3EBA), color-stop(#EC4899), to(#F57461)) !important;
+  background: linear-gradient(to left bottom, #7A3EBA, #EC4899, #F57461) !important;
+}
+
+.twitter {
+  background-color: #0EA5E9 !important;
+}
+
+.telegram {
+  background: -webkit-gradient(linear, left top, right bottom, from(#2EB3EF), to(#0B8DCF)) !important;
+  background: linear-gradient(to right bottom, #2EB3EF, #0B8DCF) !important;
+}
+
+.containerSosmed {
+  width: 100%;
+  height: 100%;
+}
+
+.containerSosmed .container .sosmed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.containerSosmed .container .sosmed .perSosmed {
+  width: calc(90%/3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+}
+
+.containerSosmed .container .sosmed .perSosmed:hover strong {
+  color: var(--biru-cerah);
+}
+
+.containerSosmed .container .sosmed .perSosmed p {
+  font-size: .9rem;
+  margin-top: 10px;
+}
+
+.containerSosmed .container .sosmed .perSosmed .icon {
+  padding: 10px;
+  font-size: 1.3rem;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  color: var(--putih);
+  background-color: var(--putih-f2);
+}
+
+.containerClient {
+  width: 100%;
+  border-top-left-radius: 100px;
+  background-color: var(--biru-cerah);
+}
+
+.containerClient .clientTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerClient .clientTitle h2 {
+  font-size: 2rem;
+  margin-right: 100px;
+  color: var(--putih);
+}
+
+.containerClient .clientTitle p {
+  max-width: 630px;
+  font-size: 1.4rem;
+  color: var(--putih);
+}
+
+.containerKerjasama {
+  width: 100%;
+  padding: 0;
+  background-color: var(--biru-cerah);
+}
+
+.containerKerjasama .container {
+  width: 95%;
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: var(--hero);
+  border-top-right-radius: 100px;
+}
+
+.containerKerjasama .container .caption {
+  width: 45%;
+}
+
+.containerKerjasama .container .caption h2 {
+  color: var(--putih);
+  letter-spacing: .5px;
+  line-height: 50px;
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
+.containerKerjasama .container .caption p {
+  color: var(--putih);
+  font-size: 1.2rem;
+  letter-spacing: .5px;
+  line-height: 27px;
+}
+
+/* footer start */
+.footer {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background-color: var(--biru-cerah);
+  /* box-shadow: .5rem 0 1rem rgba(0, 0, 0, 0.1); */
+}
+
+.footer .container {
+  width: 95%;
+  padding: 0 100px;
+  padding-bottom: 100px;
+  background-color: var(--hero);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 15rem;
+          flex: 1 1 15rem;
+  margin: 1rem;
+}
+
+.footer .box h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  color: var(--putih);
+}
+
+.footer .box p {
+  font-size: 1rem;
+  padding: .5rem 0;
+  line-height: 25px;
+  margin-bottom: 30px;
+  color: var(--putih);
+}
+
+.footer .box p .pencipta {
+  padding: 0;
+  display: inline-block;
+}
+
+.footer .box .sosmed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .box .sosmed .perSosmed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  border-radius: 50%;
+  background: #ffa011;
+}
+
+.footer .box .sosmed .perSosmed:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.footer .box a {
+  font-size: 1rem;
+  padding: .5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--putih);
+}
+
+.footer .box a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  width: 100%;
+  height: 8vh;
+  background-color: var(--biru-cerah);
+  color: var(--putih);
+}
+
+footer .container {
+  width: 95%;
+  padding-left: 100px;
+  font-size: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  background-color: var(--hero);
+}
+
+/* footer end */
+.comunity {
+  width: 100%;
+  height: 100%;
+}
+
+.comunity .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.comunity .container .perComunity {
+  width: calc(90%/3);
+  height: 250px;
+  margin: 10px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-box-shadow: var(--shadow-header);
+          box-shadow: var(--shadow-header);
+}
+
+.comunity .container .perComunity .icon {
+  font-size: 2.5rem;
+  color: var(--putih);
+}
+
+.comunity .container .perComunity strong {
+  font-size: 1.2rem;
+}
+
+.comunity .container .perComunity p {
+  line-height: 22px;
+}
+
+.heroDetailKelas {
+  width: 100%;
+  height: 100vh;
+  max-height: 100%;
+  background-color: var(--hero);
+}
+
+.heroDetailKelas .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.heroDetailKelas .container .caption {
+  width: 60%;
+}
+
+.heroDetailKelas .container .caption h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--putih);
+}
+
+.heroDetailKelas .container .caption p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--putih);
+}
+
+.heroDetailKelas .container .caption .keterangan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0;
+}
+
+.heroDetailKelas .container .caption .keterangan .perKeterangan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heroDetailKelas .container .caption .keterangan .perKeterangan .icon {
+  width: 20px;
+  height: 20px;
+  color: var(--putih);
+  fill: var(--putih);
+  margin-right: 10px;
+}
+
+.heroDetailKelas .container .caption a {
+  padding: 12px 25px;
+}
+
+.heroDetailKelas .container img {
+  width: 40%;
+  height: 300px;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+
+.detailKelas .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.detailKelas .container h2 {
+  font-size: 1.5rem;
+  color: var(--biru-cerah);
+  margin-bottom: 20px;
+}
+
+.detailKelas .container .tentangKelas {
+  width: 70%;
+  margin-right: 20px;
+}
+
+.detailKelas .container .tentangKelas .perTentangKelas {
+  padding: 30px 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  border: var(--border);
+  background-color: var(--putih);
+}
+
+.detailKelas .container .tentangKelas .perTentangKelas p {
+  line-height: 30px;
+  font-weight: 450;
+}
+
+.detailKelas .container .tentangKelas .perTentangKelas .materi {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.detailKelas .container .tentangKelas .perTentangKelas .materi a {
+  width: 100%;
+  padding: 20px;
+  margin: 5px 0;
+  font-weight: 550;
+  border-radius: 10px;
+  background-color: #EFF2F6;
+}
+
+.detailKelas .container .infoKelas {
+  width: 30%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 11vh;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.detailKelas .container .infoKelas .perInfoKelas {
+  padding: 30px 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  border: var(--border);
+  background-color: var(--putih);
+}
+
+.detailKelas .container .infoKelas .perInfoKelas .infoMateri {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-weight: 500;
+  border-radius: 10px;
+  background-color: #EFF2F6;
+}
+
+.detailKelas .container .infoKelas .perInfoKelas .infoMateri img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.detailKelas .container .infoKelas .perInfoKelas .mentor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.detailKelas .container .infoKelas .perInfoKelas .mentor img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.detailKelas .container .infoKelas .perInfoKelas .mentor p {
+  font-weight: 500;
+}
+
+.heroMateri {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--hero);
+}
+
+.heroMateri .container img,
+.heroMateri .container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.containerMateri {
+  width: 100%;
+  height: 100%;
+}
+
+.containerMateri .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.containerMateri .container .detailMateri {
+  width: 65%;
+  margin-right: 20px;
+}
+
+.containerMateri .container .detailMateri > * {
+  margin: 20px 0;
+}
+
+.containerMateri .container .detailMateri .infoMateri {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+  border: var(--border);
+  position: relative;
+}
+
+.containerMateri .container .detailMateri .infoMateri .kanan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.containerMateri .container .detailMateri .infoMateri h2 {
+  font-size: 1.2rem;
+  margin-left: 20px;
+}
+
+.containerMateri .container .detailMateri .infoMateri .icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  background-color: var(--putih);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.containerMateri .container .detailMateri .infoMateri .icon:hover {
+  color: var(--putih);
+  background-color: var(--biru-cerah);
+}
+
+.containerMateri .container .detailMateri article {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  border: var(--border);
+}
+
+.containerMateri .container .detailMateri article ul {
+  margin: 10px 0;
+}
+
+.containerMateri .container .detailMateri article ul li {
+  margin: 5px 0 5px 20px;
+  list-style: initial;
+}
+
+.containerMateri .container .detailMateri article p {
+  margin: 5px 0;
+}
+
+.containerMateri .container .detailMateri .komentar {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.containerMateri .container .detailMateri .komentar .tulisKomentar {
+  width: 100%;
+  padding: 15px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 7px;
+  border: 2px dashed rgba(0, 0, 0, 0.1);
+  background-color: var(--putih);
+}
+
+.containerMateri .container .detailMateri .komentar .tulisKomentar img {
+  width: 35px;
+  height: 35px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 15px;
+  background-color: var(--putih-900);
+}
+
+.containerMateri .container .detailMateri .komentar .perKomentar {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.containerMateri .container .detailMateri .komentar .perKomentar .balasan {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.containerMateri .container .detailMateri .komentar .perKomentar .profil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerMateri .container .detailMateri .komentar .perKomentar .profil img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 15px;
+  background-color: var(--putih-900);
+}
+
+.containerMateri .container .detailMateri .komentar .perKomentar .profil .caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.containerMateri .container .detailMateri .komentar .perKomentar .profil .caption .nama {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerMateri .container .detailMateri .komentar .perKomentar .profil .caption .nama svg {
+  color: var(--biru-cerah);
+  margin-left: 10px;
+}
+
+.containerMateri .container .detailMateri .komentar .perKomentar .profil .caption span {
+  font-size: .9rem;
+}
+
+.containerMateri .container .detailMateri .komentar .perKomentar .isiKomentar {
+  margin: 20px 0;
+}
+
+.containerMateri .container .detailMateri .komentar .perKomentar .cta {
+  width: 100%;
+  height: 100%;
+  padding: 7px 20px;
+  border-radius: 7px;
+  background-color: var(--putih-mandan-ireng);
+}
+
+.containerMateri .container .KeteranganSeries {
+  width: 35%;
+  height: 100vh;
+  top: 15vh;
+  position: -webkit-sticky;
+  position: sticky;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.containerMateri .container .KeteranganSeries > * {
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  border: var(--border);
+}
+
+.containerMateri .container .KeteranganSeries .titleSeries h2 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.containerMateri .container .KeteranganSeries .titleSeries p {
+  font-size: .9rem;
+}
+
+.containerMateri .container .KeteranganSeries .detailSeries {
+  height: 400px;
+  padding: 0;
+  overflow-y: auto;
+}
+
+.containerMateri .container .KeteranganSeries .detailSeries .perEpisode {
+  width: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.containerMateri .container .KeteranganSeries .detailSeries .perEpisode.active {
+  background-color: var(--biru-cerah) !important;
+}
+
+.containerMateri .container .KeteranganSeries .detailSeries .perEpisode.active p {
+  color: var(--putih);
+}
+
+.containerMateri .container .KeteranganSeries .detailSeries .perEpisode.active .icon {
+  color: var(--biru-cerah);
+}
+
+.containerMateri .container .KeteranganSeries .detailSeries .perEpisode:hover {
+  background-color: #80a1fc;
+}
+
+.containerMateri .container .KeteranganSeries .detailSeries .perEpisode .icon {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: var(--putih-900);
+}
+
+.kontak {
+  width: 100%;
+}
+
+.kontak .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.kontak .container .caption,
+.kontak .container img {
+  height: 100%;
+  width: 50%;
+}
+
+.kontak .container .caption {
+  margin-left: 50px;
+}
+
+.kontak .container .caption h1 {
+  font-size: 2.1rem;
+  margin-bottom: 20px;
+}
+
+.TermsCondition,
+.PrivacyPolicy {
+  width: 100%;
+  height: 100%;
+}
+
+.TermsCondition p,
+.PrivacyPolicy p {
+  margin: 20px 0;
+  font-size: 1.1rem;
+  line-height: 30px;
+}
+
+.TermsCondition ul li,
+.PrivacyPolicy ul li {
+  padding: 10px;
+  font-size: 1.1rem;
+  margin-left: 20px;
+  line-height: 30px;
+  list-style: decimal;
+}
+
+.TermsCondition h2,
+.PrivacyPolicy h2 {
+  margin: 10px 0;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1500px;
+  }
+  section,
+  footer,
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .containerKerjasama .container {
+    border-top-left-radius: 100px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
