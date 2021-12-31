@@ -255,6 +255,7 @@ header .container .menu span:nth-child(3) {
   -webkit-transform: translateX(120%);
           transform: translateX(120%);
   background-color: rgba(0, 0, 0, 0.1);
+  z-index: 9999999;
 }
 
 .containerNavMobile .navMobile {

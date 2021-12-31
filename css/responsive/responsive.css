@@ -136,6 +136,10 @@
     text-align: center;
     background-color: transparent;
   }
+  .galeri .perGaleri {
+    width: calc(100%/3);
+    height: 200px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -152,6 +156,20 @@
     display: -ms-flexbox;
     display: flex;
   }
+  .galeri .perGaleri {
+    height: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  .title p {
+    font-size: 1.1rem;
+    line-height: 25px;
+  }
+  .title h1 {
+    font-size: 1.7rem;
+    line-height: 40px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -165,6 +183,10 @@
     height: 30rem;
     margin-bottom: 0;
   }
+  .galeri .perGaleri {
+    width: calc(100%/2);
+    height: 200px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -174,6 +196,13 @@
   .containerKerjasama,
   .footer .container {
     padding: 0 15px;
+  }
+  .title p {
+    font-size: 1rem;
+  }
+  .title h1 {
+    font-size: 1.5rem;
+    line-height: 30px;
   }
   .containerClient .clientTitle p {
     font-size: 1.2rem;
@@ -188,6 +217,18 @@
   .kontak .container img {
     height: 20rem;
     margin-bottom: 10px;
+  }
+  .perFAQ .pertanyaan {
+    padding: 20px 10px;
+  }
+  .perFAQ .pertanyaan .icon {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .galeri .perGaleri {
+    height: 150px;
   }
 }
 
@@ -228,6 +269,10 @@
   .kontak .container .caption input {
     font-size: .9rem;
   }
+  .galeri .perGaleri {
+    width: 100%;
+    height: 200px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -239,6 +284,9 @@
   }
   footer .container p span {
     font-size: 1rem;
+  }
+  .perFAQ .jawaban {
+    padding: 10px;
   }
 }
 
@@ -270,6 +318,9 @@
   }
   .kontak .container .caption button {
     width: 100%;
+  }
+  .galeri .perGaleri {
+    height: 150px;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
