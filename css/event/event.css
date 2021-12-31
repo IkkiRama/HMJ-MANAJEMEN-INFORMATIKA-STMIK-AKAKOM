@@ -279,7 +279,7 @@ img {
   margin-left: 10px;
 }
 
-.Event .container .sorting .filterProgram .boxFilterProgram .btn {
+.Event .container .sorting .filterProgram .boxFilterProgram .btnEvent {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,7 +297,7 @@ img {
   margin-top: 30px;
 }
 
-.Event .container .sorting .filterProgram .boxFilterProgram .btn button {
+.Event .container .sorting .filterProgram .boxFilterProgram .btnEvent button {
   width: 80%;
   padding: 7px 10px;
   margin-bottom: 10px;
@@ -311,7 +311,7 @@ img {
   cursor: pointer;
 }
 
-.Event .container .sorting .filterProgram .boxFilterProgram .btn button:last-child {
+.Event .container .sorting .filterProgram .boxFilterProgram .btnEvent button:last-child {
   background-color: #fff;
   color: #3f3f3f;
   border: 2px solid #e4e4e7;
@@ -454,14 +454,14 @@ img {
 
 .EventMobile .program .masihBerlangsung .perMasihBerlangsung h2 {
   font-size: 1.5rem;
-  line-height: 30px;
+  line-height: 35px;
   padding: 10px;
   text-transform: capitalize;
 }
 
 .Event .container .program .masihBerlangsung .perMasihBerlangsung h2 {
   font-size: 1.2rem;
-  line-height: 25px;
+  line-height: 27px;
   padding: 10px;
   text-transform: capitalize;
 }
@@ -488,7 +488,7 @@ img {
 }
 
 .Event .container .program .masihBerlangsung .perMasihBerlangsung p {
-  font-size: .9rem;
+  font-size: 1rem;
   padding: 10px;
 }
 
@@ -515,8 +515,8 @@ img {
   color: #302f2f;
 }
 
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung .btn,
-.Event .container .program .masihBerlangsung .perMasihBerlangsung .btn {
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung .btnEvent,
+.Event .container .program .masihBerlangsung .perMasihBerlangsung .btnEvent {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -529,12 +529,12 @@ img {
           align-items: center;
 }
 
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung .btn button:hover,
-.Event .container .program .masihBerlangsung .perMasihBerlangsung .btn button:hover {
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung .btnEvent button:hover,
+.Event .container .program .masihBerlangsung .perMasihBerlangsung .btnEvent button:hover {
   opacity: .9;
 }
 
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung .btn button {
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung .btnEvent button {
   text-align: center;
   width: 95%;
   padding: 10px;
@@ -545,7 +545,7 @@ img {
   background-color: #3629a7;
 }
 
-.Event .container .program .masihBerlangsung .perMasihBerlangsung .btn button {
+.Event .container .program .masihBerlangsung .perMasihBerlangsung .btnEvent button {
   text-align: center;
   width: 95%;
   padding: 8px;
@@ -767,7 +767,7 @@ img {
   color: #3f3f3f;
 }
 
-.EventMobile .sorting .filter .containerFilter .boxFilter .btn {
+.EventMobile .sorting .filter .containerFilter .boxFilter .btnEvent {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -775,7 +775,7 @@ img {
   margin-top: 50px;
 }
 
-.EventMobile .sorting .filter .containerFilter .boxFilter .btn button {
+.EventMobile .sorting .filter .containerFilter .boxFilter .btnEvent button {
   width: calc(90%/2);
   background-color: #fff;
   border: 2px solid #e4e4e7;
@@ -788,7 +788,7 @@ img {
   cursor: pointer;
 }
 
-.EventMobile .sorting .filter .containerFilter .boxFilter .btn button:last-child {
+.EventMobile .sorting .filter .containerFilter .boxFilter .btnEvent button:last-child {
   background-color: #3629a7;
   border: 2px solid #3629a7;
   color: #fff;

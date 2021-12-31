@@ -1074,6 +1074,7 @@ footer .container p span {
                 font-weight: 500;
                 line-height: 30px;
                 color: var(--putih);
+                margin-bottom: 20px;
             }
 
             .keterangan {
@@ -1146,9 +1147,17 @@ footer .container p span {
                 border: var(--border);
                 background-color: var(--putih);
 
+                ul li {
+                    padding: 10px;
+                    margin-left: 20px;
+                    list-style: decimal;
+                    font-weight: 500;
+                }
+
                 p {
-                    line-height: 30px;
+                    line-height: 27px;
                     font-weight: 450;
+                    margin: 20px 0;
                 }
 
                 .materi {

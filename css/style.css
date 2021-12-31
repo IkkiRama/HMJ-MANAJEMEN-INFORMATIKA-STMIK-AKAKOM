@@ -1206,6 +1206,7 @@ footer .container p span {
   font-weight: 500;
   line-height: 30px;
   color: var(--putih);
+  margin-bottom: 20px;
 }
 
 .heroDetailKelas .container .caption .keterangan {
@@ -1280,9 +1281,17 @@ footer .container p span {
   background-color: var(--putih);
 }
 
+.detailKelas .container .tentangKelas .perTentangKelas ul li {
+  padding: 10px;
+  margin-left: 20px;
+  list-style: decimal;
+  font-weight: 500;
+}
+
 .detailKelas .container .tentangKelas .perTentangKelas p {
-  line-height: 30px;
+  line-height: 27px;
   font-weight: 450;
+  margin: 20px 0;
 }
 
 .detailKelas .container .tentangKelas .perTentangKelas .materi {
