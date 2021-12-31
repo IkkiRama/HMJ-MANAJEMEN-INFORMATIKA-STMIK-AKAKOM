@@ -25,6 +25,49 @@
   section {
     padding: 0 50px;
   }
+  .containerKerjasama .container .caption {
+    width: 100%;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .kontak .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .kontak .container .caption,
+  .kontak .container img {
+    width: 100%;
+  }
+  .kontak .container img {
+    height: 30rem;
+    margin-bottom: 50px;
+  }
+  .kontak .container .caption {
+    margin-left: 0;
+  }
+  .kontak .container .caption h1 {
+    text-align: center;
+  }
+  .kontak .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .kontak .container .caption,
+  .kontak .container img {
+    width: 100%;
+  }
+  .kontak .container img {
+    height: 30rem;
+    margin-bottom: 50px;
+  }
+  .kontak .container .caption {
+    margin-left: 0;
+  }
+  .kontak .container .caption h1 {
+    text-align: center;
+  }
 }
 
 @media (max-width: 800px) {
@@ -32,6 +75,66 @@
   section,
   footer {
     padding: 0 25px;
+  }
+  .containerClient {
+    border-top-left-radius: 0;
+  }
+  .containerClient .clientTitle {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .containerClient .clientTitle h2 {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .containerClient .clientTitle p {
+    width: 100%;
+  }
+  .containerKerjasama {
+    padding: 0 25px;
+    background-color: var(--hero);
+  }
+  .containerKerjasama .container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    padding: 50px 0;
+    border-top-right-radius: 0;
+  }
+  .containerKerjasama .container .caption {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+  .footer .container {
+    width: 100%;
+    padding: 0 25px;
+  }
+  footer {
+    background-color: var(--hero);
+  }
+  footer .container {
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 0;
+    padding-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    background-color: transparent;
   }
 }
 
@@ -55,13 +158,36 @@
   .containerNavMobile .navMobile {
     width: 60%;
   }
+  .footer .box {
+    margin: 1rem 0;
+  }
+  .kontak .container img {
+    height: 30rem;
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 500px) {
   header,
   section,
-  footer {
+  footer,
+  .containerKerjasama,
+  .footer .container {
     padding: 0 15px;
+  }
+  .containerClient .clientTitle p {
+    font-size: 1.2rem;
+  }
+  .containerKerjasama .container .caption h2 {
+    font-size: 2rem;
+    line-height: 45px;
+  }
+  .containerKerjasama .container .caption p {
+    font-size: 1.1rem;
+  }
+  .kontak .container img {
+    height: 20rem;
+    margin-bottom: 10px;
   }
 }
 
@@ -69,10 +195,80 @@
   .containerNavMobile .navMobile {
     width: 70%;
   }
+  .containerKerjasama .container .caption h2,
+  .containerClient .clientTitle h2 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    line-height: 30px;
+  }
+  .containerKerjasama .container .caption p,
+  .containerClient .clientTitle p {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+  .footer .box h2 {
+    font-size: 1.7rem;
+  }
+  .footer .box .sosmed .perSosmed {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    font-size: 1.2rem;
+    margin: 10px;
+    border-radius: 50%;
+    background: #ffa011;
+  }
+  .kontak .container img {
+    height: 15rem;
+  }
+  .kontak .container .caption h1 {
+    font-size: 1.9rem;
+  }
+  .kontak .container .caption textarea,
+  .kontak .container .caption input {
+    font-size: .9rem;
+  }
 }
 
 @media (max-width: 350px) {
   .containerNavMobile .navMobile {
+    width: 100%;
+  }
+  footer .container p {
+    font-size: .9rem;
+  }
+  footer .container p span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .footer .box p {
+    font-size: .8rem;
+    line-height: 20px;
+  }
+  .footer .box .sosmed {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer .box .sosmed .perSosmed {
+    margin: 10px 5px;
+  }
+  .kontak .container img {
+    height: 10rem;
+  }
+  .kontak .container .caption h1 {
+    font-size: 1.6rem;
+  }
+  .kontak .container .caption label {
+    font-size: .95rem;
+  }
+  .kontak .container .caption textarea,
+  .kontak .container .caption input {
+    padding-left: 10px;
+    font-size: .8rem;
+  }
+  .kontak .container .caption button {
     width: 100%;
   }
 }
