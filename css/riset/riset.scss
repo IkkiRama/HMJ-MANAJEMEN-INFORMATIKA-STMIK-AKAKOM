@@ -250,9 +250,9 @@ section {
 
 
 .btn-primary {
-    color: var(--putih);
-    background-color: var(--primary);
-    border-color: var(--primary);
+    color: var(--putih) !important;
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
 }
 
 .btn-primary:hover {

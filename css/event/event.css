@@ -1,0 +1,892 @@
+.btn {
+  background-color: var(--putih);
+}
+
+img {
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
+/* Event */
+.heroEvent {
+  width: 100%;
+  height: 70vh;
+  background-color: #eff2f6;
+  /* padding-top: 100px; */
+}
+
+.heroEvent .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.heroEvent .container h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.heroEvent .container p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.heroEvent .container form {
+  width: 40%;
+  height: 50px;
+  /* background-color: red; */
+  position: relative;
+}
+
+.heroEvent .container form input:focus {
+  border: 2px solid #0176f4bd;
+}
+
+.heroEvent .container form input {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  border: 1px solid #e4e4e7;
+  cursor: text;
+  background-color: #fff;
+  font-size: 1rem;
+  color: #302f2f;
+  font-weight: 500;
+  letter-spacing: .5px;
+  padding: 1rem;
+}
+
+.heroEvent .container form button {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-top: 1px solid #e4e4e7;
+  border-right: 1px solid #e4e4e7;
+  border-bottom: 1px solid #e4e4e7;
+  background-color: #2e2e2e;
+  font-weight: 600;
+  text-transform: capitalize;
+  right: 0;
+  font-size: 1rem;
+}
+
+.heroEvent .container form button p {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Event {
+  width: 100%;
+  height: 100%;
+  background-color: #f8fafc;
+}
+
+.Event .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Event .container .sorting {
+  width: 30%;
+  top: 100px;
+  position: -webkit-sticky;
+  position: sticky;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  /* background-color: red; */
+}
+
+.Event .container .sorting h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #4a4b4c;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.Event .container .sorting .urutkan .boxUrutkan:hover {
+  cursor: pointer;
+}
+
+.Event .container .sorting .urutkan .boxUrutkan {
+  width: 90%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #e4e4e7;
+  border-radius: 7px;
+  color: #3f3f3f;
+  padding: 1rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.Event .container .sorting .urutkan .boxUrutkan span {
+  font-weight: 600;
+}
+
+.EventMobile .sorting .urutkan .isiBoxUrutkan.showIsiBoxUrutkan,
+.Event .container .sorting .urutkan .boxUrutkan .isiBoxUrutkan.showIsiBoxUrutkan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Event .container .sorting .urutkan .boxUrutkan .isiBoxUrutkan {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 9999999999;
+  background-color: #fff;
+  border: 1px solid #e4e4e7;
+  border-radius: 7px;
+  padding: .5rem 0;
+}
+
+.Event .container .sorting .urutkan .boxUrutkan .isiBoxUrutkan span {
+  padding: 1rem;
+}
+
+.Event .container .sorting .urutkan .boxUrutkan .isiBoxUrutkan span.active {
+  background-color: #5441fa;
+  border: 1px solid #e4e4e7;
+  color: #fff;
+}
+
+.Event .container .sorting .urutkan .boxUrutkan .isiBoxUrutkan span.active:hover {
+  background-color: #5441fa;
+  cursor: pointer;
+}
+
+.Event .container .sorting .urutkan .boxUrutkan .isiBoxUrutkan span:hover {
+  background-color: #afc0ff;
+  cursor: pointer;
+}
+
+.Event .container .sorting .filterProgram .boxFilterProgram {
+  width: 90%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #e4e4e7;
+  border-radius: 7px;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.Event .container .sorting .filterProgram .boxFilterProgram .perFilterProgram {
+  /* background-color: red; */
+  overflow-y: hidden;
+  /* margin-bottom: 10px; */
+}
+
+.Event .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .keterangan {
+  padding: .5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Event .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .keterangan:hover {
+  cursor: pointer;
+  background-color: #e4e4e7;
+}
+
+.Event .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .keterangan span {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.Event .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .isiFilterProgram.hideIsiFilterProgram {
+  height: 0;
+}
+
+.Event .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .isiFilterProgram {
+  height: 100%;
+  padding: 0 1rem;
+  /* transform: translateY(-100px); */
+}
+
+.Event .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .isiFilterProgram .perIsiFilterProgram {
+  margin: 10px 0;
+}
+
+.Event .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .isiFilterProgram .perIsiFilterProgram label {
+  font-weight: 500;
+  color: #302f2f;
+  margin-left: 10px;
+}
+
+.Event .container .sorting .filterProgram .boxFilterProgram .btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+}
+
+.Event .container .sorting .filterProgram .boxFilterProgram .btn button {
+  width: 80%;
+  padding: 7px 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+  background-color: #2B46A6;
+  border-radius: 7px;
+  border: 2px solid #2B46A6;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.Event .container .sorting .filterProgram .boxFilterProgram .btn button:last-child {
+  background-color: #fff;
+  color: #3f3f3f;
+  border: 2px solid #e4e4e7;
+}
+
+.Event .container .program {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Event .container .program .keteranganProgram {
+  width: 100%;
+  /* background-color: red; */
+  padding: 10px 0;
+  border-bottom: 4px solid #e4e4e7;
+  background-color: #f8fafc;
+  top: 10vh;
+  position: -webkit-sticky;
+  position: sticky;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 30px;
+}
+
+.Event .container .program .keteranganProgram span {
+  color: #3629a7;
+  position: relative;
+  padding: 0 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.EventMobile .program .sudahBerakhir {
+  width: 100%;
+  height: 70vh;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Event .container .program .sudahBerakhir {
+  width: 100%;
+  min-height: 70vh;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.EventMobile .program .sudahBerakhir h1,
+.Event .container .program .sudahBerakhir h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
+  color: #CE231C;
+}
+
+.EventMobile .program .masihBerlangsung,
+.Event .container .program .masihBerlangsung {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung {
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid #e4e4e7;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung:hover h2,
+.Event .container .program .masihBerlangsung .perMasihBerlangsung:hover h2 {
+  color: #2b46a6;
+}
+
+.Event .container .program .masihBerlangsung .perMasihBerlangsung {
+  width: calc(90%/2);
+  background-color: #fff;
+  border: 2px solid #e4e4e7;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  margin: 20px 10px;
+}
+
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung img {
+  width: 100%;
+  height: 350px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.Event .container .program .masihBerlangsung .perMasihBerlangsung img {
+  width: 100%;
+  height: 250px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung h2 {
+  font-size: 1.5rem;
+  line-height: 30px;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.Event .container .program .masihBerlangsung .perMasihBerlangsung h2 {
+  font-size: 1.2rem;
+  line-height: 25px;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung h3 {
+  font-size: 1.5rem;
+  color: #CE231C;
+  padding: 10px;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.Event .container .program .masihBerlangsung .perMasihBerlangsung h3 {
+  font-size: 1.2rem;
+  color: #CE231C;
+  padding: 10px;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.EventMobile .masihBerlangsung .perMasihBerlangsung p {
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+.Event .container .program .masihBerlangsung .perMasihBerlangsung p {
+  font-size: .9rem;
+  padding: 10px;
+}
+
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung .date,
+.Event .container .program .masihBerlangsung .perMasihBerlangsung .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e4e4e7;
+}
+
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung .date p,
+.Event .container .program .masihBerlangsung .perMasihBerlangsung .date p {
+  font-weight: 600;
+}
+
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung .date .icon,
+.Event .container .program .masihBerlangsung .perMasihBerlangsung .date .icon {
+  margin-right: 10px;
+  color: #302f2f;
+}
+
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung .btn,
+.Event .container .program .masihBerlangsung .perMasihBerlangsung .btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung .btn button:hover,
+.Event .container .program .masihBerlangsung .perMasihBerlangsung .btn button:hover {
+  opacity: .9;
+}
+
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung .btn button {
+  text-align: center;
+  width: 95%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3629a7;
+}
+
+.Event .container .program .masihBerlangsung .perMasihBerlangsung .btn button {
+  text-align: center;
+  width: 95%;
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3629a7;
+}
+
+/* Event Mobile Start */
+.EventMobile {
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f8fafc;
+  display: none;
+}
+
+.EventMobile .keterangan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 4px solid #e4e4e7;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+.EventMobile .keterangan span {
+  width: 50%;
+  text-align: center;
+  color: #3629a7;
+  position: relative;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.EventMobile .sorting {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* .EventMobile .sorting .filter {} */
+.EventMobile .sorting .filter .tombol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 15px;
+  color: #4a4b4c;
+  border-radius: 7px;
+  border: 2px solid #e4e4e7;
+  background-color: #f8fafc;
+  cursor: pointer;
+}
+
+.EventMobile .sorting .filter h2 {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+/*  */
+.EventMobile .sorting .filter .containerFilter {
+  /* display: none; */
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.349);
+  z-index: 99999999999;
+  padding: 1rem;
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter {
+  width: 100%;
+  /* height: 400px; */
+  padding: 1rem;
+  border: 2px solid #e4e4e7;
+  background-color: #f8fafc;
+  border-radius: 10px;
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.7rem;
+  color: #4a4b4c;
+  margin-bottom: 20px;
+  /* padding: .5rem 1rem; */
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .title .icon {
+  font-size: 1.4rem;
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .title h4 {
+  font-size: 1.4rem;
+  font-weight: 550;
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .containerTitle .close:hover > * {
+  color: #2B46A6;
+  cursor: pointer;
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .content {
+  width: 100%;
+  height: 300px;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-direction: column; */
+  overflow: auto;
+  /* margin: 10px 0; */
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .content .perFIlter {
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .content .perFilter .title {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #4a4b4c;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+  background-color: #fff;
+  padding: .5rem 1rem;
+  border: 1px solid #e4e4e7;
+  border-radius: 7px;
+  margin: 10px 0;
+  /* position: relative; */
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .content .perFilter .isiFilterProgram {
+  /* height: 0; */
+  display: none;
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .content .perFilter .isiFilterProgram.show {
+  height: 100%;
+  display: inherit;
+  padding: 0 1rem;
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .content .perFilter .isiFilterProgram .perIsiFilterProgram {
+  margin: 10px 0;
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .content .perFilter .isiFilterProgram .perIsiFilterProgram label {
+  margin-left: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #3f3f3f;
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .btn button {
+  width: calc(90%/2);
+  background-color: #fff;
+  border: 2px solid #e4e4e7;
+  margin: 0 10px;
+  border-radius: 7px;
+  padding: 10px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.EventMobile .sorting .filter .containerFilter .boxFilter .btn button:last-child {
+  background-color: #3629a7;
+  border: 2px solid #3629a7;
+  color: #fff;
+}
+
+.EventMobile .sorting .urutkan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  color: #4a4b4c;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 7px;
+  background-color: #fff;
+  border: 2px solid #e4e4e7;
+  /* transform: translateY(-10px); */
+}
+
+.EventMobile .sorting .urutkan h2 {
+  margin-right: 100px;
+  font-size: 1rem;
+}
+
+.EventMobile .sorting .urutkan .isiBoxUrutkan {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* z-index: 9999999999; */
+  background-color: #fff;
+  border: 1px solid #e4e4e7;
+  border-radius: 7px;
+  padding: .5rem 0;
+}
+
+.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan:hover {
+  background-color: #afc0ff;
+  cursor: pointer;
+}
+
+.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan.active:hover {
+  background-color: #5441fa;
+}
+
+.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan {
+  width: 100%;
+  padding: 1rem;
+}
+
+.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan.active {
+  background-color: #5441fa;
+  border: 1px solid #e4e4e7;
+}
+
+.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan.active span {
+  color: #fff;
+}
+
+.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan span {
+  color: #3f3f3f;
+  font-weight: 600;
+}
+
+/* Event Mobile End */
+.program .masihBerlangsung .selengkapnya:hover,
+.artikel .container .selengkapnya:hover {
+  cursor: pointer;
+  opacity: .9;
+}
+
+.program .masihBerlangsung .selengkapnya,
+.artikel .container .selengkapnya {
+  margin-top: 70px;
+  width: 100%;
+  padding: 15px;
+  background-color: #3629a7;
+  font-weight: 600;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=event.css.map */
