@@ -6,306 +6,176 @@ img {
     object-fit: cover !important;
 }
 
-/* Event */
-.heroEvent {
-    width: 100%;
-    height: 70vh;
-    background-color: #eff2f6;
-    /* padding-top: 100px; */
-}
-
-.heroEvent .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.heroEvent .container h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.heroEvent .container p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-
-.heroEvent .container form {
-    width: 40%;
-    height: 50px;
-    /* background-color: red; */
-    position: relative;
-}
-
-
-.heroEvent .container form input:focus {
-    border: 2px solid #0176f4bd;
-}
-
-.heroEvent .container form input {
-    width: 100%;
-    height: 100%;
-    border-radius: 7px;
-    border: 1px solid #e4e4e7;
-    cursor: text;
-    background-color: #fff;
-    font-size: 1rem;
-    color: #302f2f;
-    font-weight: 500;
-    letter-spacing: .5px;
-    padding: 1rem;
-}
-
-.heroEvent .container form button {
-    width: 20%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
-    border-top: 1px solid #e4e4e7;
-    border-right: 1px solid #e4e4e7;
-    border-bottom: 1px solid #e4e4e7;
-    background-color: rgb(46, 46, 46);
-    font-weight: 600;
-    text-transform: capitalize;
-    right: 0;
-    font-size: 1rem;
-}
-
-.heroEvent .container form button p {
-    color: #fff;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .Event {
     width: 100%;
     height: 100%;
-    background-color: #f8fafc;
+    background-color: var(--putih-f8fafc);
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .sorting {
+            width: 30%;
+            top: 100px;
+            position: sticky;
+            align-self: flex-start;
+
+            h2 {
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: #4a4b4c;
+                margin-bottom: 15px;
+                text-transform: capitalize;
+            }
+
+            .boxUrutkan {
+                width: 90%;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: var(--putih);
+                border: 1px solid #e4e4e7;
+                border-radius: 7px;
+                color: #3f3f3f;
+                padding: 1rem;
+                margin-bottom: 30px;
+                position: relative;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                span {
+                    font-weight: 600;
+                }
+
+                .isiBoxUrutkan {
+                    width: 100%;
+                    position: absolute;
+                    top: 50px;
+                    left: 0;
+                    display: none;
+                    justify-content: center;
+                    flex-direction: column;
+                    z-index: 9999999999;
+                    background-color: var(--putih);
+                    border: 1px solid #e4e4e7;
+                    border-radius: 7px;
+                    padding: .5rem 0;
+
+                    &.showIsiBoxUrutkan {
+                        display: flex;
+                    }
+
+                    span {
+                        padding: 1rem;
+
+                        &:hover {
+                            background-color: #afc0ff;
+                            cursor: pointer;
+                        }
+
+                        &.active {
+                            background-color: #5441fa;
+                            border: 1px solid #e4e4e7;
+                            color: var(--putih);
+
+                            &:hover {
+                                background-color: #5441fa;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .filterProgram .boxFilterProgram {
+                width: 90%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                background-color: var(--putih);
+                border: 1px solid #e4e4e7;
+                border-radius: 7px;
+                padding: 1rem 0;
+                position: relative;
+
+                .btnEvent {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-top: 30px;
+
+                    button {
+                        width: 80%;
+                        padding: 7px 10px;
+                        margin-bottom: 10px;
+                        font-size: 1rem;
+                        color: var(--putih);
+                        font-weight: 600;
+                        background-color: #2B46A6;
+                        border-radius: 7px;
+                        border: 2px solid #2B46A6;
+                        text-transform: capitalize;
+
+                        &:last-child {
+                            background-color: var(--putih);
+                            color: #3f3f3f;
+                            border: var(--border);
+                        }
+                    }
+                }
+
+                .perFilterProgram {
+                    overflow-y: hidden;
+
+                    .keterangan {
+                        padding: .5rem 1rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        &:hover {
+                            cursor: pointer;
+                            background-color: #e4e4e7;
+                        }
+
+                        span {
+                            font-weight: 600;
+                            text-transform: capitalize;
+                        }
+                    }
+
+                    .isiFilterProgram {
+                        height: 100%;
+                        padding: 0 1rem;
+
+                        &.hideIsiFilterProgram {
+                            height: 0;
+                        }
+
+                        .perIsiFilterProgram {
+                            margin: 10px 0;
+
+                            label {
+                                font-weight: 500;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
 }
 
-.Event .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.Event .container .sorting {
-    width: 30%;
-    top: 100px;
-    position: sticky;
-    align-self: flex-start;
-    /* background-color: red; */
-}
-
-.Event .container .sorting h2 {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #4a4b4c;
-    margin-bottom: 15px;
-    text-transform: capitalize;
-}
-
-.Event .container .sorting .urutkan .boxUrutkan:hover {
-    cursor: pointer;
-}
-
-.Event .container .sorting .urutkan .boxUrutkan {
-    width: 90%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff;
-    border: 1px solid #e4e4e7;
-    border-radius: 7px;
-    color: #3f3f3f;
-    padding: 1rem;
-    margin-bottom: 30px;
-    position: relative;
-}
-
-.Event .container .sorting .urutkan .boxUrutkan span {
-    font-weight: 600;
-}
-
-
-
-
-
-
-.EventMobile .sorting .urutkan .isiBoxUrutkan.showIsiBoxUrutkan,
-.Event .container .sorting .urutkan .boxUrutkan .isiBoxUrutkan.showIsiBoxUrutkan {
-    display: flex;
-}
-
-
-.Event .container .sorting .urutkan .boxUrutkan .isiBoxUrutkan {
-    width: 100%;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    display: none;
-    justify-content: center;
-    flex-direction: column;
-    z-index: 9999999999;
-    background-color: #fff;
-    border: 1px solid #e4e4e7;
-    border-radius: 7px;
-    padding: .5rem 0;
-}
-
-.Event .container .sorting .urutkan .boxUrutkan .isiBoxUrutkan span {
-    padding: 1rem;
-}
-
-.Event .container .sorting .urutkan .boxUrutkan .isiBoxUrutkan span.active {
-    background-color: #5441fa;
-    border: 1px solid #e4e4e7;
-    color: #fff;
-}
-
-.Event .container .sorting .urutkan .boxUrutkan .isiBoxUrutkan span.active:hover {
-    background-color: #5441fa;
-    cursor: pointer;
-}
-
-.Event .container .sorting .urutkan .boxUrutkan .isiBoxUrutkan span:hover {
-    background-color: #afc0ff;
-    cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.Event .container .sorting .filterProgram .boxFilterProgram {
-    width: 90%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    border: 1px solid #e4e4e7;
-    border-radius: 7px;
-    padding: 1rem 0;
-    position: relative;
-}
-
-.Event .container .sorting .filterProgram .boxFilterProgram .perFilterProgram {
-    /* background-color: red; */
-    overflow-y: hidden;
-    /* margin-bottom: 10px; */
-}
-
-.Event .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .keterangan {
-    padding: .5rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.Event .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .keterangan:hover {
-    cursor: pointer;
-    background-color: #e4e4e7;
-}
-
-
-
-.Event .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .keterangan span {
-    font-weight: 600;
-    text-transform: capitalize;
-}
-
-
-
-.Event .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .isiFilterProgram.hideIsiFilterProgram {
-    height: 0;
-}
-
-
-.Event .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .isiFilterProgram {
-    height: 100%;
-    padding: 0 1rem;
-    /* transform: translateY(-100px); */
-}
-
-.Event .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .isiFilterProgram .perIsiFilterProgram {
-    margin: 10px 0;
-}
-
-.Event .container .sorting .filterProgram .boxFilterProgram .perFilterProgram .isiFilterProgram .perIsiFilterProgram label {
-    font-weight: 500;
-    color: #302f2f;
-    margin-left: 10px;
-}
-
-
-.Event .container .sorting .filterProgram .boxFilterProgram .btnEvent {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 30px;
-}
-
-.Event .container .sorting .filterProgram .boxFilterProgram .btnEvent button {
-    width: 80%;
-    padding: 7px 10px;
-    margin-bottom: 10px;
-    font-size: 1rem;
-    color: #fff;
-    font-weight: 600;
-    background-color: #2B46A6;
-    border-radius: 7px;
-    border: 2px solid #2B46A6;
-    text-transform: capitalize;
-    cursor: pointer;
-
-}
-
-.Event .container .sorting .filterProgram .boxFilterProgram .btnEvent button:last-child {
-    background-color: #fff;
-    color: #3f3f3f;
-    border: 2px solid #e4e4e7;
-}
 
 
 
@@ -336,11 +206,12 @@ img {
     /* background-color: red; */
     padding: 10px 0;
     border-bottom: 4px solid #e4e4e7;
-    background-color: #f8fafc;
+    background-color: var(--putih-f8fafc);
     top: 10vh;
     position: sticky;
     align-self: flex-start;
     margin-bottom: 30px;
+    z-index: 999999;
 }
 
 .Event .container .program .keteranganProgram span {
@@ -391,15 +262,15 @@ img {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
     flex-wrap: wrap;
 }
 
 
 .EventMobile .program .masihBerlangsung .perMasihBerlangsung {
     width: 100%;
-    background-color: #fff;
-    border: 2px solid #e4e4e7;
+    background-color: var(--putih);
+    border: var(--border);
     padding-bottom: 15px;
     border-radius: 10px;
     margin: 20px 0;
@@ -409,17 +280,20 @@ img {
 
 .EventMobile .program .masihBerlangsung .perMasihBerlangsung:hover h2,
 .Event .container .program .masihBerlangsung .perMasihBerlangsung:hover h2 {
-    color: #2b46a6;
+    color: var(--biru-cerah);
 }
 
 
 .Event .container .program .masihBerlangsung .perMasihBerlangsung {
     width: calc(90%/2);
-    background-color: #fff;
-    border: 2px solid #e4e4e7;
+    max-height: 700px;
+    background-color: var(--putih);
+    border: var(--border);
     padding-bottom: 15px;
     border-radius: 10px;
     margin: 20px 10px;
+    transition: .3s;
+    position: relative;
 }
 
 .EventMobile .program .masihBerlangsung .perMasihBerlangsung img {
@@ -444,27 +318,25 @@ img {
 }
 
 .Event .container .program .masihBerlangsung .perMasihBerlangsung h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 27px;
-    padding: 10px;
+    margin: 10px 0;
+    padding: 0 10px;
     text-transform: capitalize;
 }
 
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung h3 {
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung h3,
+.Event .container .program .masihBerlangsung .perMasihBerlangsung h3 {
     font-size: 1.5rem;
     color: #CE231C;
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px 0 50px 0;
     font-weight: 600;
 }
 
 
 .Event .container .program .masihBerlangsung .perMasihBerlangsung h3 {
     font-size: 1.2rem;
-    color: #CE231C;
-    padding: 10px;
-    margin: 10px 0;
-    font-weight: 600;
 }
 
 .EventMobile .masihBerlangsung .perMasihBerlangsung p {
@@ -478,32 +350,13 @@ img {
     padding: 10px;
 }
 
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung .date,
-.Event .container .program .masihBerlangsung .perMasihBerlangsung .date {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #e4e4e7;
-}
-
-
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung .date p,
-.Event .container .program .masihBerlangsung .perMasihBerlangsung .date p {
-    font-weight: 600;
-}
-
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung .date .icon,
-.Event .container .program .masihBerlangsung .perMasihBerlangsung .date .icon {
-    margin-right: 10px;
-    color: #302f2f;
-}
 
 .EventMobile .program .masihBerlangsung .perMasihBerlangsung .btnEvent,
 .Event .container .program .masihBerlangsung .perMasihBerlangsung .btnEvent {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
 }
 
 .EventMobile .program .masihBerlangsung .perMasihBerlangsung .btnEvent button:hover,
@@ -511,26 +364,9 @@ img {
     opacity: .9;
 }
 
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung .btnEvent button {
-    text-align: center;
-    width: 95%;
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 10px;
-    font-weight: 600;
-    color: #fff;
-    background-color: #3629a7;
-}
-
+.EventMobile .program .masihBerlangsung .perMasihBerlangsung .btnEvent button,
 .Event .container .program .masihBerlangsung .perMasihBerlangsung .btnEvent button {
-    text-align: center;
-    width: 95%;
-    padding: 8px;
-    font-size: 1rem;
-    border-radius: 10px;
-    font-weight: 600;
-    color: #fff;
-    background-color: #3629a7;
+    width: 100%;
 }
 
 
@@ -553,7 +389,7 @@ img {
     height: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: #f8fafc;
+    background-color: var(--putih-f8fafc);
     display: none;
 }
 
@@ -593,8 +429,8 @@ img {
     padding: 10px 15px;
     color: #4a4b4c;
     border-radius: 7px;
-    border: 2px solid #e4e4e7;
-    background-color: #f8fafc;
+    border: var(--border);
+    background-color: var(--putih-f8fafc);
     cursor: pointer;
 
 }
@@ -639,8 +475,8 @@ img {
     width: 100%;
     /* height: 400px; */
     padding: 1rem;
-    border: 2px solid #e4e4e7;
-    background-color: #f8fafc;
+    border: var(--border);
+    background-color: var(--putih-f8fafc);
     border-radius: 10px;
 }
 
@@ -705,7 +541,7 @@ img {
     font-weight: 600;
     text-transform: capitalize;
     cursor: pointer;
-    background-color: #fff;
+    background-color: var(--putih);
     padding: .5rem 1rem;
     border: 1px solid #e4e4e7;
     border-radius: 7px;
@@ -744,8 +580,8 @@ img {
 
 .EventMobile .sorting .filter .containerFilter .boxFilter .btnEvent button {
     width: calc(90%/2);
-    background-color: #fff;
-    border: 2px solid #e4e4e7;
+    background-color: var(--putih);
+    border: var(--border);
     margin: 0 10px;
     border-radius: 7px;
     padding: 10px;
@@ -758,7 +594,7 @@ img {
 .EventMobile .sorting .filter .containerFilter .boxFilter .btnEvent button:last-child {
     background-color: #3629a7;
     border: 2px solid #3629a7;
-    color: #fff;
+    color: var(--putih);
 }
 
 
@@ -786,8 +622,8 @@ img {
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 7px;
-    background-color: #fff;
-    border: 2px solid #e4e4e7;
+    background-color: var(--putih);
+    border: var(--border);
     /* transform: translateY(-10px); */
 }
 
@@ -807,7 +643,7 @@ img {
     align-items: start;
     flex-direction: column;
     /* z-index: 9999999999; */
-    background-color: #fff;
+    background-color: var(--putih);
     border: 1px solid #e4e4e7;
     border-radius: 7px;
     padding: .5rem 0;
@@ -835,7 +671,7 @@ img {
 }
 
 .EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan.active span {
-    color: #fff;
+    color: var(--putih);
 }
 
 .EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan span {
@@ -855,22 +691,11 @@ img {
 
 
 
-.program .masihBerlangsung .selengkapnya:hover,
-.artikel .container .selengkapnya:hover {
-    cursor: pointer;
-    opacity: .9;
-}
 
 
 .program .masihBerlangsung .selengkapnya,
 .artikel .container .selengkapnya {
     margin-top: 70px;
     width: 100%;
-    padding: 15px;
-    background-color: #3629a7;
-    font-weight: 600;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 1rem;
     text-transform: uppercase;
 }
