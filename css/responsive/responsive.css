@@ -18,6 +18,30 @@
   .containerKerjasama .container {
     border-top-left-radius: 100px;
   }
+  .heroDetailKelas .container img {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .heroDetailKelas .container .caption h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .heroDetailKelas .container .caption p {
+    font-size: 1rem;
+    line-height: 25px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .detailKelas .container .tentangKelas {
+    width: 60%;
+  }
+  .detailKelas .container .infoKelas {
+    width: 40%;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -113,14 +137,20 @@
             align-items: start;
     padding: 50px 0;
     border-top-right-radius: 0;
+    background-color: transparent;
   }
   .containerKerjasama .container .caption {
     width: 100%;
     margin: 0 0 30px 0;
   }
+  .footer {
+    margin: 0;
+    background-color: var(--hero);
+  }
   .footer .container {
     width: 100%;
     padding: 0 25px;
+    background-color: transparent;
   }
   footer {
     background-color: var(--hero);
@@ -140,6 +170,57 @@
     width: calc(100%/3);
     height: 200px;
   }
+  .heroDetailKelas {
+    height: 100%;
+  }
+  .heroDetailKelas .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .heroDetailKelas .container .caption {
+    width: 100%;
+    text-align: center;
+  }
+  .heroDetailKelas .container .caption .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .heroDetailKelas .container .caption .btn a {
+    width: 100%;
+  }
+  .heroDetailKelas .container img {
+    width: 80%;
+    height: 300px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .detailKelas .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .detailKelas .container .tentangKelas {
+    width: 100%;
+    margin-right: 0;
+  }
+  .detailKelas .container .tentangKelas .perTentangKelas p {
+    line-height: 25px;
+  }
+  .detailKelas .container .infoKelas {
+    width: 100%;
+  }
 }
 
 @media (max-width: 700px) {
@@ -158,6 +239,9 @@
   }
   .galeri .perGaleri {
     height: 150px;
+  }
+  .heroDetailKelas .container img {
+    width: 100%;
   }
 }
 
@@ -224,6 +308,18 @@
   .perFAQ .pertanyaan .icon {
     font-size: 1.2rem;
   }
+  .heroDetailKelas .container .caption h1 {
+    line-height: 40px;
+  }
+  .detailKelas .container .tentangKelas .perTentangKelas {
+    padding: 20px 10px;
+  }
+  .detailKelas .container .tentangKelas .perTentangKelas p {
+    margin: 10px 0;
+  }
+  .detailKelas .container .infoKelas .perInfoKelas {
+    padding: 20px 10px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -273,6 +369,13 @@
     width: 100%;
     height: 200px;
   }
+  .heroDetailKelas .container .caption h1 {
+    line-height: 30px;
+    font-size: 1.7rem;
+  }
+  .heroDetailKelas .container img {
+    height: 250px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -287,6 +390,12 @@
   }
   .perFAQ .jawaban {
     padding: 10px;
+  }
+  .heroDetailKelas .container .caption p {
+    font-size: .9rem;
+  }
+  .heroDetailKelas .container img {
+    height: 200px;
   }
 }
 
@@ -321,6 +430,9 @@
   }
   .galeri .perGaleri {
     height: 150px;
+  }
+  .detailKelas .container .tentangKelas .perTentangKelas ul li {
+    padding: 5px;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

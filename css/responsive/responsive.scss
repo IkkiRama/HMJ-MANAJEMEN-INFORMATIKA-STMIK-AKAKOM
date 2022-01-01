@@ -14,6 +14,55 @@
     .containerKerjasama .container {
         border-top-left-radius: 100px;
     }
+
+    .heroDetailKelas {
+
+        .container {
+
+            img {
+                max-height: 300px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .heroDetailKelas {
+
+        .container {
+
+            .caption {
+
+                h1 {
+                    font-size: 2rem;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 1rem;
+                    line-height: 25px;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .detailKelas {
+
+        .container {
+
+            .tentangKelas {
+                width: 60%;
+            }
+
+            .infoKelas {
+                width: 40%;
+            }
+        }
+    }
 }
 
 @media (max-width: 1000px) {
@@ -114,6 +163,7 @@
         align-items: start;
         padding: 50px 0;
         border-top-right-radius: 0;
+        background-color: transparent;
     }
 
     .containerKerjasama .container .caption {
@@ -121,9 +171,15 @@
         margin: 0 0 30px 0;
     }
 
+    .footer {
+        margin: 0;
+        background-color: var(--hero);
+    }
+
     .footer .container {
         width: 100%;
         padding: 0 25px;
+        background-color: transparent;
     }
 
     footer {
@@ -146,6 +202,67 @@
         .perGaleri {
             width: calc(100%/3);
             height: 200px;
+        }
+    }
+
+    .heroDetailKelas {
+        height: 100%;
+
+        .container {
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap-reverse;
+
+            .caption {
+                width: 100%;
+                text-align: center;
+
+                .btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    a {
+                        width: 100%;
+                    }
+                }
+
+
+            }
+
+
+            img {
+                width: 80%;
+                height: 300px;
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+
+
+    .detailKelas {
+
+        .container {
+            flex-wrap: wrap;
+
+            .tentangKelas {
+                width: 100%;
+                margin-right: 0;
+
+
+                .perTentangKelas {
+
+                    p {
+                        line-height: 25px;
+                    }
+                }
+            }
+
+            .infoKelas {
+                width: 100%;
+            }
         }
     }
 
@@ -174,6 +291,16 @@
 
         .perGaleri {
             height: 150px;
+        }
+    }
+
+    .heroDetailKelas {
+
+        .container {
+
+            img {
+                width: 100%;
+            }
         }
     }
 }
@@ -266,6 +393,44 @@
 
     }
 
+    .heroDetailKelas {
+
+        .container {
+
+            .caption {
+
+                h1 {
+                    line-height: 40px;
+                    // font-size: .9rem;
+                }
+            }
+        }
+    }
+
+    .detailKelas {
+
+        .container {
+
+            .tentangKelas {
+
+                .perTentangKelas {
+                    padding: 20px 10px;
+
+                    p {
+                        margin: 10px 0;
+                        // line-height: 25px;
+                    }
+                }
+            }
+
+            .infoKelas {
+                .perInfoKelas {
+                    padding: 20px 10px;
+                }
+            }
+        }
+    }
+
 
 }
 
@@ -334,6 +499,23 @@
         }
     }
 
+    .heroDetailKelas {
+
+        .container {
+
+            .caption {
+
+                h1 {
+                    line-height: 30px;
+                    font-size: 1.7rem;
+                }
+            }
+
+            img {
+                height: 250px;
+            }
+        }
+    }
 }
 
 
@@ -357,6 +539,27 @@
             padding: 10px;
         }
     }
+
+    .heroDetailKelas {
+
+        .container {
+
+            .caption {
+
+                p {
+                    font-size: .9rem;
+                }
+
+            }
+
+
+            img {
+                height: 200px;
+            }
+
+        }
+    }
+
 }
 
 @media(max-width:300px) {
@@ -400,6 +603,34 @@
 
         .perGaleri {
             height: 150px;
+        }
+    }
+
+    .detailKelas {
+
+        .container {
+
+            .tentangKelas {
+
+                .perTentangKelas {
+                    // padding: 20px 10px;
+
+                    p {
+                        // margin: 10px 0;
+                        // line-height: 25px;
+                    }
+
+                    ul li {
+                        padding: 5px;
+                    }
+                }
+            }
+
+            .infoKelas {
+                .perInfoKelas {
+                    // padding: 20px 10px;
+                }
+            }
         }
     }
 }
