@@ -11,6 +11,11 @@
         justify-content: center;
     }
 
+
+    .containerClient {
+        border-top-right-radius: 100px;
+    }
+
     .containerKerjasama .container {
         border-top-left-radius: 100px;
     }
@@ -123,6 +128,17 @@
     .kontak .container .caption h1 {
         text-align: center;
     }
+
+    .comunity {
+
+        .container {
+
+            .perComunity {
+                width: calc(90%/2);
+            }
+        }
+    }
+
 }
 
 @media(max-width:800px) {
@@ -340,6 +356,19 @@
             height: 200px;
         }
     }
+
+
+    .comunity {
+
+        .container {
+
+            .perComunity {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    }
+
 }
 
 @media(max-width:500px) {

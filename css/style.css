@@ -924,6 +924,7 @@ header .container .menu span:nth-child(3) {
 .containerClient {
   width: 100%;
   border-top-left-radius: 100px;
+  border-top-right-radius: 0;
   background-color: var(--biru-cerah);
 }
 
@@ -1085,6 +1086,7 @@ header .container .menu span:nth-child(3) {
 footer {
   width: 100%;
   height: 8vh;
+  margin: 0;
   background-color: var(--biru-cerah);
 }
 
@@ -1787,5 +1789,72 @@ footer .container p span {
 .PrivacyPolicy h2 {
   margin: 10px 0;
   font-size: 1.3rem;
+}
+
+.artikel {
+  width: 100%;
+  height: 100%;
+  background-color: #eff2f6;
+}
+
+.artikel .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.artikel .container .perArtikel {
+  width: calc(90%/3);
+  max-height: 500px;
+  margin: 15px 10px;
+  border-radius: 10px;
+  position: relative;
+  border: var(--border);
+  background-color: var(--putih);
+}
+
+.artikel .container .perArtikel:hover h2 {
+  color: var(--biru-cerah);
+}
+
+.artikel .container .perArtikel img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: var(--putih-900);
+}
+
+.artikel .container .perArtikel h2 {
+  font-size: 1.3rem;
+  line-height: 27px;
+  text-transform: capitalize;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+.artikel .container .perArtikel P {
+  font-size: .9rem;
+  font-weight: 450;
+  padding: 0 10px;
+  margin-bottom: 100px;
+}
+
+.artikel .container .perArtikel .cta {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+.artikel .container .perArtikel .cta button {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

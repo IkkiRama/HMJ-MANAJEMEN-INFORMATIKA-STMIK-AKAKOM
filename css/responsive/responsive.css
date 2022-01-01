@@ -15,6 +15,9 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .containerClient {
+    border-top-right-radius: 100px;
+  }
   .containerKerjasama .container {
     border-top-left-radius: 100px;
   }
@@ -91,6 +94,9 @@
   }
   .kontak .container .caption h1 {
     text-align: center;
+  }
+  .comunity .container .perComunity {
+    width: calc(90%/2);
   }
 }
 
@@ -270,6 +276,10 @@
   .galeri .perGaleri {
     width: calc(100%/2);
     height: 200px;
+  }
+  .comunity .container .perComunity {
+    width: 100%;
+    margin: 10px 0;
   }
 }
 

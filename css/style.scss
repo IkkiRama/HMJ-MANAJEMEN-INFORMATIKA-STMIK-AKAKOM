@@ -815,6 +815,7 @@ header {
 .containerClient {
     width: 100%;
     border-top-left-radius: 100px;
+    border-top-right-radius: 0;
     background-color: var(--biru-cerah);
 }
 
@@ -964,6 +965,7 @@ header {
 footer {
     width: 100%;
     height: 8vh;
+    margin: 0;
     background-color: var(--biru-cerah);
 }
 
@@ -1676,3 +1678,78 @@ footer .container p span {
 }
 
 // page PrivacyPolicy end
+
+
+
+
+
+
+
+
+// Page Artikel Start
+.artikel {
+    width: 100%;
+    height: 100%;
+    background-color: #eff2f6;
+
+    .container {
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .perArtikel {
+            width: calc(90%/3);
+            max-height: 500px;
+            margin: 15px 10px;
+            border-radius: 10px;
+            position: relative;
+            border: var(--border);
+            background-color: var(--putih);
+
+            &:hover {
+                h2 {
+                    color: var(--biru-cerah);
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                background-color: var(--putih-900);
+            }
+
+            h2 {
+                font-size: 1.3rem;
+                line-height: 27px;
+                text-transform: capitalize;
+                margin: 10px 0;
+                padding: 0 10px;
+            }
+
+            P {
+                font-size: .9rem;
+                font-weight: 450;
+                padding: 0 10px;
+                margin-bottom: 100px;
+            }
+
+            .cta {
+                position: absolute;
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+                // padding: 10px;
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// Page Artikel End
