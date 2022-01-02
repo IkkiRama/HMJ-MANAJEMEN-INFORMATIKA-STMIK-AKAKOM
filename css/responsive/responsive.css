@@ -101,6 +101,18 @@
   .containerFitur .fitur .perFitur {
     width: calc(90%/2);
   }
+  .containerFAQ .container .FAQ {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .containerFAQ .container .FAQ .kiri,
+  .containerFAQ .container .FAQ .kanan {
+    width: 100%;
+    margin: 0;
+  }
+  .containerSosmed .container .sosmed .perSosmed {
+    width: calc(90%/2);
+  }
 }
 
 @media (max-width: 900px) {
@@ -380,6 +392,9 @@
   }
   .artikel .container .perArtikel img {
     height: 250px;
+  }
+  .containerSosmed .container .sosmed .perSosmed {
+    width: 100%;
   }
 }
 

@@ -157,6 +157,34 @@
         }
     }
 
+
+    .containerFAQ {
+
+        .container .FAQ {
+            flex-wrap: wrap;
+
+            .kiri,
+            .kanan {
+                width: 100%;
+                margin: 0;
+
+            }
+        }
+    }
+
+    .containerSosmed {
+
+        .container {
+
+            .sosmed {
+
+                .perSosmed {
+                    width: calc(90%/2);
+                }
+            }
+        }
+    }
+
 }
 
 @media(max-width:900px) {
@@ -535,6 +563,19 @@
 
                 img {
                     height: 250px;
+                }
+            }
+        }
+    }
+
+    .containerSosmed {
+
+        .container {
+
+            .sosmed {
+
+                .perSosmed {
+                    width: 100%;
                 }
             }
         }
