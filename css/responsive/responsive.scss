@@ -81,6 +81,47 @@
         width: 100%;
         margin-right: 20px;
     }
+
+    .hero {
+
+        .container {
+
+            .caption {
+                width: 50%;
+
+                h1 {
+                    font-size: 2.2rem;
+                    line-height: 40px;
+                }
+
+                p {
+                    font-size: 1rem;
+                    line-height: 25px;
+                }
+            }
+
+            .img {
+                width: 50%;
+            }
+        }
+    }
+
+    .containerAlesan {
+
+        .container {
+
+            .alesan {
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .perAlesan {
+                    width: calc(90%/2);
+                    margin: 10px;
+                }
+            }
+        }
+    }
+
 }
 
 @media(max-width:900px) {
@@ -138,6 +179,31 @@
             }
         }
     }
+
+    .hero {
+        height: 100%;
+        // min-height: 100vh;
+
+        .container {
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            // align-items: flex-end;
+            text-align: center;
+
+            .caption {
+                width: 100%;
+                margin: 0;
+                padding-bottom: 100px;
+            }
+
+            .img {
+                width: 300px;
+                height: 300px;
+                margin: 0;
+            }
+        }
+    }
+
 
 }
 
@@ -319,6 +385,30 @@
             }
         }
     }
+
+    .containerAlesan {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: var(--biru-cerah);
+
+        .container {
+            padding: 0;
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .alesan {
+                padding-top: 25px;
+
+                .perAlesan {
+                    width: 100%;
+                    margin: 10px 0;
+                    padding: 30px 20px;
+                }
+            }
+        }
+    }
 }
 
 
@@ -460,6 +550,45 @@
         }
     }
 
+    .hero {
+        height: 100vh;
+
+        .container {
+
+            .caption {
+                padding-bottom: 50px;
+
+                h1 {
+                    font-size: 2rem;
+                    line-height: 35px;
+                }
+            }
+
+            .img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+
+    .containerAlesan {
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        .container {
+
+            .alesan {
+
+                .perAlesan {
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
 
 }
 
@@ -545,6 +674,31 @@
             }
         }
     }
+
+    .hero {
+        padding-top: 0;
+
+        .container {
+
+            .caption {
+                padding-bottom: 0;
+
+                h1 {
+                    font-size: 1.7rem;
+                    line-height: 35px;
+                }
+
+                a {
+                    width: 100%;
+                }
+            }
+
+            .img {
+                display: none;
+            }
+        }
+    }
+
 }
 
 
@@ -589,6 +743,59 @@
         }
     }
 
+    .hero {
+
+
+        .container {
+
+            .caption {
+
+                h1 {
+                    font-size: 1.5rem;
+                    line-height: 30px;
+                    margin-bottom: 0;
+                }
+
+                p {
+                    font-size: .9rem;
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+
+
+    .containerAlesan {
+
+        .container {
+
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            .alesan {
+                padding-top: 10px;
+
+                .perAlesan {
+                    padding: 20px 10px;
+
+                    h2 {
+                        font-size: 1.1rem;
+                    }
+
+                    p {
+                        font-weight: 450;
+                        font-size: .8rem;
+                    }
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media(max-width:300px) {

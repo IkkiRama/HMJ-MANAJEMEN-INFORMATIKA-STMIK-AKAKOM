@@ -245,6 +245,34 @@
                         <span class="indikatorSudahBerakhir">Sudah Berakhir</span>
                     </div>
 
+                    <div class="sorting">
+
+                        <div class="filter">
+                            <i class="fas fa-filter"></i>
+                            <h2>Filter</h2>
+                        </div>
+
+                        <div class="urutkan">
+                            <h2>Terbaru</h2>
+                            <i class="fas fa-angle-down"></i>
+
+                            <div class="isiBoxUrutkan">
+                                <div class="perIsiBoxUrutkan active">
+                                    <span>Terbaru</span>
+                                </div>
+                                <div class="perIsiBoxUrutkan">
+                                    <span>Terpopuler</span>
+                                </div>
+                                <div class="perIsiBoxUrutkan">
+                                    <span>Nama A-Z</span>
+                                </div>
+                                <div class="perIsiBoxUrutkan">
+                                    <span>Nama Z-A</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="masihBerlangsung ">
 
                         <a href="detailEvent.html" class="perMasihBerlangsung">
@@ -376,303 +404,117 @@
 
 
 
+        <!-- <div class="containerFilter">
 
-        <!-- Event Mobile Start -->
-        <section class="EventMobile pb-100">
 
-            <div class="keterangan">
-                <span class="indikatorMasihBerlangsung">Masih Berlangsung</span>
-                <span class="indikatorSudahBerakhir">Sudah Berakhir</span>
-            </div>
+            <div class="boxFilter">
 
-            <div class="sorting">
-                <div class="filter">
+                <div class="containerTitle">
 
-                    <div class="tombol">
-                        <i class="fas fa-filter"></i>
-                        <h2>Filter</h2>
+                    <div class="title">
+
+                        <div class="icon">
+                            <i class="fas fa-filter"></i>
+                        </div>
+
+                        <h4>Filter Event</h4>
                     </div>
 
-                    <div class="containerFilter">
+                    <div class="close">
+                        <i class="fas fa-times"></i>
+                    </div>
 
+                </div>
 
-                        <div class="boxFilter">
+                <div class="content">
+                    <div class="perFilter">
 
-                            <div class="containerTitle">
+                        <div class="title">
+                            <span>jenis</span>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
 
-                                <div class="title">
-
-                                    <div class="icon">
-                                        <i class="fas fa-filter"></i>
-                                    </div>
-
-                                    <h4>Filter Event</h4>
-                                </div>
-
-                                <div class="close">
-                                    <i class="fas fa-times"></i>
-                                </div>
-
+                        <div class="isiFilterProgram show">
+                            <div class="perIsiFilterProgram">
+                                <input type="checkbox" name="" id="Beasiswa">
+                                <label for="Beasiswa">Beasiswa</label>
                             </div>
 
-                            <div class="content">
-                                <div class="perFilter">
-
-                                    <div class="title">
-                                        <span>jenis</span>
-                                        <i class="fas fa-angle-down"></i>
-                                    </div>
-
-                                    <div class="isiFilterProgram show">
-                                        <div class="perIsiFilterProgram">
-                                            <input type="checkbox" name="" id="Beasiswa">
-                                            <label for="Beasiswa">Beasiswa</label>
-                                        </div>
-
-                                        <div class="perIsiFilterProgram ">
-                                            <input type="checkbox" name="" id="Lomba">
-                                            <label for="Lomba">Lomba</label>
-                                        </div>
-
-                                        <div class="perIsiFilterProgram">
-                                            <input type="checkbox" name="" id="Webinar">
-                                            <label for="Webinar">Webinar</label>
-                                        </div>
-
-                                        <div class="perIsiFilterProgram ">
-                                            <input type="checkbox" name="" id="Voolunter">
-                                            <label for="Voolunter">Voolunter</label>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="perFilter">
-
-                                    <div class="title">
-                                        <span>perusahaan</span>
-                                        <i class="fas fa-angle-down"></i>
-                                    </div>
-
-                                    <div class="isiFilterProgram">
-
-                                        <div class="perIsiFilterProgram ">
-                                            <input type="checkbox" name="" id="KampusMerdeka">
-                                            <label for="KampusMerdeka">Kampus Merdeka</label>
-                                        </div>
-
-                                        <div class="perIsiFilterProgram">
-                                            <input type="checkbox" name="" id="Kominfo">
-                                            <label for="Kominfo">Kominfo</label>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="perFilter">
-
-                                    <div class="title">
-                                        <span>Universitas</span>
-                                        <i class="fas fa-angle-down"></i>
-                                    </div>
-
-                                    <div class="isiFilterProgram">
-                                        <div class="perIsiFilterProgram">
-                                            <input type="checkbox" name="" id="ITB">
-                                            <label for="ITB">
-                                                <span>ITB</span>
-                                            </label>
-                                        </div>
-
-                                        <div class="perIsiFilterProgram">
-                                            <input type="checkbox" name="" id="UGM">
-                                            <label for="UGM">UGM</label>
-                                        </div>
-
-                                    </div>
-
-                                </div>
+                            <div class="perIsiFilterProgram ">
+                                <input type="checkbox" name="" id="Lomba">
+                                <label for="Lomba">Lomba</label>
                             </div>
 
-                            <div class="btnEvent">
-                                <button type="submit">Hapus</button>
-                                <button type="submit">Terapkan Filter</button>
+                            <div class="perIsiFilterProgram">
+                                <input type="checkbox" name="" id="Webinar">
+                                <label for="Webinar">Webinar</label>
+                            </div>
+
+                            <div class="perIsiFilterProgram ">
+                                <input type="checkbox" name="" id="Voolunter">
+                                <label for="Voolunter">Voolunter</label>
                             </div>
 
                         </div>
 
                     </div>
 
+                    <div class="perFilter">
 
-                </div>
+                        <div class="title">
+                            <span>perusahaan</span>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
 
-                <div class="urutkan">
-                    <h2>Terbaru</h2>
-                    <i class="fas fa-angle-down"></i>
+                        <div class="isiFilterProgram">
 
-                    <div class="isiBoxUrutkan">
-                        <div class="perIsiBoxUrutkan active">
-                            <span>Terbaru</span>
+                            <div class="perIsiFilterProgram ">
+                                <input type="checkbox" name="" id="KampusMerdeka">
+                                <label for="KampusMerdeka">Kampus Merdeka</label>
+                            </div>
+
+                            <div class="perIsiFilterProgram">
+                                <input type="checkbox" name="" id="Kominfo">
+                                <label for="Kominfo">Kominfo</label>
+                            </div>
+
                         </div>
-                        <div class="perIsiBoxUrutkan">
-                            <span>Terpopuler</span>
+
+                    </div>
+
+                    <div class="perFilter">
+
+                        <div class="title">
+                            <span>Universitas</span>
+                            <i class="fas fa-angle-down"></i>
                         </div>
-                        <div class="perIsiBoxUrutkan">
-                            <span>Nama A-Z</span>
+
+                        <div class="isiFilterProgram">
+                            <div class="perIsiFilterProgram">
+                                <input type="checkbox" name="" id="ITB">
+                                <label for="ITB">
+                                    <span>ITB</span>
+                                </label>
+                            </div>
+
+                            <div class="perIsiFilterProgram">
+                                <input type="checkbox" name="" id="UGM">
+                                <label for="UGM">UGM</label>
+                            </div>
+
                         </div>
-                        <div class="perIsiBoxUrutkan">
-                            <span>Nama Z-A</span>
-                        </div>
+
                     </div>
                 </div>
-            </div>
 
-
-
-            <div class="program">
-
-                <div class="masihBerlangsung">
-
-                    <a href="detailEvent.html" class="perMasihBerlangsung">
-                        <img src="img/galeri/calendar-works.jpg" alt="img event">
-                        <h2>Membangun Form & Melakukan Integration Testing dengan JavaScript & ReactJS</h2>
-                        <p>
-                            Ingin mengenal lebih lanjut tentang React? Fitur apa saja yang dapat kamu bangun menggunakan
-                            React?Ingin mengenal lebih lanjut tentang React? Fitur apa saja yang dapat kamu bangun
-                            menggunakan
-                            React?Ingin mengenal lebih lanjut tentang React? Fitur apa saja yang dapat kamu bangun
-                            menggunakan
-                            React?Ingin mengenal lebih lanjut tentang React? Fitur apa saja yang dapat kamu bangun
-                            menggunakan
-                            React?Ingin mengenal lebih lanjut tentang React? Fitur apa saja yang dapat kamu bangun
-                            menggunakan
-                            React?
-                        </p>
-
-                        <h3>Rp 25.000</h3>
-
-                        <div class="btnEvent">
-                            <button class="btn btn-primary">Daftar Event</button>
-                        </div>
-                    </a>
-
-
-                    <a href="detailEvent.html" class="perMasihBerlangsung">
-                        <img src="img/galeri/calendar-works.jpg" alt="img event">
-                        <h2>Membangun Form & Melakukan Integration Testing dengan JavaScript & ReactJS</h2>
-                        <p>
-                            Ingin mengenal lebih lanjut tentang React? Fitur apa saja yang dapat kamu bangun menggunakan
-                            React?
-                        </p>
-
-                        <h3>Rp 25.000</h3>
-
-                        <div class="btnEvent">
-                            <button class="btn btn-primary">Daftar Event</button>
-                        </div>
-                    </a>
-
-
-
-                    <a href="detailEvent.html" class="perMasihBerlangsung">
-                        <img src="img/galeri/calendar-works.jpg" alt="img event">
-                        <h2>Membangun Form & Melakukan Integration Testing dengan JavaScript & ReactJS</h2>
-                        <p>
-                            Ingin mengenal lebih lanjut tentang React? Fitur apa saja yang dapat kamu bangun menggunakan
-                            React?
-                        </p>
-
-                        <h3>Rp 25.000</h3>
-
-                        <div class="btnEvent">
-                            <button class="btn btn-primary">Daftar Event</button>
-                        </div>
-                    </a>
-
-
-                    <a href="detailEvent.html" class="perMasihBerlangsung">
-                        <img src="img/galeri/calendar-works.jpg" alt="img event">
-                        <h2>Membangun Form & Melakukan Integration Testing dengan JavaScript & ReactJS</h2>
-                        <p>
-                            Ingin mengenal lebih lanjut tentang React? Fitur apa saja yang dapat kamu bangun menggunakan
-                            React?
-                        </p>
-
-                        <h3>Rp 25.000</h3>
-
-                        <div class="btnEvent">
-                            <button class="btn btn-primary">Daftar Event</button>
-                        </div>
-                    </a>
-
-
-
-                    <a href="detailEvent.html" class="perMasihBerlangsung">
-                        <img src="img/galeri/calendar-works.jpg" alt="img event">
-                        <h2>Membangun Form & Melakukan Integration Testing dengan JavaScript & ReactJS</h2>
-                        <p>
-                            Ingin mengenal lebih lanjut tentang React? Fitur apa saja yang dapat kamu bangun menggunakan
-                            React?
-                        </p>
-
-                        <h3>Rp 25.000</h3>
-
-                        <div class="btnEvent">
-                            <button class="btn btn-primary">Daftar Event</button>
-                        </div>
-                    </a>
-
-
-
-                    <a href="detailEvent.html" class="perMasihBerlangsung">
-                        <img src="img/galeri/calendar-works.jpg" alt="img event">
-                        <h2>Membangun Form & Melakukan Integration Testing dengan JavaScript & ReactJS</h2>
-                        <p>
-                            Ingin mengenal lebih lanjut tentang React? Fitur apa saja yang dapat kamu bangun menggunakan
-                            React?
-                        </p>
-
-                        <h3>Rp 25.000</h3>
-
-                        <div class="btnEvent">
-                            <button class="btn btn-primary">Daftar Event</button>
-                        </div>
-                    </a>
-
-
-                    <a href="detailEvent.html" class="perMasihBerlangsung">
-                        <img src="img/galeri/calendar-works.jpg" alt="img event">
-                        <h2>Membangun Form & Melakukan Integration Testing dengan JavaScript & ReactJS</h2>
-                        <p>
-                            Ingin mengenal lebih lanjut tentang React? Fitur apa saja yang dapat kamu bangun menggunakan
-                            React?
-                        </p>
-
-                        <h3>Rp 25.000</h3>
-
-                        <div class="btnEvent">
-                            <button class="btn btn-primary">Daftar Event</button>
-                        </div>
-                    </a>
-
-
-                    <button class="selengkapnya">Load More</button>
-
-
-
+                <div class="btnEvent">
+                    <button type="submit">Hapus</button>
+                    <button type="submit">Terapkan Filter</button>
                 </div>
 
-                <div class="sudahBerakhir">
-                    <img src="img/kosong.svg" alt="kosong">
-                    <h1>Tidak ada hasil</h1>
-                </div>
-
-
             </div>
-        </section>
-        <!-- Event Mobile End -->
+
+        </div> -->
 
 
         <section class="containerClient pb-100 pt-50">

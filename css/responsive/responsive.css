@@ -56,6 +56,31 @@
     width: 100%;
     margin-right: 20px;
   }
+  .hero .container .caption {
+    width: 50%;
+  }
+  .hero .container .caption h1 {
+    font-size: 2.2rem;
+    line-height: 40px;
+  }
+  .hero .container .caption p {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+  .hero .container .img {
+    width: 50%;
+  }
+  .containerAlesan .container .alesan {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .containerAlesan .container .alesan .perAlesan {
+    width: calc(90%/2);
+    margin: 10px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -97,6 +122,27 @@
   }
   .comunity .container .perComunity {
     width: calc(90%/2);
+  }
+  .hero {
+    height: 100%;
+  }
+  .hero .container {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .hero .container .caption {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 100px;
+  }
+  .hero .container .img {
+    width: 300px;
+    height: 300px;
+    margin: 0;
   }
 }
 
@@ -249,6 +295,25 @@
   .heroDetailKelas .container img {
     width: 100%;
   }
+  .containerAlesan {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--biru-cerah);
+  }
+  .containerAlesan .container {
+    padding: 0;
+  }
+  .containerAlesan .container h1 {
+    font-size: 1.5rem;
+  }
+  .containerAlesan .container .alesan {
+    padding-top: 25px;
+  }
+  .containerAlesan .container .alesan .perAlesan {
+    width: 100%;
+    margin: 10px 0;
+    padding: 30px 20px;
+  }
 }
 
 @media (max-width: 650px) {
@@ -330,6 +395,28 @@
   .detailKelas .container .infoKelas .perInfoKelas {
     padding: 20px 10px;
   }
+  .hero {
+    height: 100vh;
+  }
+  .hero .container .caption {
+    padding-bottom: 50px;
+  }
+  .hero .container .caption h1 {
+    font-size: 2rem;
+    line-height: 35px;
+  }
+  .hero .container .img {
+    width: 200px;
+    height: 200px;
+  }
+  .containerAlesan {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .containerAlesan .container .alesan .perAlesan img {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -386,6 +473,22 @@
   .heroDetailKelas .container img {
     height: 250px;
   }
+  .hero {
+    padding-top: 0;
+  }
+  .hero .container .caption {
+    padding-bottom: 0;
+  }
+  .hero .container .caption h1 {
+    font-size: 1.7rem;
+    line-height: 35px;
+  }
+  .hero .container .caption a {
+    width: 100%;
+  }
+  .hero .container .img {
+    display: none;
+  }
 }
 
 @media (max-width: 350px) {
@@ -406,6 +509,35 @@
   }
   .heroDetailKelas .container img {
     height: 200px;
+  }
+  .hero .container .caption h1 {
+    font-size: 1.5rem;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+  .hero .container .caption p {
+    font-size: .9rem;
+    margin: 20px 0;
+  }
+  .containerAlesan .container h1 {
+    font-size: 1.2rem;
+  }
+  .containerAlesan .container .alesan {
+    padding-top: 10px;
+  }
+  .containerAlesan .container .alesan .perAlesan {
+    padding: 20px 10px;
+  }
+  .containerAlesan .container .alesan .perAlesan h2 {
+    font-size: 1.1rem;
+  }
+  .containerAlesan .container .alesan .perAlesan p {
+    font-weight: 450;
+    font-size: .8rem;
+  }
+  .containerAlesan .container .alesan .perAlesan img {
+    width: 40px;
+    height: 40px;
   }
 }
 

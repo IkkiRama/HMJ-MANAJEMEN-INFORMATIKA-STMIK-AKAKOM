@@ -258,7 +258,42 @@ img {
   cursor: pointer;
 }
 
-.EventMobile .program .sudahBerakhir {
+.Event .container .program .sorting {
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Event .container .program .sorting .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 15px;
+  color: #4a4b4c;
+  border-radius: 7px;
+  border: var(--border);
+  background-color: var(--putih-f8fafc);
+  cursor: pointer;
+}
+
+.Event .container .program .sorting .filter h2 {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.Event .container .program .sudahBerakhir {
   width: 100%;
   height: 70vh;
   display: none;
@@ -274,24 +309,6 @@ img {
           flex-direction: column;
 }
 
-.Event .container .program .sudahBerakhir {
-  width: 100%;
-  min-height: 70vh;
-  display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
-
-.EventMobile .program .sudahBerakhir h1,
 .Event .container .program .sudahBerakhir h1 {
   font-size: 2rem;
   text-align: center;
@@ -299,7 +316,6 @@ img {
   color: #CE231C;
 }
 
-.EventMobile .program .masihBerlangsung,
 .Event .container .program .masihBerlangsung {
   width: 100%;
   display: -webkit-box;
@@ -310,20 +326,6 @@ img {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung {
-  width: 100%;
-  background-color: var(--putih);
-  border: var(--border);
-  padding-bottom: 15px;
-  border-radius: 10px;
-  margin: 20px 0;
-}
-
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung:hover h2,
-.Event .container .program .masihBerlangsung .perMasihBerlangsung:hover h2 {
-  color: var(--biru-cerah);
 }
 
 .Event .container .program .masihBerlangsung .perMasihBerlangsung {
@@ -339,25 +341,8 @@ img {
   position: relative;
 }
 
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung img {
-  width: 100%;
-  height: 350px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.Event .container .program .masihBerlangsung .perMasihBerlangsung img {
-  width: 100%;
-  height: 250px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung h2 {
-  font-size: 1.5rem;
-  line-height: 35px;
-  padding: 10px;
-  text-transform: capitalize;
+.Event .container .program .masihBerlangsung .perMasihBerlangsung:hover h2 {
+  color: var(--biru-cerah);
 }
 
 .Event .container .program .masihBerlangsung .perMasihBerlangsung h2 {
@@ -368,22 +353,20 @@ img {
   text-transform: capitalize;
 }
 
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung h3,
 .Event .container .program .masihBerlangsung .perMasihBerlangsung h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #CE231C;
   padding: 10px;
   margin: 10px 0 50px 0;
   font-weight: 600;
 }
 
-.Event .container .program .masihBerlangsung .perMasihBerlangsung h3 {
-  font-size: 1.2rem;
-}
-
-.EventMobile .masihBerlangsung .perMasihBerlangsung p {
-  font-size: 1.1rem;
-  padding: 10px;
+.Event .container .program .masihBerlangsung .perMasihBerlangsung img {
+  width: 100%;
+  height: 250px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: var(--putih-900);
 }
 
 .Event .container .program .masihBerlangsung .perMasihBerlangsung p {
@@ -391,7 +374,6 @@ img {
   padding: 10px;
 }
 
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung .btnEvent,
 .Event .container .program .masihBerlangsung .perMasihBerlangsung .btnEvent {
   position: absolute;
   left: 10px;
@@ -399,48 +381,12 @@ img {
   bottom: 10px;
 }
 
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung .btnEvent button:hover,
-.Event .container .program .masihBerlangsung .perMasihBerlangsung .btnEvent button:hover {
-  opacity: .9;
-}
-
-.EventMobile .program .masihBerlangsung .perMasihBerlangsung .btnEvent button,
 .Event .container .program .masihBerlangsung .perMasihBerlangsung .btnEvent button {
   width: 100%;
 }
 
-/* Event Mobile Start */
-.EventMobile {
-  width: 100%;
-  height: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: var(--putih-f8fafc);
-  display: none;
-}
-
-.EventMobile .keterangan {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-bottom: 4px solid #e4e4e7;
-  margin-bottom: 20px;
-  padding: 10px 0;
-}
-
-.EventMobile .keterangan span {
-  width: 50%;
-  text-align: center;
-  color: #3629a7;
-  position: relative;
-  font-weight: 600;
-  cursor: pointer;
+.Event .container .program .masihBerlangsung .perMasihBerlangsung .btnEvent button :hover {
+  opacity: .9;
 }
 
 .EventMobile .sorting {
