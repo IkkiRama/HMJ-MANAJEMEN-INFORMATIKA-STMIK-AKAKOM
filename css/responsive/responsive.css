@@ -45,6 +45,9 @@
   .detailKelas .container .infoKelas {
     width: 40%;
   }
+  .artikel .container .perArtikel {
+    width: calc(92%/2);
+  }
 }
 
 @media (max-width: 1000px) {
@@ -80,6 +83,23 @@
   .containerAlesan .container .alesan .perAlesan {
     width: calc(90%/2);
     margin: 10px;
+  }
+  .title h1 {
+    font-size: 1.7rem;
+  }
+  .title p {
+    font-size: 1.1rem;
+    line-height: 25px;
+  }
+  .containerFitur .fitur {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .containerFitur .fitur .perFitur {
+    width: calc(90%/2);
   }
 }
 
@@ -314,6 +334,18 @@
     margin: 10px 0;
     padding: 30px 20px;
   }
+  .containerFitur .fitur .perFitur {
+    width: 100%;
+    margin: 10px 0;
+    padding: 30px;
+  }
+  .artikel .container .perArtikel {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .artikel .container .perArtikel img {
+    height: 300px;
+  }
 }
 
 @media (max-width: 650px) {
@@ -345,6 +377,9 @@
   .comunity .container .perComunity {
     width: 100%;
     margin: 10px 0;
+  }
+  .artikel .container .perArtikel img {
+    height: 250px;
   }
 }
 
@@ -416,6 +451,12 @@
   .containerAlesan .container .alesan .perAlesan img {
     width: 50px;
     height: 50px;
+  }
+  .containerFitur .fitur .perFitur {
+    padding: 20px;
+  }
+  .artikel .container .perArtikel img {
+    height: 200px;
   }
 }
 
@@ -489,6 +530,16 @@
   .hero .container .img {
     display: none;
   }
+  .containerFitur .fitur .perFitur h2 {
+    margin: 20px 0 10px 0;
+    font-size: 1.2rem;
+  }
+  .artikel .container .perArtikel img {
+    height: 170px;
+  }
+  .artikel .container .perArtikel h2 {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 350px) {
@@ -539,6 +590,12 @@
     width: 40px;
     height: 40px;
   }
+  .title h1 {
+    font-size: 1.5rem;
+  }
+  .title p {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 300px) {
@@ -575,6 +632,19 @@
   }
   .detailKelas .container .tentangKelas .perTentangKelas ul li {
     padding: 5px;
+  }
+  .containerFitur .fitur .perFitur p {
+    font-size: .9rem;
+  }
+  .artikel .container .perArtikel img {
+    height: 150px;
+  }
+  .artikel .container .perArtikel h2 {
+    font-size: 1.1rem;
+  }
+  .artikel .container .perArtikel p,
+  .artikel .container .perArtikel button {
+    font-size: .9rem;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

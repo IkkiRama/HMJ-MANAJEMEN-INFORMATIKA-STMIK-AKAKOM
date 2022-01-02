@@ -450,9 +450,9 @@ header .container .menu span:nth-child(3) {
 .containerFitur .fitur .perFitur {
   width: calc(90%/3);
   max-height: 300px;
-  margin: 0.9rem;
+  margin: 10px;
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--putih);
   border-radius: 0.5rem;
   -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -485,33 +485,6 @@ header .container .menu span:nth-child(3) {
   background-color: #ffa011;
 }
 
-.galeriHome {
-  width: 100%;
-  height: 100%;
-}
-
-.galeriHome .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.galeriHome .container .perGaleri {
-  width: calc(100%/4);
-  height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  cursor: pointer;
-}
-
 .galeri {
   width: 100%;
   height: 100%;
@@ -534,123 +507,6 @@ header .container .menu span:nth-child(3) {
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
-}
-
-.artikelHome {
-  width: 100%;
-  height: 100%;
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "main biasa1 biasa2" "main biasa3 biasa4";
-  -ms-grid-columns: 50% 25% 25%;
-      grid-template-columns: 50% 25% 25%;
-  -ms-grid-rows: 250px 250px;
-      grid-template-rows: 250px 250px;
-}
-
-.artikelHome .perArtikel {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: var(--putih-900);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  position: relative;
-}
-
-.artikelHome .perArtikel::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #1b1b1b;
-  position: absolute;
-  opacity: .6;
-}
-
-.artikelHome .perArtikel h2 {
-  padding: 0 20px;
-  font-size: 1rem;
-  line-height: 20px;
-  position: relative;
-  color: var(--putih);
-}
-
-.artikelHome .perArtikel .keterangan {
-  padding: 10px 20px 20px 20px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.artikelHome .perArtikel .icon,
-.artikelHome .perArtikel p {
-  font-size: .7rem;
-  margin: 0 3px;
-  color: var(--putih);
-}
-
-.artikelHome .perArtikel:first-child {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  grid-area: main;
-  background-image: url("../img/galeri/calendar-works.jpg");
-}
-
-.artikelHome .perArtikel:first-child h2 {
-  font-size: 2.5rem;
-  line-height: 50px;
-  margin-bottom: 30px;
-}
-
-.artikelHome .perArtikel:first-child .icon,
-.artikelHome .perArtikel:first-child p {
-  font-size: 1.2rem;
-  margin: 0 10px;
-}
-
-.artikelHome .perArtikel:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: biasa1;
-  background-image: url("../img/galeri/p-1.jpg");
-}
-
-.artikelHome .perArtikel:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: biasa2;
-  background-image: url("../img/galeri/p-2.jpg");
-}
-
-.artikelHome .perArtikel:nth-child(4) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: biasa3;
-  background-image: url("../img/galeri/p-3.jpg");
-}
-
-.artikelHome .perArtikel:last-child {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: biasa4;
-  background-image: url("../img/galeri/p-4.jpg");
 }
 
 .containerTopik {
@@ -1779,7 +1635,7 @@ footer .container p span {
 
 .artikel .container .perArtikel {
   width: calc(90%/3);
-  max-height: 500px;
+  max-height: 600px;
   margin: 15px 10px;
   border-radius: 10px;
   position: relative;
@@ -1810,8 +1666,6 @@ footer .container p span {
 }
 
 .artikel .container .perArtikel P {
-  font-size: .9rem;
-  font-weight: 450;
   padding: 0 10px;
   margin-bottom: 100px;
 }

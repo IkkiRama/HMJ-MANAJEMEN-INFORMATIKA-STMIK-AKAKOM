@@ -68,6 +68,17 @@
             }
         }
     }
+
+
+    .artikel {
+
+        .container {
+
+            .perArtikel {
+                width: calc(92%/2);
+            }
+        }
+    }
 }
 
 @media (max-width: 1000px) {
@@ -118,6 +129,30 @@
                     width: calc(90%/2);
                     margin: 10px;
                 }
+            }
+        }
+    }
+
+    .title {
+
+        h1 {
+            font-size: 1.7rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 25px;
+        }
+    }
+
+    .containerFitur {
+
+        .fitur {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .perFitur {
+                width: calc(90%/2);
             }
         }
     }
@@ -409,6 +444,38 @@
             }
         }
     }
+
+    .containerFitur {
+
+        .fitur {
+
+            .perFitur {
+                width: 100%;
+                margin: 10px 0;
+                padding: 30px;
+            }
+        }
+    }
+
+
+
+    .artikel {
+
+        .container {
+
+            .perArtikel {
+                width: 100%;
+                margin: 10px 0;
+
+                img {
+                    height: 300px;
+                }
+            }
+        }
+    }
+
+
+
 }
 
 
@@ -455,6 +522,20 @@
             .perComunity {
                 width: 100%;
                 margin: 10px 0;
+            }
+        }
+    }
+
+
+    .artikel {
+
+        .container {
+
+            .perArtikel {
+
+                img {
+                    height: 250px;
+                }
             }
         }
     }
@@ -590,6 +671,29 @@
         }
     }
 
+
+    .containerFitur {
+
+        .fitur {
+
+            .perFitur {
+                padding: 20px;
+            }
+        }
+    }
+
+    .artikel {
+
+        .container {
+
+            .perArtikel {
+
+                img {
+                    height: 200px;
+                }
+            }
+        }
+    }
 }
 
 
@@ -699,6 +803,38 @@
         }
     }
 
+    .containerFitur {
+
+        .fitur {
+
+            .perFitur {
+
+                h2 {
+                    margin: 20px 0 10px 0;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+
+    .artikel {
+
+        .container {
+
+            .perArtikel {
+
+                img {
+                    height: 170px;
+                }
+
+                h2 {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
 }
 
 
@@ -796,6 +932,17 @@
             }
         }
     }
+
+    .title {
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
 }
 
 @media(max-width:300px) {
@@ -869,4 +1016,42 @@
             }
         }
     }
+
+
+
+    .containerFitur {
+
+        .fitur {
+
+            .perFitur {
+
+                p {
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+
+    .artikel {
+
+        .container {
+
+            .perArtikel {
+
+                img {
+                    height: 150px;
+                }
+
+                h2 {
+                    font-size: 1.1rem;
+                }
+
+                p,
+                button {
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+
 }

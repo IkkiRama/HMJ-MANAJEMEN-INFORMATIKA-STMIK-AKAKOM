@@ -27,7 +27,7 @@ img {
 
 .Event .container .sorting {
   width: 30%;
-  top: 100px;
+  top: 15vh;
   position: -webkit-sticky;
   position: sticky;
   -ms-flex-item-align: start;
