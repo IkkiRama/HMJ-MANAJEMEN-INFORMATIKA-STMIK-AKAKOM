@@ -20,7 +20,6 @@
     <script src="fontawesome/js/all.min.js"></script>
 
     <script src="js/script.js" defer></script>
-    <script src="js/event.js" defer></script>
 
     <link rel="apple-touch-icon" href="img/logo HIMARAKSI.png">
     <link rel="shortcut icon" href="img/logo HIMARAKSI.png" type="image/x-icon">
@@ -386,7 +385,7 @@
 
 
 
-                        <button class="selengkapnya btn btn-primary">Load More</button>
+                        <button class="btn btn-primary w-100 text-uppercase fw-600">Load More</button>
                     </div>
 
 
@@ -621,6 +620,7 @@
 
         //js untuk menampilkan window filter program pada layar komputer
         let keterangan = document.querySelectorAll(".keterangan")
+
         keterangan.forEach((k) => {
             k.addEventListener("click", () => {
                 k.nextElementSibling.classList.toggle("hideIsiFilterProgram")
@@ -630,18 +630,18 @@
 
 
         //js filter program pada layar hp
-        let tombol = document.querySelector(".tombol")
-        tombol.addEventListener("click", () => {
-            tombol.nextElementSibling.style.display = "flex"
-        })
+        //let tombol = document.querySelector(".tombol")
+        //tombol.addEventListener("click", () => {
+        //  tombol.nextElementSibling.style.display = "flex"
+        //})
 
 
 
         //js untuk close window filter program pada layar komputer
-        let closeWindow = document.querySelector(".close")
-        closeWindow.addEventListener("click", () => {
-            closeWindow.parentElement.parentElement.parentElement.style.display = "none"
-        })
+        //let closeWindow = document.querySelector(".close")
+        //closeWindow.addEventListener("click", () => {
+        //closeWindow.parentElement.parentElement.parentElement.style.display = "none"
+        //})
 
 
 
@@ -658,54 +658,27 @@
 
 
         // untuk berpindah halaman antara event yang masih ada dan sudah berlalu
-        let indikatorSudahBerakhir = document.querySelectorAll(".indikatorSudahBerakhir")
-        let indikatorMasihBerlangsung = document.querySelectorAll(".indikatorMasihBerlangsung")
+        let indikatorSudahBerakhir = document.querySelector(".indikatorSudahBerakhir")
+        let indikatorMasihBerlangsung = document.querySelector(".indikatorMasihBerlangsung")
 
-        //console.log(indikatorSudahBerakhir)
-        //console.log(indikatorMasihBerlangsung)
 
-        let sudahBerakhir = document.querySelectorAll(".sudahBerakhir")
-        let masihBerlangsung = document.querySelectorAll(".masihBerlangsung")
 
-        indikatorSudahBerakhir.forEach((ISB) => {
+        let sudahBerakhir = document.querySelector(".sudahBerakhir")
+        let masihBerlangsung = document.querySelector(".masihBerlangsung")
 
-            ISB.addEventListener("click", () => {
-                masihBerlangsung.forEach((MB) => {
-                    MB.style.display = "none"
-                })
-                sudahBerakhir.forEach((SB) => {
-                    SB.style.display = "flex"
-                })
-            })
+
+
+        indikatorSudahBerakhir.addEventListener("click", () => {
+            masihBerlangsung.style.display = "none"
+            sudahBerakhir.style.display = "flex"
         })
 
 
-        indikatorMasihBerlangsung.forEach((IMB) => {
-            IMB.addEventListener("click", () => {
-                masihBerlangsung.forEach((MB) => {
-                    MB.style.display = "flex"
-                })
-
-                sudahBerakhir.forEach((SB) => {
-                    SB.style.display = "none"
-                })
-            })
+        indikatorMasihBerlangsung.addEventListener("click", () => {
+            masihBerlangsung.style.display = "flex"
+            sudahBerakhir.style.display = "none"
         })
     </script>
-
-
-    <!-- <div class="modalContainer">
-        <div class="modal">
-            <div class="modal-title">
-
-            </div>
-            <div class="modal-body"></div>
-            <div class="modal-footer"></div>
-        </div>
-    </div> -->
-
-
-
 </body>
 
 </html>

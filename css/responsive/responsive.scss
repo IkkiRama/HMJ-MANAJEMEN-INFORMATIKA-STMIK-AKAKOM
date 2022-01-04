@@ -536,6 +536,7 @@
                 display: flex;
                 justify-content: space-between;
                 position: static;
+                text-align: center;
             }
 
             .sorting {
@@ -924,6 +925,23 @@
 
         .program {
 
+
+            .keteranganProgram span {
+                padding: 0 5px;
+                font-size: .9rem;
+            }
+
+            .sorting {
+
+                .urutkan {
+
+                    h2 {
+                        margin-right: 30px;
+                    }
+                }
+            }
+
+
             .masihBerlangsung .perMasihBerlangsung {
 
                 h3,
@@ -941,6 +959,7 @@
             }
         }
     }
+
 
 }
 
@@ -1061,6 +1080,7 @@
                 h3,
                 h2 {
                     font-size: 1.1rem;
+                    line-height: 25px;
                 }
 
                 img {
@@ -1181,4 +1201,17 @@
         }
     }
 
+    .Event .container .program .sorting {
+        flex-wrap: wrap;
+
+        .filter {
+            flex-direction: row-reverse;
+        }
+
+        .filter,
+        .urutkan {
+            width: 100%;
+            margin: 5px 0;
+        }
+    }
 }

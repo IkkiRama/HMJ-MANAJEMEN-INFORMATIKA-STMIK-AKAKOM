@@ -384,6 +384,7 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     position: static;
+    text-align: center;
   }
   .Event .container .program .sorting {
     display: -webkit-box;
@@ -587,6 +588,13 @@
   .artikel .container .perArtikel h2 {
     font-size: 1.2rem;
   }
+  .Event .container .program .keteranganProgram span {
+    padding: 0 5px;
+    font-size: .9rem;
+  }
+  .Event .container .program .sorting .urutkan h2 {
+    margin-right: 30px;
+  }
   .Event .container .program .masihBerlangsung .perMasihBerlangsung h3,
   .Event .container .program .masihBerlangsung .perMasihBerlangsung h2 {
     font-size: 1.2rem;
@@ -656,6 +664,7 @@
   .Event .container .program .masihBerlangsung .perMasihBerlangsung h3,
   .Event .container .program .masihBerlangsung .perMasihBerlangsung h2 {
     font-size: 1.1rem;
+    line-height: 25px;
   }
   .Event .container .program .masihBerlangsung .perMasihBerlangsung img {
     height: 150px;
@@ -709,6 +718,21 @@
   .artikel .container .perArtikel p,
   .artikel .container .perArtikel button {
     font-size: .9rem;
+  }
+  .Event .container .program .sorting {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .Event .container .program .sorting .filter {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .Event .container .program .sorting .filter,
+  .Event .container .program .sorting .urutkan {
+    width: 100%;
+    margin: 5px 0;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

@@ -19,14 +19,14 @@ window.addEventListener("scroll", () => {
 })
 
 
-let modal = document.querySelector(".modalContainer")
-let close = document.querySelector(".close")
-let cari = document.querySelector(".cari")
+// let modal = document.querySelector(".modalContainer")
+// let close = document.querySelector(".close")
+// let cari = document.querySelector(".cari")
 
-cari.addEventListener("click", () => {
-    modal.classList.toggle("active")
-})
+// cari.addEventListener("click", () => {
+//     modal.classList.toggle("active")
+// })
 
-close.addEventListener("click", () => {
-    modal.classList.toggle("active")
-})
+// close.addEventListener("click", () => {
+//     modal.classList.toggle("active")
+// })
