@@ -1682,4 +1682,119 @@ footer .container p span {
 .artikel .container .perArtikel .cta button {
   width: 100%;
 }
+
+/* Halaman Per Artikel start */
+.contentArtikel {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contentArtikel .container {
+  width: 80%;
+}
+
+.contentArtikel .container .titleArtikel {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.contentArtikel .container .writer {
+  font-size: 1rem;
+  margin: 20px 0;
+}
+
+.contentArtikel .container .thumbnail {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: var(--putih-900);
+}
+
+.contentArtikel .container .mainArtikel h3 {
+  font-size: 1.5rem;
+}
+
+.contentArtikel .container .mainArtikel p {
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 30px;
+}
+
+.contentArtikel .container .mainArtikel ul {
+  margin: 20px 0;
+}
+
+.contentArtikel .container .mainArtikel ul li {
+  padding: 7px;
+  margin-left: 20px;
+  list-style: disc;
+  font-weight: 500;
+}
+
+.contentArtikel .container .mainArtikel a {
+  color: var(--biru-cerah);
+}
+
+.contentArtikel .container .mainArtikel a:hover {
+  text-decoration: underline;
+}
+
+.komentar {
+  width: 100%;
+  height: 100%;
+}
+
+.komentar .perKomentar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 40px 0;
+}
+
+.komentar .perKomentar .profil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.komentar .perKomentar .profil img {
+  width: 45px;
+  height: 45px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  background-color: var(--putih-900);
+}
+
+.komentar .perKomentar .profil .nama {
+  margin-left: 15px;
+}
+
+.komentar .perKomentar .profil .nama h3 {
+  font-size: 1.3rem;
+}
+
+.komentar .perKomentar .profil .nama p {
+  font-size: .9rem;
+}
 /*# sourceMappingURL=style.css.map */

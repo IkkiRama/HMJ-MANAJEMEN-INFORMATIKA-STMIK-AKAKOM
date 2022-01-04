@@ -2,6 +2,7 @@
   .container {
     max-width: 1500px;
   }
+  article,
   section,
   footer,
   header {
@@ -51,7 +52,9 @@
 }
 
 @media (max-width: 1000px) {
+  article,
   header,
+  article,
   section {
     padding: 0 50px;
   }
@@ -116,6 +119,7 @@
 }
 
 @media (max-width: 900px) {
+  article,
   header,
   section,
   footer {
@@ -432,6 +436,7 @@
 }
 
 @media (max-width: 500px) {
+  article,
   header,
   section,
   footer,
