@@ -198,7 +198,7 @@ header .container nav ul li a {
   color: #dadada;
 }
 
-header .container nav ul li a.active {
+header .container nav ul li a:hover, header .container nav ul li a.active {
   color: var(--putih);
 }
 
@@ -281,8 +281,8 @@ header .container .menu span:nth-child(3) {
   color: #525252;
 }
 
-.containerNavMobile .navMobile li a.active {
-  color: #353535;
+.containerNavMobile .navMobile li a:hover, .containerNavMobile .navMobile li a.active {
+  color: #222222;
 }
 
 .bg-gradient-to-r {
@@ -507,6 +507,7 @@ header .container .menu span:nth-child(3) {
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
+  background-color: var(--putih-900);
 }
 
 .containerTopik {
@@ -1194,6 +1195,7 @@ footer .container p span {
      object-fit: cover;
   border-radius: 50%;
   margin-right: 10px;
+  background-color: var(--putih-900);
 }
 
 .detailKelas .container .infoKelas .perInfoKelas .mentor p {

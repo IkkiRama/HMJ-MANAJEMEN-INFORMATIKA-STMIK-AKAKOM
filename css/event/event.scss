@@ -5,7 +5,7 @@
 img {
     object-fit: cover !important;
 }
- 
+
 
 .Event {
     width: 100%;
@@ -184,13 +184,13 @@ img {
 
             .keteranganProgram {
                 width: 100%;
-                /* background-color: red; */
                 padding: 10px 0;
                 border-bottom: 4px solid #e4e4e7;
                 background-color: var(--putih-f8fafc);
                 top: 10vh;
                 position: sticky;
                 align-self: flex-start;
+                text-align: center;
                 margin-bottom: 30px;
                 z-index: 999999;
 
@@ -209,6 +209,8 @@ img {
                 display: none;
                 align-items: center;
                 justify-content: space-between;
+                z-index: 99999999;
+                position: static;
 
                 .filter {
                     display: flex;
@@ -222,8 +224,77 @@ img {
                     cursor: pointer;
 
                     h2 {
+                        margin: 0;
+                        padding: 0;
                         margin-left: 10px;
                         font-size: 1rem;
+                    }
+                }
+
+                .urutkan {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    position: relative;
+                    color: #4a4b4c;
+                    padding: 10px 15px;
+                    cursor: pointer;
+                    border-radius: 7px;
+                    background-color: var(--putih);
+                    border: var(--border);
+                    /* transform: translateY(-10px); */
+
+                    h2 {
+                        margin: 0;
+                        margin-right: 100px;
+                        font-size: 1rem;
+                    }
+
+
+                    .isiBoxUrutkan {
+                        display: none;
+                        width: 100%;
+                        position: absolute;
+                        top: 50px;
+                        left: 0;
+                        justify-content: center;
+                        align-items: start;
+                        flex-direction: column;
+                        /* z-index: 9999999999; */
+                        background-color: var(--putih);
+                        border: 1px solid #e4e4e7;
+                        border-radius: 7px;
+                        padding: .5rem 0;
+
+                        .perIsiBoxUrutkan {
+                            width: 100%;
+                            padding: 1rem;
+
+                            &.active {
+                                background-color: #5441fa;
+                                border: 1px solid #e4e4e7;
+
+                                &:hover {
+                                    background-color: #5441fa;
+                                }
+
+                                span {
+                                    color: var(--putih);
+                                }
+
+                            }
+
+                            &:hover {
+                                background-color: #afc0ff;
+                                cursor: pointer;
+                            }
+
+                            span {
+                                color: #3f3f3f;
+                                font-weight: 600;
+                            }
+
+                        }
                     }
                 }
             }
@@ -291,7 +362,6 @@ img {
                     }
 
                     p {
-                        font-size: 1rem;
                         padding: 10px;
                     }
 
@@ -345,6 +415,77 @@ img {
 
 
 
+
+
+
+
+
+
+.EventMobile .sorting .urutkan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    color: #4a4b4c;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 7px;
+    background-color: var(--putih);
+    border: var(--border);
+    /* transform: translateY(-10px); */
+}
+
+.EventMobile .sorting .urutkan h2 {
+    margin-right: 100px;
+    font-size: 1rem;
+}
+
+
+.EventMobile .sorting .urutkan .isiBoxUrutkan {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    /* z-index: 9999999999; */
+    background-color: var(--putih);
+    border: 1px solid #e4e4e7;
+    border-radius: 7px;
+    padding: .5rem 0;
+
+}
+
+.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan:hover {
+    background-color: #afc0ff;
+    cursor: pointer;
+}
+
+
+.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan.active:hover {
+    background-color: #5441fa;
+}
+
+.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan {
+    width: 100%;
+    padding: 1rem;
+}
+
+.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan.active {
+    background-color: #5441fa;
+    border: 1px solid #e4e4e7;
+}
+
+.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan.active span {
+    color: var(--putih);
+}
+
+.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan span {
+    color: #3f3f3f;
+    font-weight: 600;
+}
 
 
 
@@ -500,86 +641,6 @@ img {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.EventMobile .sorting .urutkan {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    color: #4a4b4c;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 7px;
-    background-color: var(--putih);
-    border: var(--border);
-    /* transform: translateY(-10px); */
-}
-
-.EventMobile .sorting .urutkan h2 {
-    margin-right: 100px;
-    font-size: 1rem;
-}
-
-
-.EventMobile .sorting .urutkan .isiBoxUrutkan {
-    display: none;
-    width: 100%;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    justify-content: center;
-    align-items: start;
-    flex-direction: column;
-    /* z-index: 9999999999; */
-    background-color: var(--putih);
-    border: 1px solid #e4e4e7;
-    border-radius: 7px;
-    padding: .5rem 0;
-
-}
-
-.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan:hover {
-    background-color: #afc0ff;
-    cursor: pointer;
-}
-
-
-.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan.active:hover {
-    background-color: #5441fa;
-}
-
-.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan {
-    width: 100%;
-    padding: 1rem;
-}
-
-.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan.active {
-    background-color: #5441fa;
-    border: 1px solid #e4e4e7;
-}
-
-.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan.active span {
-    color: var(--putih);
-}
-
-.EventMobile .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan span {
-    color: #3f3f3f;
-    font-weight: 600;
-}
 
 
 

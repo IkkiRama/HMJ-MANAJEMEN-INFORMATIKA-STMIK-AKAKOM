@@ -116,6 +116,11 @@
 }
 
 @media (max-width: 900px) {
+  header,
+  section,
+  footer {
+    padding: 0 25px;
+  }
   .kontak .container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -176,14 +181,19 @@
     height: 300px;
     margin: 0;
   }
+  .Event .container .sorting {
+    width: 40%;
+  }
+  .Event .container .program {
+    width: 60%;
+  }
+  .Event .container .program .masihBerlangsung .perMasihBerlangsung {
+    width: 100%;
+    margin: 20px 0;
+  }
 }
 
 @media (max-width: 800px) {
-  header,
-  section,
-  footer {
-    padding: 0 25px;
-  }
   .containerClient {
     border-top-left-radius: 0;
   }
@@ -357,6 +367,28 @@
   }
   .artikel .container .perArtikel img {
     height: 300px;
+  }
+  .Event .container .sorting {
+    width: 0%;
+    display: none;
+  }
+  .Event .container .program {
+    width: 100%;
+    margin: 0;
+  }
+  .Event .container .program .keteranganProgram {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: static;
+  }
+  .Event .container .program .sorting {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -555,6 +587,16 @@
   .artikel .container .perArtikel h2 {
     font-size: 1.2rem;
   }
+  .Event .container .program .masihBerlangsung .perMasihBerlangsung h3,
+  .Event .container .program .masihBerlangsung .perMasihBerlangsung h2 {
+    font-size: 1.2rem;
+  }
+  .Event .container .program .masihBerlangsung .perMasihBerlangsung p {
+    font-size: .9rem;
+  }
+  .Event .container .program .masihBerlangsung .perMasihBerlangsung img {
+    height: 200px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -610,6 +652,13 @@
   }
   .title p {
     font-size: 1rem;
+  }
+  .Event .container .program .masihBerlangsung .perMasihBerlangsung h3,
+  .Event .container .program .masihBerlangsung .perMasihBerlangsung h2 {
+    font-size: 1.1rem;
+  }
+  .Event .container .program .masihBerlangsung .perMasihBerlangsung img {
+    height: 150px;
   }
 }
 

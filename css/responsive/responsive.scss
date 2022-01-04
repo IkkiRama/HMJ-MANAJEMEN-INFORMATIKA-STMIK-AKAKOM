@@ -188,6 +188,13 @@
 }
 
 @media(max-width:900px) {
+
+    header,
+    section,
+    footer {
+        padding: 0 25px;
+    }
+
     .kontak .container {
         flex-wrap: wrap;
     }
@@ -267,16 +274,27 @@
         }
     }
 
+    .Event .container {
+
+        .sorting {
+            width: 40%;
+        }
+
+        .program {
+            width: 60%;
+
+            .masihBerlangsung .perMasihBerlangsung {
+                width: 100%;
+                margin: 20px 0;
+            }
+        }
+    }
+
 
 }
 
 @media(max-width:800px) {
 
-    header,
-    section,
-    footer {
-        padding: 0 25px;
-    }
 
     .containerClient {
         border-top-left-radius: 0;
@@ -503,6 +521,31 @@
     }
 
 
+    .Event .container {
+
+        .sorting {
+            width: 0%;
+            display: none;
+        }
+
+        .program {
+            width: 100%;
+            margin: 0;
+
+            .keteranganProgram {
+                display: flex;
+                justify-content: space-between;
+                position: static;
+            }
+
+            .sorting {
+                display: flex;
+            }
+
+
+        }
+    }
+
 
 }
 
@@ -518,6 +561,7 @@
         font-size: 1.7rem;
         line-height: 40px;
     }
+
 }
 
 @media(max-width:600px) {
@@ -876,6 +920,28 @@
         }
     }
 
+    .Event .container {
+
+        .program {
+
+            .masihBerlangsung .perMasihBerlangsung {
+
+                h3,
+                h2 {
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    font-size: .9rem;
+                }
+
+                img {
+                    height: 200px;
+                }
+            }
+        }
+    }
+
 }
 
 
@@ -982,6 +1048,26 @@
 
         p {
             font-size: 1rem;
+        }
+    }
+
+
+    .Event .container {
+
+        .program {
+
+            .masihBerlangsung .perMasihBerlangsung {
+
+                h3,
+                h2 {
+                    font-size: 1.1rem;
+                }
+
+                img {
+                    height: 150px;
+                }
+
+            }
         }
     }
 }
