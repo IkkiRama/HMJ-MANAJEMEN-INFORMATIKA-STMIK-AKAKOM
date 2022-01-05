@@ -552,7 +552,7 @@ header {
         p {
             font-weight: 600;
         }
-
+ 
         .icon {
             color: var(--hitam-santai);
             fill: var(--hitam-santai);
@@ -568,6 +568,8 @@ header {
     .jawaban {
         padding: 20px;
         display: none;
+        border-radius: 7px;
+        border: var(--border);
 
         &.show {
             display: inline-block;

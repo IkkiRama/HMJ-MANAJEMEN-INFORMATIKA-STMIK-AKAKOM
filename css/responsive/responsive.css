@@ -25,6 +25,9 @@
   .heroDetailKelas .container img {
     max-height: 300px;
   }
+  .contentArtikel .container {
+    width: 50%;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -115,6 +118,12 @@
   }
   .containerSosmed .container .sosmed .perSosmed {
     width: calc(90%/2);
+  }
+  .contentArtikel .container {
+    width: 100%;
+  }
+  .contentArtikel .container .thumbnail {
+    height: 350px;
   }
 }
 
@@ -319,6 +328,13 @@
   .detailKelas .container .infoKelas {
     width: 100%;
   }
+  .contentArtikel .container .titleArtikel {
+    font-size: 1.7rem;
+    line-height: 35px;
+  }
+  .contentArtikel .container .mainArtikel h3 {
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 700px) {
@@ -394,6 +410,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .contentArtikel .container .thumbnail {
+    height: 300px;
   }
 }
 
@@ -511,6 +530,17 @@
   .artikel .container .perArtikel img {
     height: 200px;
   }
+  .contentArtikel .container .titleArtikel {
+    font-size: 1.4rem;
+    line-height: 30px;
+  }
+  .contentArtikel .container .thumbnail {
+    height: 250px;
+    margin-bottom: 0;
+  }
+  .contentArtikel .container .mainArtikel h3 {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 450px) {
@@ -610,6 +640,15 @@
   .Event .container .program .masihBerlangsung .perMasihBerlangsung img {
     height: 200px;
   }
+  .contentArtikel .container .thumbnail {
+    height: 220px;
+  }
+  .contentArtikel .container .mainArtikel p {
+    line-height: 25px;
+  }
+  .contentArtikel .container .mainArtikel ul li {
+    padding: 3px 0;
+  }
 }
 
 @media (max-width: 350px) {
@@ -673,6 +712,29 @@
   }
   .Event .container .program .masihBerlangsung .perMasihBerlangsung img {
     height: 150px;
+  }
+  .contentArtikel label h2 {
+    font-size: 1.2rem;
+  }
+  .contentArtikel .container .titleArtikel {
+    font-size: 1.2rem;
+    line-height: 27px;
+  }
+  .contentArtikel .container .writer {
+    font-size: .8rem;
+  }
+  .komentar .perKomentar .profil img {
+    width: 40px;
+    height: 40px;
+  }
+  .komentar .perKomentar .profil .nama {
+    margin-left: 10px;
+  }
+  .komentar .perKomentar .profil .nama h3 {
+    font-size: 1.2rem;
+  }
+  .komentar .perKomentar .profil .nama p {
+    font-size: .8rem;
   }
 }
 

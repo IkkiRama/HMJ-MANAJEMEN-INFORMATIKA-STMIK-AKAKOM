@@ -31,6 +31,13 @@
         }
     }
 
+    .contentArtikel {
+
+        .container {
+            width: 50%;
+        }
+    }
+
 }
 
 @media (max-width: 1200px) {
@@ -187,6 +194,18 @@
             }
         }
     }
+
+    .contentArtikel {
+
+        .container {
+            width: 100%;
+
+            .thumbnail {
+                height: 350px;
+            }
+        }
+    }
+
 
 }
 
@@ -433,6 +452,24 @@
         }
     }
 
+    .contentArtikel {
+
+        .container {
+
+            .titleArtikel {
+                font-size: 1.7rem;
+                line-height: 35px;
+            }
+
+            .mainArtikel {
+
+                h3 {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
 }
 
 
@@ -548,6 +585,16 @@
             }
 
 
+        }
+    }
+
+    .contentArtikel {
+
+        .container {
+
+            .thumbnail {
+                height: 300px;
+            }
         }
     }
 
@@ -785,6 +832,31 @@
             }
         }
     }
+
+
+
+    .contentArtikel {
+
+        .container {
+
+            .titleArtikel {
+                font-size: 1.4rem;
+                line-height: 30px;
+            }
+
+            .thumbnail {
+                height: 250px;
+                margin-bottom: 0;
+            }
+
+            .mainArtikel {
+
+                h3 {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
 }
 
 
@@ -966,6 +1038,27 @@
     }
 
 
+    .contentArtikel {
+
+        .container {
+
+            .thumbnail {
+                height: 220px;
+            }
+
+            .mainArtikel {
+                p {
+                    line-height: 25px;
+                }
+
+                ul li {
+                    padding: 3px 0;
+                }
+            }
+        }
+    }
+
+
 }
 
 
@@ -1095,6 +1188,54 @@
             }
         }
     }
+
+
+
+    .contentArtikel {
+
+        label h2 {
+            font-size: 1.2rem;
+        }
+
+        .container {
+
+            .titleArtikel {
+                font-size: 1.2rem;
+                line-height: 27px;
+            }
+
+
+            .writer {
+                font-size: .8rem;
+            }
+        }
+    }
+
+    .komentar {
+
+        .perKomentar {
+
+            .profil {
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .nama {
+                    margin-left: 10px;
+
+                    h3 {
+                        font-size: 1.2rem;
+                    }
+
+                    p {
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media(max-width:300px) {
@@ -1148,12 +1289,6 @@
             .tentangKelas {
 
                 .perTentangKelas {
-                    // padding: 20px 10px;
-
-                    p {
-                        // margin: 10px 0;
-                        // line-height: 25px;
-                    }
 
                     ul li {
                         padding: 5px;
@@ -1161,11 +1296,6 @@
                 }
             }
 
-            .infoKelas {
-                .perInfoKelas {
-                    // padding: 20px 10px;
-                }
-            }
         }
     }
 

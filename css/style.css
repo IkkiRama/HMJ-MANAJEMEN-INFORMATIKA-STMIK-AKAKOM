@@ -645,6 +645,8 @@ header .container .menu span:nth-child(3) {
 .perFAQ .jawaban {
   padding: 20px;
   display: none;
+  border-radius: 7px;
+  border: var(--border);
 }
 
 .perFAQ .jawaban.show {

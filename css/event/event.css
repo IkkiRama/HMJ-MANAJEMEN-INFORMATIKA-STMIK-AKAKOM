@@ -57,7 +57,7 @@ img {
   background-color: var(--putih);
   border: 1px solid #e4e4e7;
   border-radius: 7px;
-  color: #3f3f3f;
+  color: var(--hitam-santai);
   padding: 1rem;
   margin-bottom: 30px;
   position: relative;
@@ -167,7 +167,7 @@ img {
 
 .Event .container .sorting .filterProgram .boxFilterProgram .btnEvent button:last-child {
   background-color: var(--putih);
-  color: #3f3f3f;
+  color: var(--hitam-santai);
   border: var(--border);
 }
 
@@ -375,7 +375,7 @@ img {
 }
 
 .Event .container .program .sorting .urutkan .isiBoxUrutkan .perIsiBoxUrutkan span {
-  color: #3f3f3f;
+  color: var(--hitam-santai);
   font-weight: 600;
 }
 
