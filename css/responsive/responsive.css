@@ -351,6 +351,9 @@
     display: -ms-flexbox;
     display: flex;
   }
+  .modalContainer .modal {
+    width: 100%;
+  }
   .galeri .perGaleri {
     height: 150px;
   }

@@ -10,27 +10,33 @@
   --putih: #fff;
   --putih-f2: #f2f2f2;
   --putih-900: #F2F4F7;
-  --ungu: #963EFF;
+  --putih-f8fafc: #f8fafc;
   --kuning: #FCE354;
   --biru-cerah: #1352FF;
   --border: 2px solid #e4e4e7;
   /* btn */
   --danger: #dc3545;
-  --primary: #007bff;
+  --primary: #0b31da;
   --warning: #ffc107;
   --dark: rgb(55 65 81);
+  --success: #1EE592;
+  --ungu: #963EFF;
   --danger-hover: #c52939;
-  --primary-hover: #0070e7;
+  --primary-hover: #1836bd;
   --warning-hover: #e2ab06;
   --dark-hover: #2F3949;
+  --success-hover: #19cf84;
+  --ungu-hover: #8435e4;
   --border-table: 1px solid #dee2e6;
   --table-dark: #343a40;
   --tr: rgba(0, 0, 0, 0.05);
   --outline-input: #0176f4bd;
   --outline-button: #63aeffbd;
   --outline-warning: #ffe601f1;
+  --outline-success: #1fdd8ee3;
   --outline-white: rgb(207, 207, 207);
   --outline-dark: #717172;
+  --outline-ungu: #802ce7ec;
   --tw-gradient-to: #06b6d4;
   --tw-gradient-from: #0d6efd;
   --tw-gradient-stops: #0d6efd,
@@ -204,7 +210,7 @@ section {
 .btn {
   display: inline-block;
   padding: 8px 25px;
-  font-weight: 500;
+  font-weight: 600;
   border-radius: 8px;
   border: 1px solid transparent;
   font-size: 1rem;
@@ -278,9 +284,31 @@ section {
   outline: 2px solid var(--outline-dark);
 }
 
-.modalContainer.active {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+.btn-success {
+  background-color: var(--success);
+  border-color: var(--success);
+}
+
+.btn-success:hover {
+  background-color: var(--success-hover);
+}
+
+.btn-success:focus {
+  outline: 2px solid var(--outline-success);
+}
+
+.btn-ungu {
+  color: var(--putih);
+  background-color: var(--ungu);
+  border-color: var(--ungu);
+}
+
+.btn-ungu:hover {
+  background-color: var(--ungu-hover);
+}
+
+.btn-ungu:focus {
+  outline: 2px solid var(--outline-ungu);
 }
 
 .modalContainer.active {
@@ -314,7 +342,6 @@ section {
 .modalContainer .modal {
   width: 50%;
   max-height: 100%;
-  overflow-y: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,7 +355,7 @@ section {
 }
 
 .modalContainer .modal .modal-title {
-  padding: 10px 30px;
+  padding: 20px 30px 10px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,6 +366,19 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: var(--border);
+}
+
+.modalContainer .modal .modal-title .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .modalContainer .modal .modal-title .icon {
@@ -353,8 +393,56 @@ section {
 }
 
 .modalContainer .modal .modal-body {
+  overflow-y: auto;
   padding: 20px;
   border-bottom: var(--border);
+}
+
+.modalContainer .modal .modal-body .perFilterProgram {
+  overflow-y: hidden;
+}
+
+.modalContainer .modal .modal-body .perFilterProgram .keterangan {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 10px;
+  background-color: var(--putih-900);
+}
+
+.modalContainer .modal .modal-body .perFilterProgram .keterangan:hover {
+  cursor: pointer;
+  background-color: #e4e4e7;
+}
+
+.modalContainer .modal .modal-body .perFilterProgram .keterangan span {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.modalContainer .modal .modal-body .perFilterProgram .isiFilterProgram {
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.modalContainer .modal .modal-body .perFilterProgram .isiFilterProgram.hideIsiFilterProgram {
+  height: 0;
+}
+
+.modalContainer .modal .modal-body .perFilterProgram .isiFilterProgram .perIsiFilterProgram {
+  margin: 10px 0;
+}
+
+.modalContainer .modal .modal-body .perFilterProgram .isiFilterProgram .perIsiFilterProgram label {
+  font-weight: 500;
+  margin-left: 10px;
 }
 
 .modalContainer .modal .modal-footer {

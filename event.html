@@ -20,6 +20,7 @@
     <script src="fontawesome/js/all.min.js"></script>
 
     <script src="js/script.js" defer></script>
+    <script src="js/event.js" defer></script>
 
     <link rel="apple-touch-icon" href="img/logo HIMARAKSI.png">
     <link rel="shortcut icon" href="img/logo HIMARAKSI.png" type="image/x-icon">
@@ -404,121 +405,6 @@
         </section>
         <!-- Event end -->
 
-
-
-        <!-- <div class="containerFilter">
-
-
-            <div class="boxFilter">
-
-                <div class="containerTitle">
-
-                    <div class="title">
-
-                        <div class="icon">
-                            <i class="fas fa-filter"></i>
-                        </div>
-
-                        <h4>Filter Event</h4>
-                    </div>
-
-                    <div class="close">
-                        <i class="fas fa-times"></i>
-                    </div>
-
-                </div>
-
-                <div class="content">
-                    <div class="perFilter">
-
-                        <div class="title">
-                            <span>jenis</span>
-                            <i class="fas fa-angle-down"></i>
-                        </div>
-
-                        <div class="isiFilterProgram show">
-                            <div class="perIsiFilterProgram">
-                                <input type="checkbox" name="" id="Beasiswa">
-                                <label for="Beasiswa">Beasiswa</label>
-                            </div>
-
-                            <div class="perIsiFilterProgram ">
-                                <input type="checkbox" name="" id="Lomba">
-                                <label for="Lomba">Lomba</label>
-                            </div>
-
-                            <div class="perIsiFilterProgram">
-                                <input type="checkbox" name="" id="Webinar">
-                                <label for="Webinar">Webinar</label>
-                            </div>
-
-                            <div class="perIsiFilterProgram ">
-                                <input type="checkbox" name="" id="Voolunter">
-                                <label for="Voolunter">Voolunter</label>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="perFilter">
-
-                        <div class="title">
-                            <span>perusahaan</span>
-                            <i class="fas fa-angle-down"></i>
-                        </div>
-
-                        <div class="isiFilterProgram">
-
-                            <div class="perIsiFilterProgram ">
-                                <input type="checkbox" name="" id="KampusMerdeka">
-                                <label for="KampusMerdeka">Kampus Merdeka</label>
-                            </div>
-
-                            <div class="perIsiFilterProgram">
-                                <input type="checkbox" name="" id="Kominfo">
-                                <label for="Kominfo">Kominfo</label>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="perFilter">
-
-                        <div class="title">
-                            <span>Universitas</span>
-                            <i class="fas fa-angle-down"></i>
-                        </div>
-
-                        <div class="isiFilterProgram">
-                            <div class="perIsiFilterProgram">
-                                <input type="checkbox" name="" id="ITB">
-                                <label for="ITB">
-                                    <span>ITB</span>
-                                </label>
-                            </div>
-
-                            <div class="perIsiFilterProgram">
-                                <input type="checkbox" name="" id="UGM">
-                                <label for="UGM">UGM</label>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="btnEvent">
-                    <button type="submit">Hapus</button>
-                    <button type="submit">Terapkan Filter</button>
-                </div>
-
-            </div>
-
-        </div> -->
-
-
         <section class="containerClient pb-100 pt-50">
             <div class="container">
 
@@ -604,81 +490,106 @@
         </div>
     </footer>
 
-    <script>
-        //js Box Urutkan pada layar komputer
-        let urutkan = document.querySelectorAll(".urutkan")
-        let isiBoxUrutkan = document.querySelectorAll(".isiBoxUrutkan")
 
-        urutkan.forEach((u) => {
-            u.addEventListener("click", () => {
-                isiBoxUrutkan.forEach((isi) => {
-                    isi.classList.toggle("showIsiBoxUrutkan")
-                })
-            })
-        })
+    <div class="modalContainer">
+        <div class="modal">
+            <div class="modal-title">
 
+                <div class="title">
+                    <div class="icon">
+                        <i class="fas fa-filter"></i>
+                    </div>
 
-        //js untuk menampilkan window filter program pada layar komputer
-        let keterangan = document.querySelectorAll(".keterangan")
+                    <h2>Filter</h2>
+                </div>
 
-        keterangan.forEach((k) => {
-            k.addEventListener("click", () => {
-                k.nextElementSibling.classList.toggle("hideIsiFilterProgram")
-            })
-        })
+                <div class="icon close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="modal-body">
 
+                <div class="perFilterProgram">
 
+                    <div class="keterangan">
+                        <span>jenis</span>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
 
-        //js filter program pada layar hp
-        //let tombol = document.querySelector(".tombol")
-        //tombol.addEventListener("click", () => {
-        //  tombol.nextElementSibling.style.display = "flex"
-        //})
+                    <div class="isiFilterProgram">
+                        <div class="perIsiFilterProgram">
+                            <input type="checkbox" name="" id="1">
 
+                            <label for="1">Beasiswa</label>
+                        </div>
 
+                        <div class="perIsiFilterProgram ">
+                            <input type="checkbox" name="" id="2">
+                            <label for="2">Lomba</label>
+                        </div>
 
-        //js untuk close window filter program pada layar komputer
-        //let closeWindow = document.querySelector(".close")
-        //closeWindow.addEventListener("click", () => {
-        //closeWindow.parentElement.parentElement.parentElement.style.display = "none"
-        //})
+                        <div class="perIsiFilterProgram">
+                            <input type="checkbox" name="" id="3">
+                            <label for="3">Webinar</label>
+                        </div>
 
+                        <div class="perIsiFilterProgram ">
+                            <input type="checkbox" name="" id="4">
+                            <label for="4">Voolunter</label>
 
+                        </div>
 
+                    </div>
 
-        //js Box Urutkan pada layar hp
-        let title = document.querySelectorAll(".perFilter .title")
-        title.forEach((t) => {
-            t.addEventListener("click", () => {
-                t.nextElementSibling.classList.toggle("show")
-            })
-        })
+                </div>
 
+                <div class="perFilterProgram">
 
+                    <div class="keterangan">
+                        <span>Perusahaan</span>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
 
+                    <div class="isiFilterProgram hideIsiFilterProgram">
+                        <div class="perIsiFilterProgram ">
+                            <input type="checkbox" name="" id="5">
+                            <label for="5">Kampus Merdeka</label>
+                        </div>
 
-        // untuk berpindah halaman antara event yang masih ada dan sudah berlalu
-        let indikatorSudahBerakhir = document.querySelector(".indikatorSudahBerakhir")
-        let indikatorMasihBerlangsung = document.querySelector(".indikatorMasihBerlangsung")
+                        <div class="perIsiFilterProgram">
+                            <input type="checkbox" name="" id="6">
+                            <label for="6">Kominfo</label>
+                        </div>
+                    </div>
 
+                </div>
 
+                <div class="perFilterProgram">
 
-        let sudahBerakhir = document.querySelector(".sudahBerakhir")
-        let masihBerlangsung = document.querySelector(".masihBerlangsung")
+                    <div class="keterangan">
+                        <span>Universitas</span>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
 
+                    <div class="isiFilterProgram hideIsiFilterProgram">
+                        <div class="perIsiFilterProgram">
+                            <input type="checkbox" name="" id="7">
+                            <label for="7">ITB</label>
+                        </div>
 
+                        <div class="perIsiFilterProgram">
+                            <input type="checkbox" name="" id="8">
+                            <label for="8">UGM</label>
+                        </div>
+                    </div>
 
-        indikatorSudahBerakhir.addEventListener("click", () => {
-            masihBerlangsung.style.display = "none"
-            sudahBerakhir.style.display = "flex"
-        })
+                </div>
 
+            </div>
+            <div class="modal-footer"></div>
+        </div>
+    </div>
 
-        indikatorMasihBerlangsung.addEventListener("click", () => {
-            masihBerlangsung.style.display = "flex"
-            sudahBerakhir.style.display = "none"
-        })
-    </script>
 </body>
 
 </html>

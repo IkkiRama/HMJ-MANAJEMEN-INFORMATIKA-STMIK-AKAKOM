@@ -12,7 +12,7 @@
     --putih: #fff;
     --putih-f2: #f2f2f2;
     --putih-900: #F2F4F7;
-    --ungu: #963EFF;
+    --putih-f8fafc: #f8fafc;
     --kuning: #FCE354;
     --biru-cerah: #1352FF;
     --border: 2px solid #e4e4e7;
@@ -20,15 +20,20 @@
 
     /* btn */
     --danger: #dc3545;
-    --primary: #007bff;
+    --primary: #0b31da;
+    // --primary: #007bff;
     --warning: #ffc107;
     --dark: rgb(55 65 81);
+    --success: #1EE592;
+    --ungu: #963EFF;
 
 
     --danger-hover: #c52939;
-    --primary-hover: #0070e7;
+    --primary-hover: #1836bd;
     --warning-hover: #e2ab06;
     --dark-hover: #2F3949;
+    --success-hover: #19cf84;
+    --ungu-hover: #8435e4;
 
     --border-table: 1px solid #dee2e6;
     --table-dark: #343a40;
@@ -38,8 +43,10 @@
     --outline-input: #0176f4bd;
     --outline-button: #63aeffbd;
     --outline-warning: #ffe601f1;
+    --outline-success: #1fdd8ee3;
     --outline-white: rgb(207, 207, 207);
     --outline-dark: #717172;
+    --outline-ungu: #802ce7ec;
 
 
 
@@ -52,6 +59,7 @@
     // rgba(34, 211, 238, 0)
     // --tw-gradient-stops: var(--tw-gradient-from, #22d3ee, var(--tw-gradient-to, rgba(34, 211, 238, 0)));
 }
+
 
 
 *,
@@ -229,7 +237,7 @@ section {
 .btn {
     display: inline-block;
     padding: 8px 25px;
-    font-weight: 500;
+    font-weight: 600;
     border-radius: 8px;
     border: 1px solid transparent;
     font-size: 1rem;
@@ -306,14 +314,37 @@ section {
 }
 
 
-
-
-
-
-
-.modalContainer.active {
-    transform: translateY(0);
+.btn-success {
+    background-color: var(--success);
+    border-color: var(--success);
 }
+
+.btn-success:hover {
+    background-color: var(--success-hover);
+}
+
+.btn-success:focus {
+    outline: 2px solid var(--outline-success);
+}
+
+.btn-ungu {
+    color: var(--putih);
+    background-color: var(--ungu);
+    border-color: var(--ungu);
+}
+
+.btn-ungu:hover {
+    background-color: var(--ungu-hover);
+}
+
+.btn-ungu:focus {
+    outline: 2px solid var(--outline-ungu);
+}
+
+
+
+
+
 
 .modalContainer.active {
     transform: translateY(0);
@@ -336,7 +367,6 @@ section {
     .modal {
         width: 50%;
         max-height: 100%;
-        overflow-y: auto;
         display: flex;
         flex-direction: column;
         border-radius: 7px;
@@ -344,11 +374,17 @@ section {
         background-color: var(--putih);
 
         .modal-title {
-            padding: 10px 30px;
+            padding: 20px 30px 10px 30px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             border-bottom: var(--border);
+
+            .title {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+            }
 
             .icon {
                 font-size: 1.7rem;
@@ -362,8 +398,51 @@ section {
         }
 
         .modal-body {
+            overflow-y: auto;
             padding: 20px;
             border-bottom: var(--border);
+
+            .perFilterProgram {
+                overflow-y: hidden;
+
+                .keterangan {
+                    padding: 1rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-radius: 10px;
+                    background-color: var(--putih-900);
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #e4e4e7;
+                    }
+
+                    span {
+                        font-weight: 600;
+                        text-transform: capitalize;
+                    }
+                }
+
+                .isiFilterProgram {
+                    height: 100%;
+                    padding: 0 1rem;
+
+                    &.hideIsiFilterProgram {
+                        height: 0;
+                    }
+
+                    .perIsiFilterProgram {
+                        margin: 10px 0;
+
+                        label {
+                            font-weight: 500;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+
+            }
         }
 
         .modal-footer {

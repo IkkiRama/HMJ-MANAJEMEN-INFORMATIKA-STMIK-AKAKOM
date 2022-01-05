@@ -1,3 +1,15 @@
+//modal
+let iconClose = document.querySelector(".close")
+iconClose.addEventListener("click", () => {
+    iconClose.parentElement.parentElement.parentElement.classList.toggle("active")
+})
+
+let filter = document.querySelector(".filter")
+console.log("filter")
+filter.addEventListener("click", () => {
+    iconClose.parentElement.parentElement.parentElement.classList.toggle("active")
+})
+
 //js Box Urutkan pada layar komputer
 let urutkan = document.querySelectorAll(".urutkan")
 let isiBoxUrutkan = document.querySelectorAll(".isiBoxUrutkan")
@@ -13,29 +25,12 @@ urutkan.forEach((u) => {
 
 //js untuk menampilkan window filter program pada layar komputer
 let keterangan = document.querySelectorAll(".keterangan")
+
 keterangan.forEach((k) => {
     k.addEventListener("click", () => {
         k.nextElementSibling.classList.toggle("hideIsiFilterProgram")
     })
 })
-
-
-
-//js filter program pada layar hp
-let tombol = document.querySelector(".tombol")
-tombol.addEventListener("click", () => {
-    tombol.nextElementSibling.style.display = "flex"
-})
-
-
-
-//js untuk close window filter program pada layar komputer
-let closeWindow = document.querySelector(".close")
-closeWindow.addEventListener("click", () => {
-    closeWindow.parentElement.parentElement.parentElement.style.display = "none"
-})
-
-
 
 
 //js Box Urutkan pada layar hp
@@ -50,33 +45,23 @@ title.forEach((t) => {
 
 
 // untuk berpindah halaman antara event yang masih ada dan sudah berlalu
-let indikatorSudahBerakhir = document.querySelectorAll(".indikatorSudahBerakhir")
-let indikatorMasihBerlangsung = document.querySelectorAll(".indikatorMasihBerlangsung")
+let indikatorSudahBerakhir = document.querySelector(".indikatorSudahBerakhir")
+let indikatorMasihBerlangsung = document.querySelector(".indikatorMasihBerlangsung")
 
-let sudahBerakhir = document.querySelectorAll(".sudahBerakhir")
-let masihBerlangsung = document.querySelectorAll(".masihBerlangsung")
 
-indikatorSudahBerakhir.forEach((ISB) => {
 
-    ISB.addEventListener("click", () => {
-        masihBerlangsung.forEach((MB) => {
-            MB.style.display = "none"
-        })
-        sudahBerakhir.forEach((SB) => {
-            SB.style.display = "flex"
-        })
-    })
+let sudahBerakhir = document.querySelector(".sudahBerakhir")
+let masihBerlangsung = document.querySelector(".masihBerlangsung")
+
+
+
+indikatorSudahBerakhir.addEventListener("click", () => {
+    masihBerlangsung.style.display = "none"
+    sudahBerakhir.style.display = "flex"
 })
 
 
-indikatorMasihBerlangsung.forEach((IMB) => {
-    IMB.addEventListener("click", () => {
-        masihBerlangsung.forEach((MB) => {
-            MB.style.display = "flex"
-        })
-
-        sudahBerakhir.forEach((SB) => {
-            SB.style.display = "none"
-        })
-    })
+indikatorMasihBerlangsung.addEventListener("click", () => {
+    masihBerlangsung.style.display = "flex"
+    sudahBerakhir.style.display = "none"
 })
