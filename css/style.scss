@@ -218,6 +218,7 @@ header {
                 cursor: pointer;
             }
 
+            label,
             span {
                 width: 100%;
                 height: 4px;
@@ -225,7 +226,7 @@ header {
                 background-color: var(--putih);
 
 
-                &:nth-child(3) {
+                &:nth-child(2) {
                     width: 80%;
                 }
             }
@@ -341,49 +342,6 @@ header {
 }
 
 
-.series {
-    width: 100%;
-    height: 100%;
-
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        .perSeries {
-            width: calc(90%/3);
-            margin: 30px 10px;
-
-            img {
-                width: 100%;
-                height: 200px;
-                object-fit: cover;
-                border-radius: 10px;
-                background-color: var(--putih-900);
-            }
-
-            .keterangan {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-
-                p {
-                    font-size: 1rem;
-                    margin: 10px 0;
-                }
-            }
-
-
-            h2 {
-                font-size: 1rem;
-            }
-        }
-    }
-
-}
-
-
 .title {
     display: flex;
     text-align: center;
@@ -470,57 +428,6 @@ header {
 }
 
 
-
-
-.containerTopik {
-    width: 100%;
-    height: 100%;
-
-    .container {
-
-
-        .topik {
-            width: 100%;
-            height: 100%;
-            padding: 20px 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 50px;
-            border-radius: 10px;
-            background-color: var(--putih-mandan-ireng);
-
-            .perTopik {
-                padding: 7px 20px;
-                margin: 10px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 7px;
-                background-color: var(--putih);
-
-                &:hover {
-                    p {
-                        color: var(--biru-cerah);
-                    }
-                }
-
-                span {
-                    padding: 10px;
-                    font-size: .9rem;
-                    border-radius: 50%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-right: 20px;
-                    background-color: var(--putih-f2);
-                }
-            }
-        }
-    }
-}
-
 .containerFAQ {
     width: 100%;
     height: 100%;
@@ -586,46 +493,6 @@ header {
 
         &.show {
             display: inline-block;
-        }
-    }
-}
-
-
-.search {
-    width: 100%;
-    height: 100%;
-    background-color: var(--putih-f2);
-
-    .container {
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
-        h1 {
-            font-size: 2rem;
-            font-weight: 500;
-        }
-
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-
-        .searchAlert {
-            font-size: .9rem;
-        }
-
-        form {
-
-            .form-group {
-                width: 700px;
-
-                button {
-                    width: 20%;
-                }
-            }
         }
     }
 }
@@ -1103,269 +970,6 @@ footer {
 
 
 
-
-// Per Detail Kelas Start
-.heroMateri {
-    width: 100%;
-    height: 100vh;
-    background-color: var(--hero);
-
-    .container {
-
-        img,
-        iframe {
-            width: 100%;
-            height: 100%;
-        }
-    }
-}
-
-.containerMateri {
-    width: 100%;
-    height: 100%;
-
-    .container {
-        display: flex;
-        // align-items: center;
-        justify-content: space-between;
-
-        .detailMateri {
-            width: 65%;
-            margin-right: 20px;
-
-            &>* {
-                margin: 20px 0;
-            }
-
-            .infoMateri {
-                width: 100%;
-                // height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 20px;
-                border-radius: 10px;
-                border: var(--border);
-                position: relative;
-
-                .kanan {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-
-                h2 {
-                    font-size: 1.2rem;
-                    margin-left: 20px;
-                }
-
-                .icon {
-                    width: 40px;
-                    height: 40px;
-                    // top: 10px;
-                    // position: absolute;
-                    cursor: pointer;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 50%;
-                    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-                    background-color: var(--putih);
-                    transition: .5s;
-
-                    &:hover {
-                        color: var(--putih);
-                        background-color: var(--biru-cerah);
-                    }
-                }
-            }
-
-
-            article {
-                width: 100%;
-                padding: 20px;
-                border-radius: 10px;
-                border: var(--border);
-
-                ul {
-                    margin: 10px 0;
-
-                    li {
-                        margin: 5px 0 5px 20px;
-                        list-style: initial;
-                        // list-style: disc;
-                    }
-                }
-
-                p {
-                    margin: 5px 0;
-                }
-            }
-
-
-            .komentar {
-                width: 100%;
-                height: 100%;
-                margin-top: 50px;
-
-                .tulisKomentar {
-                    width: 100%;
-                    padding: 15px;
-                    cursor: pointer;
-                    display: flex;
-                    margin-bottom: 50px;
-                    align-items: center;
-                    border-radius: 7px;
-                    border: 2px dashed rgba(0, 0, 0, 0.1);
-                    background-color: var(--putih);
-
-                    img {
-                        width: 35px;
-                        height: 35px;
-                        object-fit: cover;
-                        border-radius: 50%;
-                        margin-right: 15px;
-                        background-color: var(--putih-900);
-                    }
-                }
-
-                .perKomentar {
-                    width: 100%;
-                    // height: 100%;
-                    margin-top: 30px;
-
-                    .balasan {
-                        margin-top: 20px;
-                        margin-left: 50px;
-                    }
-
-                    .profil {
-                        display: flex;
-                        align-items: center;
-
-                        img {
-                            width: 40px;
-                            height: 40px;
-                            object-fit: cover;
-                            border-radius: 50%;
-                            margin-right: 15px;
-                            background-color: var(--putih-900);
-                        }
-
-                        .caption {
-                            display: flex;
-                            flex-direction: column;
-
-                            .nama {
-                                display: flex;
-                                align-items: center;
-
-                                svg {
-                                    color: var(--biru-cerah);
-                                    margin-left: 10px;
-                                }
-                            }
-
-                            span {
-                                font-size: .9rem;
-                            }
-                        }
-                    }
-
-                    .isiKomentar {
-                        margin: 20px 0;
-                    }
-
-                    .cta {
-                        width: 100%;
-                        height: 100%;
-                        padding: 7px 20px;
-                        border-radius: 7px;
-                        background-color: var(--putih-mandan-ireng);
-                    }
-                }
-            }
-        }
-
-        .KeteranganSeries {
-            width: 35%;
-            height: 100vh;
-            top: 15vh;
-            position: sticky;
-            align-self: flex-start;
-
-            &>* {
-                width: 100%;
-                padding: 20px;
-                margin: 20px 0;
-                border-radius: 10px;
-                border: var(--border);
-            }
-
-            .titleSeries {
-
-                h2 {
-                    font-size: 1rem;
-                    margin-bottom: 20px;
-                }
-
-                p {
-                    font-size: .9rem;
-                }
-            }
-
-
-            .detailSeries {
-                height: 400px;
-                padding: 0;
-                overflow-y: auto;
-
-                .perEpisode {
-                    width: 100%;
-                    padding: 20px;
-                    display: flex;
-                    align-items: center;
-                    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
-                    &.active {
-                        background-color: var(--biru-cerah) !important;
-
-                        p {
-                            color: var(--putih);
-                        }
-
-                        .icon {
-                            color: var(--biru-cerah);
-                        }
-                    }
-
-                    &:hover {
-                        background-color: #80a1fc;
-                    }
-
-                    .icon {
-                        width: 40px;
-                        height: 40px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        margin-right: 10px;
-                        border-radius: 50%;
-                        background-color: var(--putih-900);
-                    }
-                }
-            }
-        }
-    }
-}
-
-// Per Detail Kelas End
-
-
-
-
-
-
 .containerAlesan {
     width: 100%;
     height: 100%;
@@ -1686,12 +1290,14 @@ footer {
 }
 
 
+/* Halaman Per Artikel end*/
 
 
 
 
 
-//profil
+
+// Halaman Profil Start
 
 .bg-profil {
     height: 50vh;
@@ -1706,8 +1312,6 @@ footer {
         object-fit: cover;
     }
 }
-
-
 
 
 .profil {
@@ -1756,9 +1360,10 @@ footer {
                     width: 150px;
                     height: 150px;
                     border-radius: 50%;
-                    border: 5px solid var(--putih);
                     margin-bottom: 20px;
                     object-fit: cover;
+                    border: 5px solid var(--putih);
+                    background-color: var(--putih-900);
                 }
 
                 .email {
@@ -1774,24 +1379,6 @@ footer {
                 }
 
 
-                .pencapaian {
-                    display: flex;
-                    justify-content: space-between;
-                    margin-top: 20px;
-
-                    .perPencapaian {
-                        display: flex;
-
-                        p {
-                            font-weight: 500;
-                        }
-
-                        span {
-                            font-weight: 600;
-                            color: var(--kuningCerah);
-                        }
-                    }
-                }
 
                 .tentangSaya {
                     margin-top: 20px;
@@ -1801,11 +1388,19 @@ footer {
                         margin-top: 10px;
                         color: #6f6f74;
                     }
+
+                    .username {
+                        width: 100%;
+                        font-weight: 500;
+                        margin: 10px 0;
+                        padding: 15px 20px;
+                        border-radius: 10px;
+                        background-color: var(--putih-f2);
+                    }
                 }
 
                 a {
                     margin-top: 30px;
-                    width: 100%;
                     font-weight: 600;
                 }
             }
@@ -1817,31 +1412,21 @@ footer {
             // min-height: 50vh;
             margin-left: 20px;
 
-            .titleCodeBadge {
+            h2 {
+                // .titleCodeBadge {
                 font-size: 1.3rem;
                 font-weight: 600;
                 padding: 10px 20px;
                 border-bottom: 1px solid #e4e4e7;
             }
 
-            .codeBadgeKosong {
+            p {
                 width: 100%;
                 padding: 20px 20px 0 20px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                text-align: center;
-
-                img {
-                    width: 100px;
-                    height: 100px;
-                }
-
-                h1 {
-                    margin: 10px 0;
-                }
             }
         }
     }
 }
+
+
+// Halaman Profil End

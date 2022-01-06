@@ -235,6 +235,7 @@ header .container .menu input {
   cursor: pointer;
 }
 
+header .container .menu label,
 header .container .menu span {
   width: 100%;
   height: 4px;
@@ -242,7 +243,8 @@ header .container .menu span {
   background-color: var(--putih);
 }
 
-header .container .menu span:nth-child(3) {
+header .container .menu label:nth-child(2),
+header .container .menu span:nth-child(2) {
   width: 80%;
 }
 
@@ -355,60 +357,6 @@ header .container .menu span:nth-child(3) {
   height: 100%;
 }
 
-.series {
-  width: 100%;
-  height: 100%;
-}
-
-.series .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.series .container .perSeries {
-  width: calc(90%/3);
-  margin: 30px 10px;
-}
-
-.series .container .perSeries img {
-  width: 100%;
-  height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 10px;
-  background-color: var(--putih-900);
-}
-
-.series .container .perSeries .keterangan {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.series .container .perSeries .keterangan p {
-  font-size: 1rem;
-  margin: 10px 0;
-}
-
-.series .container .perSeries h2 {
-  font-size: 1rem;
-}
-
 .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -517,68 +465,6 @@ header .container .menu span:nth-child(3) {
   background-color: var(--putih-900);
 }
 
-.containerTopik {
-  width: 100%;
-  height: 100%;
-}
-
-.containerTopik .container .topik {
-  width: 100%;
-  height: 100%;
-  padding: 20px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: 50px;
-  border-radius: 10px;
-  background-color: var(--putih-mandan-ireng);
-}
-
-.containerTopik .container .topik .perTopik {
-  padding: 7px 20px;
-  margin: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 7px;
-  background-color: var(--putih);
-}
-
-.containerTopik .container .topik .perTopik:hover p {
-  color: var(--biru-cerah);
-}
-
-.containerTopik .container .topik .perTopik span {
-  padding: 10px;
-  font-size: .9rem;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-right: 20px;
-  background-color: var(--putih-f2);
-}
-
 .containerFAQ {
   width: 100%;
   height: 100%;
@@ -658,51 +544,6 @@ header .container .menu span:nth-child(3) {
 
 .perFAQ .jawaban.show {
   display: inline-block;
-}
-
-.search {
-  width: 100%;
-  height: 100%;
-  background-color: var(--putih-f2);
-}
-
-.search .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.search .container h1 {
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-.search .container p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.search .container .searchAlert {
-  font-size: .9rem;
-}
-
-.search .container form .form-group {
-  width: 700px;
-}
-
-.search .container form .form-group button {
-  width: 20%;
 }
 
 .facebook {
@@ -1211,300 +1052,6 @@ footer .container p span {
   font-weight: 500;
 }
 
-.heroMateri {
-  width: 100%;
-  height: 100vh;
-  background-color: var(--hero);
-}
-
-.heroMateri .container img,
-.heroMateri .container iframe {
-  width: 100%;
-  height: 100%;
-}
-
-.containerMateri {
-  width: 100%;
-  height: 100%;
-}
-
-.containerMateri .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.containerMateri .container .detailMateri {
-  width: 65%;
-  margin-right: 20px;
-}
-
-.containerMateri .container .detailMateri > * {
-  margin: 20px 0;
-}
-
-.containerMateri .container .detailMateri .infoMateri {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 20px;
-  border-radius: 10px;
-  border: var(--border);
-  position: relative;
-}
-
-.containerMateri .container .detailMateri .infoMateri .kanan {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.containerMateri .container .detailMateri .infoMateri h2 {
-  font-size: 1.2rem;
-  margin-left: 20px;
-}
-
-.containerMateri .container .detailMateri .infoMateri .icon {
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-  background-color: var(--putih);
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-.containerMateri .container .detailMateri .infoMateri .icon:hover {
-  color: var(--putih);
-  background-color: var(--biru-cerah);
-}
-
-.containerMateri .container .detailMateri article {
-  width: 100%;
-  padding: 20px;
-  border-radius: 10px;
-  border: var(--border);
-}
-
-.containerMateri .container .detailMateri article ul {
-  margin: 10px 0;
-}
-
-.containerMateri .container .detailMateri article ul li {
-  margin: 5px 0 5px 20px;
-  list-style: initial;
-}
-
-.containerMateri .container .detailMateri article p {
-  margin: 5px 0;
-}
-
-.containerMateri .container .detailMateri .komentar {
-  width: 100%;
-  height: 100%;
-  margin-top: 50px;
-}
-
-.containerMateri .container .detailMateri .komentar .tulisKomentar {
-  width: 100%;
-  padding: 15px;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 7px;
-  border: 2px dashed rgba(0, 0, 0, 0.1);
-  background-color: var(--putih);
-}
-
-.containerMateri .container .detailMateri .komentar .tulisKomentar img {
-  width: 35px;
-  height: 35px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
-  margin-right: 15px;
-  background-color: var(--putih-900);
-}
-
-.containerMateri .container .detailMateri .komentar .perKomentar {
-  width: 100%;
-  margin-top: 30px;
-}
-
-.containerMateri .container .detailMateri .komentar .perKomentar .balasan {
-  margin-top: 20px;
-  margin-left: 50px;
-}
-
-.containerMateri .container .detailMateri .komentar .perKomentar .profil {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.containerMateri .container .detailMateri .komentar .perKomentar .profil img {
-  width: 40px;
-  height: 40px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
-  margin-right: 15px;
-  background-color: var(--putih-900);
-}
-
-.containerMateri .container .detailMateri .komentar .perKomentar .profil .caption {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.containerMateri .container .detailMateri .komentar .perKomentar .profil .caption .nama {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.containerMateri .container .detailMateri .komentar .perKomentar .profil .caption .nama svg {
-  color: var(--biru-cerah);
-  margin-left: 10px;
-}
-
-.containerMateri .container .detailMateri .komentar .perKomentar .profil .caption span {
-  font-size: .9rem;
-}
-
-.containerMateri .container .detailMateri .komentar .perKomentar .isiKomentar {
-  margin: 20px 0;
-}
-
-.containerMateri .container .detailMateri .komentar .perKomentar .cta {
-  width: 100%;
-  height: 100%;
-  padding: 7px 20px;
-  border-radius: 7px;
-  background-color: var(--putih-mandan-ireng);
-}
-
-.containerMateri .container .KeteranganSeries {
-  width: 35%;
-  height: 100vh;
-  top: 15vh;
-  position: -webkit-sticky;
-  position: sticky;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
-
-.containerMateri .container .KeteranganSeries > * {
-  width: 100%;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 10px;
-  border: var(--border);
-}
-
-.containerMateri .container .KeteranganSeries .titleSeries h2 {
-  font-size: 1rem;
-  margin-bottom: 20px;
-}
-
-.containerMateri .container .KeteranganSeries .titleSeries p {
-  font-size: .9rem;
-}
-
-.containerMateri .container .KeteranganSeries .detailSeries {
-  height: 400px;
-  padding: 0;
-  overflow-y: auto;
-}
-
-.containerMateri .container .KeteranganSeries .detailSeries .perEpisode {
-  width: 100%;
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.containerMateri .container .KeteranganSeries .detailSeries .perEpisode.active {
-  background-color: var(--biru-cerah) !important;
-}
-
-.containerMateri .container .KeteranganSeries .detailSeries .perEpisode.active p {
-  color: var(--putih);
-}
-
-.containerMateri .container .KeteranganSeries .detailSeries .perEpisode.active .icon {
-  color: var(--biru-cerah);
-}
-
-.containerMateri .container .KeteranganSeries .detailSeries .perEpisode:hover {
-  background-color: #80a1fc;
-}
-
-.containerMateri .container .KeteranganSeries .detailSeries .perEpisode .icon {
-  width: 40px;
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-right: 10px;
-  border-radius: 50%;
-  background-color: var(--putih-900);
-}
-
 .containerAlesan {
   width: 100%;
   height: 100%;
@@ -1807,6 +1354,7 @@ footer .container p span {
   font-size: .9rem;
 }
 
+/* Halaman Per Artikel end*/
 .bg-profil {
   height: 50vh;
   background-color: var(--biru-cerah);
@@ -1879,10 +1427,11 @@ footer .container p span {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 5px solid var(--putih);
   margin-bottom: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+  border: 5px solid var(--putih);
+  background-color: var(--putih-900);
 }
 
 .profil .container .profil-orang .detail-orang .email {
@@ -1897,31 +1446,6 @@ footer .container p span {
   text-transform: uppercase;
 }
 
-.profil .container .profil-orang .detail-orang .pencapaian {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 20px;
-}
-
-.profil .container .profil-orang .detail-orang .pencapaian .perPencapaian {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.profil .container .profil-orang .detail-orang .pencapaian .perPencapaian p {
-  font-weight: 500;
-}
-
-.profil .container .profil-orang .detail-orang .pencapaian .perPencapaian span {
-  font-weight: 600;
-  color: var(--kuningCerah);
-}
-
 .profil .container .profil-orang .detail-orang .tentangSaya {
   margin-top: 20px;
   text-align: left;
@@ -1932,9 +1456,17 @@ footer .container p span {
   color: #6f6f74;
 }
 
+.profil .container .profil-orang .detail-orang .tentangSaya .username {
+  width: 100%;
+  font-weight: 500;
+  margin: 10px 0;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: var(--putih-f2);
+}
+
 .profil .container .profil-orang .detail-orang a {
   margin-top: 30px;
-  width: 100%;
   font-weight: 600;
 }
 
@@ -1944,38 +1476,15 @@ footer .container p span {
   margin-left: 20px;
 }
 
-.profil .container .profil-kelas .titleCodeBadge {
+.profil .container .profil-kelas h2 {
   font-size: 1.3rem;
   font-weight: 600;
   padding: 10px 20px;
   border-bottom: 1px solid #e4e4e7;
 }
 
-.profil .container .profil-kelas .codeBadgeKosong {
+.profil .container .profil-kelas p {
   width: 100%;
   padding: 20px 20px 0 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
-
-.profil .container .profil-kelas .codeBadgeKosong img {
-  width: 100px;
-  height: 100px;
-}
-
-.profil .container .profil-kelas .codeBadgeKosong h1 {
-  margin: 10px 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -38,6 +38,24 @@
         }
     }
 
+
+
+    .bg-profil {
+        height: 40vh;
+    }
+
+
+
+    .profil {
+
+        .container {
+
+            .profil-kelas {
+                min-height: 300px;
+            }
+        }
+    }
+
 }
 
 @media (max-width: 1200px) {
@@ -84,6 +102,17 @@
 
             .perArtikel {
                 width: calc(92%/2);
+            }
+        }
+    }
+
+    .profil {
+
+        .container {
+
+            .profil-orang,
+            .profil-kelas {
+                width: 50%;
             }
         }
     }
@@ -470,6 +499,37 @@
         }
     }
 
+
+
+
+    .profil {
+
+        .container {
+            flex-wrap: wrap;
+
+            .profil-orang,
+            .profil-kelas {
+                width: 100%;
+            }
+
+            .profil-kelas {
+                margin-top: 20px;
+                margin-left: 0;
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+
+    .bg-profil {
+
+        .container {
+            background-image: url("../../img/profil/profile-banner-mobile.png");
+
+        }
+    }
+
+
 }
 
 
@@ -605,6 +665,7 @@
             }
         }
     }
+
 
 
 }
@@ -1067,6 +1128,31 @@
     }
 
 
+
+
+
+    .profil {
+
+        .container {
+
+            .profil-kelas {
+
+                .codeBadgeKosong {
+
+                    img {
+                        width: 70px;
+                        height: 70px;
+                    }
+
+                    h1 {
+                        font-size: 1.3rem;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 
@@ -1244,6 +1330,71 @@
             }
         }
     }
+
+
+
+
+    .profil {
+
+        .container {
+
+            .profil-orang {
+
+                .icon {
+                    padding: 5px 10px;
+                    font-size: .8rem;
+                }
+
+                .detail-orang {
+                    margin-top: -60px;
+
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        margin-bottom: 10px;
+                    }
+
+                    h2 {
+                        font-size: 1.3rem;
+                    }
+
+                    .email {
+                        font-size: .9rem;
+                    }
+
+                    .sekolah {
+                        font-size: 1rem;
+
+                    }
+
+
+                    .tentangSaya {
+
+                        p {
+                            font-size: .9rem;
+                            line-height: 20px;
+                        }
+                    }
+
+                    a {
+                        padding: 8px;
+                    }
+                }
+            }
+
+            .profil-kelas {
+
+                .codeBadgeKosong {
+
+                    p {
+                        font-size: .9rem;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media(max-width:300px) {

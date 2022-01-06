@@ -28,6 +28,12 @@
   .contentArtikel .container {
     width: 50%;
   }
+  .bg-profil {
+    height: 40vh;
+  }
+  .profil .container .profil-kelas {
+    min-height: 300px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -51,6 +57,10 @@
   }
   .artikel .container .perArtikel {
     width: calc(92%/2);
+  }
+  .profil .container .profil-orang,
+  .profil .container .profil-kelas {
+    width: 50%;
   }
 }
 
@@ -334,6 +344,22 @@
   }
   .contentArtikel .container .mainArtikel h3 {
     font-size: 1.3rem;
+  }
+  .profil .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .profil .container .profil-orang,
+  .profil .container .profil-kelas {
+    width: 100%;
+  }
+  .profil .container .profil-kelas {
+    margin-top: 20px;
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+  .bg-profil .container {
+    background-image: url("../../img/profil/profile-banner-mobile.png");
   }
 }
 
@@ -652,6 +678,14 @@
   .contentArtikel .container .mainArtikel ul li {
     padding: 3px 0;
   }
+  .profil .container .profil-kelas .codeBadgeKosong img {
+    width: 70px;
+    height: 70px;
+  }
+  .profil .container .profil-kelas .codeBadgeKosong h1 {
+    font-size: 1.3rem;
+    line-height: 30px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -738,6 +772,38 @@
   }
   .komentar .perKomentar .profil .nama p {
     font-size: .8rem;
+  }
+  .profil .container .profil-orang .icon {
+    padding: 5px 10px;
+    font-size: .8rem;
+  }
+  .profil .container .profil-orang .detail-orang {
+    margin-top: -60px;
+  }
+  .profil .container .profil-orang .detail-orang img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  .profil .container .profil-orang .detail-orang h2 {
+    font-size: 1.3rem;
+  }
+  .profil .container .profil-orang .detail-orang .email {
+    font-size: .9rem;
+  }
+  .profil .container .profil-orang .detail-orang .sekolah {
+    font-size: 1rem;
+  }
+  .profil .container .profil-orang .detail-orang .tentangSaya p {
+    font-size: .9rem;
+    line-height: 20px;
+  }
+  .profil .container .profil-orang .detail-orang a {
+    padding: 8px;
+  }
+  .profil .container .profil-kelas .codeBadgeKosong p {
+    font-size: .9rem;
+    line-height: 20px;
   }
 }
 
