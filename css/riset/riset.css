@@ -16,13 +16,12 @@
   --border: 2px solid #e4e4e7;
   /* btn */
   --danger: #dc3545;
-  --primary: #0b31da;
   --warning: #ffc107;
   --dark: rgb(55 65 81);
   --success: #1EE592;
   --ungu: #963EFF;
   --danger-hover: #c52939;
-  --primary-hover: #1836bd;
+  --primary-hover: #0d46e0;
   --warning-hover: #e2ab06;
   --dark-hover: #2F3949;
   --success-hover: #19cf84;
@@ -32,7 +31,7 @@
   --tr: rgba(0, 0, 0, 0.05);
   --outline-input: #0176f4bd;
   --outline-button: #63aeffbd;
-  --outline-primary: #0e31ce;
+  --outline-primary: #0642e6e5;
   --outline-warning: #ffe601f1;
   --outline-success: #1fdd8ee3;
   --outline-white: rgb(207, 207, 207);
@@ -83,6 +82,10 @@ label,
 span,
 a {
   color: var(--hitam-santai);
+}
+
+label {
+  cursor: pointer;
 }
 
 article,
@@ -222,6 +225,7 @@ section {
 }
 
 .btn:focus {
+  border-radius: 8px;
   outline: 2px solid var(--outline-button);
 }
 
@@ -241,8 +245,8 @@ section {
 
 .btn-primary {
   color: var(--putih) !important;
-  background-color: var(--primary) !important;
-  border-color: var(--primary) !important;
+  background-color: var(--biru-cerah) !important;
+  border-color: var(--biru-cerah) !important;
 }
 
 .btn-primary:hover {

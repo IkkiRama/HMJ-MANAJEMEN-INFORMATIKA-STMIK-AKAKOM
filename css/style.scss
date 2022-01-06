@@ -1,67 +1,3 @@
-:root {
-    --shadow-header: 0 1rem 1rem rgba(0, 0, 0, 0.1);
-    --background-heroHome: linear-gradient(to top right, #450b7c, #563cc9, #49e9fb);
-    --background-header: linear-gradient(to right, #450b7c, #563cc9);
-    --kuningCerah: rgb(255, 160, 17);
-    --putih-mandan-ireng: rgb(231, 231, 231);
-    --bg-mandanGelap: #F6F8FD;
-
-    --hero: #111827;
-
-    --hitam-santai: #302f2f;
-    --putih: #fff;
-    --putih-f2: #f2f2f2;
-    --putih-900: #F2F4F7;
-    --putih-f8fafc: #f8fafc;
-    --kuning: #FCE354;
-    --biru-cerah: #1352FF;
-    --border: 2px solid #e4e4e7;
-
-
-    /* btn */
-    --danger: #dc3545;
-    --primary: #0b31da;
-    // --primary: #007bff;
-    --warning: #ffc107;
-    --dark: rgb(55 65 81);
-    --success: #1EE592;
-    --ungu: #963EFF;
-
-
-    --danger-hover: #c52939;
-    --primary-hover: #1836bd;
-    --warning-hover: #e2ab06;
-    --dark-hover: #2F3949;
-    --success-hover: #19cf84;
-    --ungu-hover: #8435e4;
-
-    --border-table: 1px solid #dee2e6;
-    --table-dark: #343a40;
-    --tr: rgba(0, 0, 0, 0.05);
-
-
-    --outline-input: #0176f4bd;
-    --outline-button: #63aeffbd;
-    --outline-primary: #0e31ce;
-    --outline-warning: #ffe601f1;
-    --outline-success: #1fdd8ee3;
-    --outline-white: rgb(207, 207, 207);
-    --outline-dark: #717172;
-    --outline-ungu: #802ce7ec;
-
-
-
-
-    --tw-gradient-to: #06b6d4;
-    --tw-gradient-from: #0d6efd;
-    --tw-gradient-stops: #0d6efd,
-        #22d3ee,
-        #06b6d4;
-    // rgba(34, 211, 238, 0)
-    // --tw-gradient-stops: var(--tw-gradient-from, #22d3ee, var(--tw-gradient-to, rgba(34, 211, 238, 0)));
-}
-
-
 #scroll-top {
     position: fixed;
     bottom: 1.5rem;
@@ -202,6 +138,7 @@ header {
         .menu {
             width: 30px;
             height: 20px;
+            cursor: pointer;
             display: none;
             align-items: end;
             justify-content: space-between;
@@ -209,16 +146,6 @@ header {
             position: relative;
             z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 !important;
 
-            input {
-                width: 100%;
-                height: 130%;
-                position: absolute;
-                top: -3px;
-                opacity: 0;
-                cursor: pointer;
-            }
-
-            label,
             span {
                 width: 100%;
                 height: 4px;
@@ -1255,11 +1182,13 @@ footer {
 .komentar {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 
     .perKomentar {
         display: flex;
         flex-direction: column;
-        margin: 40px 0;
+        margin: 50px 0;
 
         .profil {
             display: flex;
