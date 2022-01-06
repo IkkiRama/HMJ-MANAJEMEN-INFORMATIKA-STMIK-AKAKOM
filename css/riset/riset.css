@@ -32,6 +32,7 @@
   --tr: rgba(0, 0, 0, 0.05);
   --outline-input: #0176f4bd;
   --outline-button: #63aeffbd;
+  --outline-primary: #0e31ce;
   --outline-warning: #ffe601f1;
   --outline-success: #1fdd8ee3;
   --outline-white: rgb(207, 207, 207);
@@ -246,6 +247,10 @@ section {
 
 .btn-primary:hover {
   background-color: var(--primary-hover);
+}
+
+.btn-primary:focus {
+  outline: 2px solid var(--outline-primary);
 }
 
 .btn-warning {

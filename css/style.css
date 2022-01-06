@@ -1,3 +1,50 @@
+:root {
+  --shadow-header: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  --background-heroHome: linear-gradient(to top right, #450b7c, #563cc9, #49e9fb);
+  --background-header: linear-gradient(to right, #450b7c, #563cc9);
+  --kuningCerah: rgb(255, 160, 17);
+  --putih-mandan-ireng: rgb(231, 231, 231);
+  --bg-mandanGelap: #F6F8FD;
+  --hero: #111827;
+  --hitam-santai: #302f2f;
+  --putih: #fff;
+  --putih-f2: #f2f2f2;
+  --putih-900: #F2F4F7;
+  --putih-f8fafc: #f8fafc;
+  --kuning: #FCE354;
+  --biru-cerah: #1352FF;
+  --border: 2px solid #e4e4e7;
+  /* btn */
+  --danger: #dc3545;
+  --primary: #0b31da;
+  --warning: #ffc107;
+  --dark: rgb(55 65 81);
+  --success: #1EE592;
+  --ungu: #963EFF;
+  --danger-hover: #c52939;
+  --primary-hover: #1836bd;
+  --warning-hover: #e2ab06;
+  --dark-hover: #2F3949;
+  --success-hover: #19cf84;
+  --ungu-hover: #8435e4;
+  --border-table: 1px solid #dee2e6;
+  --table-dark: #343a40;
+  --tr: rgba(0, 0, 0, 0.05);
+  --outline-input: #0176f4bd;
+  --outline-button: #63aeffbd;
+  --outline-primary: #0e31ce;
+  --outline-warning: #ffe601f1;
+  --outline-success: #1fdd8ee3;
+  --outline-white: rgb(207, 207, 207);
+  --outline-dark: #717172;
+  --outline-ungu: #802ce7ec;
+  --tw-gradient-to: #06b6d4;
+  --tw-gradient-from: #0d6efd;
+  --tw-gradient-stops: #0d6efd,
+        #22d3ee,
+        #06b6d4;
+}
+
 #scroll-top {
   position: fixed;
   bottom: 1.5rem;
@@ -176,6 +223,7 @@ header .container .menu {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 !important;
 }
 
 header .container .menu input {
@@ -216,7 +264,7 @@ header .container .menu span:nth-child(3) {
   -webkit-transform: translateX(120%);
           transform: translateX(120%);
   background-color: rgba(0, 0, 0, 0.1);
-  z-index: 9999999;
+  z-index: 9999999 !important;
 }
 
 .containerNavMobile .navMobile {
@@ -1757,5 +1805,177 @@ footer .container p span {
 
 .komentar .perKomentar .profil .nama p {
   font-size: .9rem;
+}
+
+.bg-profil {
+  height: 50vh;
+  background-color: var(--biru-cerah);
+}
+
+.bg-profil .container {
+  background-image: url("../img/profil/profile-banner-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profil {
+  margin-top: -80px;
+}
+
+.profil .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profil .container .profil-orang,
+.profil .container .profil-kelas {
+  border: var(--border);
+  border-radius: 10px;
+  background-color: var(--putih);
+}
+
+.profil .container .profil-orang {
+  width: 35%;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+}
+
+.profil .container .profil-orang .icon {
+  top: 10px;
+  right: 10px;
+  padding: 7px 15px;
+  position: absolute;
+  border-radius: 5px;
+  border: 1px solid #e4e4e7;
+}
+
+.profil .container .profil-orang .detail-orang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-top: -80px;
+}
+
+.profil .container .profil-orang .detail-orang img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid var(--putih);
+  margin-bottom: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profil .container .profil-orang .detail-orang .email {
+  font-weight: 500;
+  color: var(--biru-cerah);
+}
+
+.profil .container .profil-orang .detail-orang .sekolah {
+  color: #6f6f74;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.profil .container .profil-orang .detail-orang .pencapaian {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.profil .container .profil-orang .detail-orang .pencapaian .perPencapaian {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profil .container .profil-orang .detail-orang .pencapaian .perPencapaian p {
+  font-weight: 500;
+}
+
+.profil .container .profil-orang .detail-orang .pencapaian .perPencapaian span {
+  font-weight: 600;
+  color: var(--kuningCerah);
+}
+
+.profil .container .profil-orang .detail-orang .tentangSaya {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.profil .container .profil-orang .detail-orang .tentangSaya p {
+  margin-top: 10px;
+  color: #6f6f74;
+}
+
+.profil .container .profil-orang .detail-orang a {
+  margin-top: 30px;
+  width: 100%;
+  font-weight: 600;
+}
+
+.profil .container .profil-kelas {
+  width: 65%;
+  min-height: 300px;
+  margin-left: 20px;
+}
+
+.profil .container .profil-kelas .titleCodeBadge {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-bottom: 1px solid #e4e4e7;
+}
+
+.profil .container .profil-kelas .codeBadgeKosong {
+  width: 100%;
+  padding: 20px 20px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.profil .container .profil-kelas .codeBadgeKosong img {
+  width: 100px;
+  height: 100px;
+}
+
+.profil .container .profil-kelas .codeBadgeKosong h1 {
+  margin: 10px 0;
 }
 /*# sourceMappingURL=style.css.map */

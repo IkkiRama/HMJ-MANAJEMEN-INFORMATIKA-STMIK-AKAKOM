@@ -1,3 +1,67 @@
+:root {
+    --shadow-header: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+    --background-heroHome: linear-gradient(to top right, #450b7c, #563cc9, #49e9fb);
+    --background-header: linear-gradient(to right, #450b7c, #563cc9);
+    --kuningCerah: rgb(255, 160, 17);
+    --putih-mandan-ireng: rgb(231, 231, 231);
+    --bg-mandanGelap: #F6F8FD;
+
+    --hero: #111827;
+
+    --hitam-santai: #302f2f;
+    --putih: #fff;
+    --putih-f2: #f2f2f2;
+    --putih-900: #F2F4F7;
+    --putih-f8fafc: #f8fafc;
+    --kuning: #FCE354;
+    --biru-cerah: #1352FF;
+    --border: 2px solid #e4e4e7;
+
+
+    /* btn */
+    --danger: #dc3545;
+    --primary: #0b31da;
+    // --primary: #007bff;
+    --warning: #ffc107;
+    --dark: rgb(55 65 81);
+    --success: #1EE592;
+    --ungu: #963EFF;
+
+
+    --danger-hover: #c52939;
+    --primary-hover: #1836bd;
+    --warning-hover: #e2ab06;
+    --dark-hover: #2F3949;
+    --success-hover: #19cf84;
+    --ungu-hover: #8435e4;
+
+    --border-table: 1px solid #dee2e6;
+    --table-dark: #343a40;
+    --tr: rgba(0, 0, 0, 0.05);
+
+
+    --outline-input: #0176f4bd;
+    --outline-button: #63aeffbd;
+    --outline-primary: #0e31ce;
+    --outline-warning: #ffe601f1;
+    --outline-success: #1fdd8ee3;
+    --outline-white: rgb(207, 207, 207);
+    --outline-dark: #717172;
+    --outline-ungu: #802ce7ec;
+
+
+
+
+    --tw-gradient-to: #06b6d4;
+    --tw-gradient-from: #0d6efd;
+    --tw-gradient-stops: #0d6efd,
+        #22d3ee,
+        #06b6d4;
+    // rgba(34, 211, 238, 0)
+    // --tw-gradient-stops: var(--tw-gradient-from, #22d3ee, var(--tw-gradient-to, rgba(34, 211, 238, 0)));
+}
+
+
 #scroll-top {
     position: fixed;
     bottom: 1.5rem;
@@ -143,6 +207,7 @@ header {
             justify-content: space-between;
             flex-direction: column;
             position: relative;
+            z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 !important;
 
             input {
                 width: 100%;
@@ -182,7 +247,7 @@ header {
     justify-content: end;
     transform: translateX(120%);
     background-color: rgba(0, 0, 0, 0.1);
-    z-index: 9999999;
+    z-index: 9999999 !important;
 
     .navMobile {
         width: 45%;
@@ -1614,6 +1679,167 @@ footer {
 
                 p {
                     font-size: .9rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+//profil
+
+.bg-profil {
+    height: 50vh;
+    background-color: var(--biru-cerah);
+    // border-radius: 20px;
+
+    .container {
+        background-image: url("../img/profil/profile-banner-desktop.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        object-fit: cover;
+    }
+}
+
+
+
+
+.profil {
+    // transform: translateY(-80px);
+    margin-top: -80px;
+
+    .container {
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+
+        .profil-orang,
+        .profil-kelas {
+            border: var(--border);
+            border-radius: 10px;
+            background-color: var(--putih);
+        }
+
+        .profil-orang {
+            width: 35%;
+            height: 100%;
+            padding: 20px;
+            position: relative;
+            // top: 27vh;
+            // align-self: flex-start;
+
+            .icon {
+                top: 10px;
+                right: 10px;
+                padding: 7px 15px;
+                position: absolute;
+                border-radius: 5px;
+                border: 1px solid #e4e4e7;
+            }
+
+            .detail-orang {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                // transform: translateY(-80px);
+                margin-top: -80px;
+
+                img {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    border: 5px solid var(--putih);
+                    margin-bottom: 20px;
+                    object-fit: cover;
+                }
+
+                .email {
+                    font-weight: 500;
+                    color: var(--biru-cerah);
+                }
+
+                .sekolah {
+                    color: #6f6f74;
+                    font-weight: 500;
+                    font-size: 1.1rem;
+                    text-transform: uppercase;
+                }
+
+
+                .pencapaian {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 20px;
+
+                    .perPencapaian {
+                        display: flex;
+
+                        p {
+                            font-weight: 500;
+                        }
+
+                        span {
+                            font-weight: 600;
+                            color: var(--kuningCerah);
+                        }
+                    }
+                }
+
+                .tentangSaya {
+                    margin-top: 20px;
+                    text-align: left;
+
+                    p {
+                        margin-top: 10px;
+                        color: #6f6f74;
+                    }
+                }
+
+                a {
+                    margin-top: 30px;
+                    width: 100%;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .profil-kelas {
+            width: 65%;
+            min-height: 300px;
+            // min-height: 50vh;
+            margin-left: 20px;
+
+            .titleCodeBadge {
+                font-size: 1.3rem;
+                font-weight: 600;
+                padding: 10px 20px;
+                border-bottom: 1px solid #e4e4e7;
+            }
+
+            .codeBadgeKosong {
+                width: 100%;
+                padding: 20px 20px 0 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                h1 {
+                    margin: 10px 0;
                 }
             }
         }

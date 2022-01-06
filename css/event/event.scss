@@ -208,7 +208,7 @@ img {
                 display: none;
                 align-items: center;
                 justify-content: space-between;
-                z-index: 99999999;
+                z-index: 999;
                 position: static;
 
                 .filter {
@@ -242,6 +242,7 @@ img {
                     background-color: var(--putih);
                     border: var(--border);
                     /* transform: translateY(-10px); */
+
 
                     h2 {
                         margin: 0;
