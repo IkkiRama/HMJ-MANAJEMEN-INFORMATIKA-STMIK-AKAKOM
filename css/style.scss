@@ -1359,3 +1359,56 @@ footer {
 
 
 // Halaman Profil End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Halaman About Start
+.containerAnggota {
+
+    .container {
+
+        .anggota {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+            .perAnggota {
+                width: calc(90%/4);
+                margin: 15px 10px;
+
+                img {
+                    width: 100%;
+                    height: 250px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    font-size: .9rem;
+                }
+
+                h2 {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+// Halaman About End
