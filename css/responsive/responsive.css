@@ -62,6 +62,9 @@
   .profil .container .profil-kelas {
     width: 50%;
   }
+  .containerAnggota .container .anggota .perAnggota {
+    width: calc(90%/3);
+  }
 }
 
 @media (max-width: 1000px) {
@@ -213,6 +216,9 @@
   .Event .container .program .masihBerlangsung .perMasihBerlangsung {
     width: 100%;
     margin: 20px 0;
+  }
+  .containerAnggota .container .anggota .perAnggota img {
+    height: 200px;
   }
 }
 
@@ -443,6 +449,12 @@
   .contentArtikel .container .thumbnail {
     height: 300px;
   }
+  .containerAnggota .container .anggota .perAnggota {
+    width: calc(90%/2);
+  }
+  .containerAnggota .container .anggota .perAnggota img {
+    height: 250px;
+  }
 }
 
 @media (max-width: 650px) {
@@ -480,6 +492,9 @@
   }
   .containerSosmed .container .sosmed .perSosmed {
     width: 100%;
+  }
+  .containerAnggota .container .anggota .perAnggota img {
+    height: 200px;
   }
 }
 
@@ -575,6 +590,13 @@
 @media (max-width: 450px) {
   .galeri .perGaleri {
     height: 150px;
+  }
+  .containerAnggota .container .anggota .perAnggota {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .containerAnggota .container .anggota .perAnggota img {
+    height: 300px;
   }
 }
 
@@ -805,6 +827,9 @@
     font-size: .9rem;
     line-height: 20px;
   }
+  .containerAnggota .container .anggota .perAnggota img {
+    height: 250px;
+  }
 }
 
 @media (max-width: 300px) {
@@ -869,6 +894,9 @@
   .Event .container .program .sorting .urutkan {
     width: 100%;
     margin: 5px 0;
+  }
+  .containerAnggota .container .anggota .perAnggota img {
+    height: 200px;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

@@ -320,6 +320,18 @@ section {
   outline: 2px solid var(--outline-ungu);
 }
 
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .modalContainer.active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -456,5 +468,41 @@ section {
 
 .modalContainer .modal .modal-footer {
   padding: 20px;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+}
+
+.pagination .page-item:first-child .page-link {
+  margin-left: 0;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.pagination .page-item .page-link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  -webkit-transition: .2s;
+  transition: .2s;
+  line-height: 1.25rem;
+  color: var(--biru-cerah);
+  border: 1px solid #dee2e6;
+  background-color: var(--putih);
+}
+
+.pagination .page-item .page-link:hover {
+  color: var(--putih);
+  background-color: var(--biru-cerah);
+}
+
+.pagination .page-item .page-link a {
+  color: var(--biru-cerah);
 }
 /*# sourceMappingURL=riset.css.map */

@@ -1455,6 +1455,12 @@ footer .container p span {
 .containerAnggota .container .anggota .perAnggota {
   width: calc(90%/4);
   margin: 15px 10px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.containerAnggota .container .anggota .perAnggota:hover h2 {
+  color: var(--biru-cerah);
 }
 
 .containerAnggota .container .anggota .perAnggota img {
@@ -1464,6 +1470,7 @@ footer .container p span {
      object-fit: cover;
   border-radius: 10px;
   margin-bottom: 5px;
+  background-color: var(--putih-900);
 }
 
 .containerAnggota .container .anggota .perAnggota p {

@@ -355,6 +355,13 @@ section {
 
 
 
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 
 .modalContainer.active {
@@ -458,6 +465,45 @@ section {
 
         .modal-footer {
             padding: 20px;
+        }
+    }
+
+}
+
+
+
+.pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem;
+
+    .page-item {
+
+        &:first-child .page-link {
+            margin-left: 0;
+            border-top-left-radius: 0.25rem;
+            border-bottom-left-radius: 0.25rem;
+        }
+
+        .page-link {
+            position: relative;
+            display: block;
+            padding: 0.5rem 0.75rem;
+            transition: .2s;
+            line-height: 1.25rem;
+            color: var(--biru-cerah);
+            border: 1px solid #dee2e6;
+            background-color: var(--putih);
+
+            &:hover {
+                color: var(--putih);
+                background-color: var(--biru-cerah);
+            }
+
+            a {
+                color: var(--biru-cerah);
+            }
         }
     }
 

@@ -1390,6 +1390,14 @@ footer {
             .perAnggota {
                 width: calc(90%/4);
                 margin: 15px 10px;
+                transition: .2s;
+
+                &:hover {
+
+                    h2 {
+                        color: var(--biru-cerah);
+                    }
+                }
 
                 img {
                     width: 100%;
@@ -1397,6 +1405,7 @@ footer {
                     object-fit: cover;
                     border-radius: 10px;
                     margin-bottom: 5px;
+                    background-color: var(--putih-900);
                 }
 
                 p {

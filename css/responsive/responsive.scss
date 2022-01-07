@@ -116,6 +116,20 @@
             }
         }
     }
+
+
+    .containerAnggota {
+
+        .container {
+
+            .anggota {
+
+                .perAnggota {
+                    width: calc(90%/3);
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1000px) {
@@ -338,6 +352,21 @@
             .masihBerlangsung .perMasihBerlangsung {
                 width: 100%;
                 margin: 20px 0;
+            }
+        }
+    }
+
+
+
+    .containerAnggota {
+
+        .container {
+
+            .anggota {
+
+                .perAnggota img {
+                    height: 200px;
+                }
             }
         }
     }
@@ -668,6 +697,25 @@
 
 
 
+    .containerAnggota {
+
+        .container {
+
+            .anggota {
+
+                .perAnggota {
+                    width: calc(90%/2);
+
+                    img {
+
+                        height: 250px;
+                    }
+                }
+            }
+        }
+    }
+
+
 }
 
 
@@ -741,6 +789,21 @@
 
                 .perSosmed {
                     width: 100%;
+                }
+            }
+        }
+    }
+
+
+
+    .containerAnggota {
+
+        .container {
+
+            .anggota {
+
+                .perAnggota img {
+                    height: 200px;
                 }
             }
         }
@@ -934,6 +997,25 @@
 
         .perGaleri {
             height: 150px;
+        }
+    }
+
+
+    .containerAnggota {
+
+        .container {
+
+            .anggota {
+
+                .perAnggota {
+                    width: 100%;
+                    margin: 10px 0;
+
+                    img {
+                        height: 300px;
+                    }
+                }
+            }
         }
     }
 }
@@ -1395,6 +1477,21 @@
         }
     }
 
+
+
+    .containerAnggota {
+
+        .container {
+
+            .anggota {
+
+                .perAnggota img {
+                    height: 250px;
+                }
+            }
+        }
+    }
+
 }
 
 @media(max-width:300px) {
@@ -1506,6 +1603,20 @@
         .urutkan {
             width: 100%;
             margin: 5px 0;
+        }
+    }
+
+
+    .containerAnggota {
+
+        .container {
+
+            .anggota {
+
+                .perAnggota img {
+                    height: 200px;
+                }
+            }
         }
     }
 }
