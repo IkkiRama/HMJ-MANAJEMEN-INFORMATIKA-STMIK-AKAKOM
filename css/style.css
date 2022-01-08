@@ -293,6 +293,7 @@ header .container .menu span:nth-child(2) {
 
 .hero .container .img {
   width: 40%;
+  height: 90%;
 }
 
 .hero .container .img img {

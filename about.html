@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/responsive/responsive.css">
 
     <script src="js/script.js" defer></script>
+    <script src="js/gsap.js"></script>
 
     <link rel="apple-touch-icon" href="img/logo HIMARAKSI.png">
     <link rel="shortcut icon" href="img/logo HIMARAKSI.png" type="image/x-icon">
@@ -61,8 +62,8 @@
         <section class="hero pt-15-vh">
             <div class="container">
                 <div class="caption">
-                    <h1>Apa sih <span>HMJ MI itu?.</span></h1>
-                    <p>
+                    <h1 class="stagger1">Apa sih <span>HMJ MI itu?.</span></h1>
+                    <p class="stagger1">
                         HMJ MI merupakan sebuah organisasi untuk jurusan manajemen Informatika yang bertujuan untuk
                         menghimpun dan mewadahi mahasiswa dalam menyalurkan aspirasi dan mengkoordinasikan kegiatan
                         mahasiswa serta menjaga nama baik almamater STMIK AKAKOM
@@ -313,6 +314,22 @@
             <p>Created with <span>&hearts;</span> by TasBee</p>
         </div>
     </footer>
+
+    <script>
+        gsap.from('.hero', {
+            y: "-30%",
+            opacity: 0,
+            duration: 2,
+            ease: Power4.easeOut,
+        })
+        gsap.from('.stagger1', {
+            opacity: 0,
+            y: -50,
+            duration: 2,
+            stagger: .7,
+            ease: Power4.easeOut,
+        }, "-=2.5")
+    </script>
 
 
 </body>
