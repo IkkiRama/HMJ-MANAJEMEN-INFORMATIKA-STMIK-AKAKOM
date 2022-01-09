@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/responsive/responsive.css">
 
     <script src="js/script.js" defer></script>
+    <script src="js/gsap.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
 
     <link rel="apple-touch-icon" href="img/logo HIMARAKSI.png">
     <link rel="shortcut icon" href="img/logo HIMARAKSI.png" type="image/x-icon">
@@ -62,11 +64,11 @@
         <section class="hero pt-15-vh ">
             <div class="container">
                 <div class="caption">
-                    <h1>We provide <span>qualified facilities to excel.</span></h1>
+                    <h1 class="stagger1">We provide <span>qualified facilities to excel.</span></h1>
                     <!-- Kami menyediakan fasilitas yang mumpuni untuk berprestasi -->
-                    <p>
-                        Kami menyediakan berbagai macam fasilitas untuk mendukung organisasi ini berjalan dan
-                        berprestasi ditingkat nasional
+                    <p class="stagger1">
+                        Kami menyediakan berbagai macam fasilitas di sekretariat kami untuk mendukung organisasi ini
+                        berjalan dan berprestasi ditingkat nasional
                     </p>
                 </div>
                 <div class="img">
@@ -136,6 +138,28 @@
                     <tr>
                         <td>7</td>
                         <td>Lab Game</td>
+                        <td>Nasional</td>
+                        <td>Baik</td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td>Ruang Rapat</td>
+                        <td>Nasional</td>
+                        <td>Baik</td>
+                    </tr>
+
+                    <tr>
+                        <td>9</td>
+                        <td>Ruang Penyimpanan Barang</td>
+                        <td>Nasional</td>
+                        <td>Baik</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>10</td>
+                        <td>Ruang Podcats</td>
                         <td>Nasional</td>
                         <td>Baik</td>
                     </tr>
@@ -241,6 +265,41 @@
             <p>Created with <span>&hearts;</span> by TasBee</p>
         </div>
     </footer>
+
+    <script>
+        gsap.from('.hero', {
+            y: "-30%",
+            opacity: 0,
+            duration: 2,
+            ease: Power4.easeOut,
+        })
+        gsap.from('.stagger1', {
+            opacity: 0,
+            y: -50,
+            duration: 2,
+            stagger: .7,
+            ease: Power4.easeOut,
+        }, "-=2.5")
+        gsap.from('.img', {
+            opacity: 0,
+            y: -50,
+            duration: 2,
+            ease: Power4.easeOut,
+        })
+
+        gsap.from('table', {
+            opacity: 0,
+            y: -100,
+            duration: 2,
+            ease: Power4.easeOut,
+
+            scrollTrigger: {
+                trigger: "table",
+                start: "top center",
+                toggleActions: "restart resume reverse pause"
+            }
+        })
+    </script>
 
 </body>
 

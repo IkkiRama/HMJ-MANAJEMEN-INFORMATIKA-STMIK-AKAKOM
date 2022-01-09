@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/responsive/responsive.css">
 
     <script src="js/script.js" defer></script>
+    <script src="js/gsap.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
 
     <link rel="apple-touch-icon" href="img/logo HIMARAKSI.png">
     <link rel="shortcut icon" href="img/logo HIMARAKSI.png" type="image/x-icon">
@@ -61,8 +63,8 @@
         <section class="pt-15-vh pb-100">
             <div class="container">
                 <div class="title mb-50">
-                    <h1>Galeri Kami</h1>
-                    <p>
+                    <h1 class="stagger1">Galeri Kami</h1>
+                    <p class="stagger1">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio quasi eum incidunt, odio alias
                         placeat magni recusandae aut quidem obcaecati praesentium labore fugit quos laborum doloribus
                         quibusdam dolor, modi beatae.
@@ -70,18 +72,18 @@
                 </div>
 
                 <div class="galeri">
-                    <img src="img/galeri/calendar-works.jpg" alt="img galeri" class="perGaleri">
-                    <img src="img/galeri/p-1.jpg" alt="img galeri" class="perGaleri">
-                    <img src="img/galeri/p-2.jpg" alt="img galeri" class="perGaleri">
-                    <img src="img/galeri/p-3.jpg" alt="img galeri" class="perGaleri">
-                    <img src="img/galeri/p-4.jpg" alt="img galeri" class="perGaleri">
-                    <img src="img/galeri/p-5.jpg" alt="img galeri" class="perGaleri">
-                    <img src="img/galeri/calendar-works.jpg" alt="img galeri" class="perGaleri">
-                    <img src="img/galeri/p-1.jpg" alt="img galeri" class="perGaleri">
-                    <img src="img/galeri/p-2.jpg" alt="img galeri" class="perGaleri">
-                    <img src="img/galeri/p-3.jpg" alt="img galeri" class="perGaleri">
-                    <img src="img/galeri/p-4.jpg" alt="img galeri" class="perGaleri">
-                    <img src="img/galeri/p-5.jpg" alt="img galeri" class="perGaleri">
+                    <img src="img/galeri/calendar-works.jpg" alt="img galeri" class="perGaleri stagger1">
+                    <img src="img/galeri/p-1.jpg" alt="img galeri" class="perGaleri stagger1">
+                    <img src="img/galeri/p-2.jpg" alt="img galeri" class="perGaleri stagger1">
+                    <img src="img/galeri/p-3.jpg" alt="img galeri" class="perGaleri stagger1">
+                    <img src="img/galeri/p-4.jpg" alt="img galeri" class="perGaleri stagger1">
+                    <img src="img/galeri/p-5.jpg" alt="img galeri" class="perGaleri stagger1">
+                    <img src="img/galeri/calendar-works.jpg" alt="img galeri" class="perGaleri stagger1">
+                    <img src="img/galeri/p-1.jpg" alt="img galeri" class="perGaleri stagger1">
+                    <img src="img/galeri/p-2.jpg" alt="img galeri" class="perGaleri stagger1">
+                    <img src="img/galeri/p-3.jpg" alt="img galeri" class="perGaleri stagger1">
+                    <img src="img/galeri/p-4.jpg" alt="img galeri" class="perGaleri stagger1">
+                    <img src="img/galeri/p-5.jpg" alt="img galeri" class="perGaleri stagger1">
                 </div>
             </div>
         </section>
@@ -183,6 +185,16 @@
             <p>Created with <span>&hearts;</span> by TasBee</p>
         </div>
     </footer>
+
+    <script>
+        gsap.from(".stagger1", {
+            y: -100,
+            opacity: 0,
+            stagger: .5,
+            //duration: 10,
+            ease: Power4.easeOut,
+        })
+    </script>
 
 </body>
 

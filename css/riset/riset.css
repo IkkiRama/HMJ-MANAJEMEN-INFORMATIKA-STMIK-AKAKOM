@@ -97,6 +97,14 @@ section {
   width: 100%;
 }
 
+.fa {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: inherit;
+  vertical-align: -0.125em;
+}
+
 .container {
   width: 100%;
   height: 100%;
@@ -405,12 +413,15 @@ section {
 .modalContainer .modal .modal-title .icon {
   font-size: 1.7rem;
   cursor: pointer;
+}
+
+.modalContainer .modal .modal-title .icon .fa {
   -webkit-transition: .1s;
   transition: .1s;
 }
 
-.modalContainer .modal .modal-title .icon:hover {
-  color: var(--biru-cerah);
+.modalContainer .modal .modal-title .icon:hover .fa {
+  fill: var(--biru-cerah);
 }
 
 .modalContainer .modal .modal-body {

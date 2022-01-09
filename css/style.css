@@ -479,6 +479,7 @@ header .container .menu span:nth-child(2) {
 }
 
 .perFAQ .jawaban {
+  width: 100%;
   padding: 20px;
   display: none;
   border-radius: 7px;
@@ -569,8 +570,11 @@ header .container .menu span:nth-child(2) {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
-  color: var(--putih);
   background-color: var(--putih-f2);
+}
+
+.containerSosmed .container .sosmed .perSosmed .icon > * {
+  fill: var(--putih) !important;
 }
 
 .containerClient {
@@ -793,7 +797,10 @@ footer .container p span {
 
 .comunity .container .perComunity .icon {
   font-size: 2.5rem;
-  color: var(--putih);
+}
+
+.comunity .container .perComunity .icon > * {
+  fill: var(--putih) !important;
 }
 
 .comunity .container .perComunity strong {
