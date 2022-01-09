@@ -231,6 +231,7 @@ header .container .menu span:nth-child(2) {
 .containerNavMobile .navMobile li a {
   font-weight: 600;
   color: #525252;
+  font-size: 1.2rem;
 }
 
 .containerNavMobile .navMobile li a:hover, .containerNavMobile .navMobile li a.active {

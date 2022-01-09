@@ -1,3 +1,9 @@
+.fa {
+  fill: var(--hitam-santai);
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
 .btn {
   background-color: var(--putih);
 }

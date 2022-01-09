@@ -5,7 +5,6 @@ iconClose.addEventListener("click", () => {
 })
 
 let filter = document.querySelector(".filter")
-console.log("filter")
 filter.addEventListener("click", () => {
     iconClose.parentElement.parentElement.parentElement.classList.toggle("active")
 })

@@ -418,6 +418,7 @@ section {
                 cursor: pointer;
 
                 .fa {
+                    fill: var(--hitam-santai);
                     transition: .1s;
                 }
 
@@ -431,6 +432,11 @@ section {
             overflow-y: auto;
             padding: 20px;
             border-bottom: var(--border);
+
+            .fa {
+                fill: var(--hitam-santai);
+                // transition: .1s;
+            }
 
             .perFilterProgram {
                 overflow-y: hidden;
