@@ -24,7 +24,7 @@ urutkan.forEach((u) => {
 
 //js untuk menampilkan window filter program pada layar komputer
 let keterangan = document.querySelectorAll(".keterangan")
-
+ 
 keterangan.forEach((k) => {
     k.addEventListener("click", () => {
         k.nextElementSibling.classList.toggle("hideIsiFilterProgram")
