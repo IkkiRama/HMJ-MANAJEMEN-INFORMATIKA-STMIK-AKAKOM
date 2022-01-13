@@ -18,6 +18,8 @@
 
     <script src="js/script.js" defer></script>
     <script src="js/faq.js" defer></script>
+    <script src="js/gsap.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
 
     <link rel="apple-touch-icon" href="img/logo HIMARAKSI.png">
     <link rel="shortcut icon" href="img/logo HIMARAKSI.png" type="image/x-icon">
@@ -63,13 +65,13 @@
         <section class="hero pt-15-vh ">
             <div class="container">
                 <div class="caption">
-                    <h1>A platform for <span>Sharing , Learn & Discuss.</span></h1>
-                    <p>
+                    <h1 class="stagger1">A platform for <span>Sharing , Learn & Discuss.</span></h1>
+                    <p class="stagger1">
                         Tingkatkan kemampuan Anda dengan kami untuk mendorong keterampilan Anda ke tingkat berikutnya,
                         melalui kegiatan yang ada disini.
                     </p>
 
-                    <div class="cta">
+                    <div class="cta stagger1">
                         <a href="#fitur" class="btn btn-primary">Explore</a>
                     </div>
                 </div>
@@ -85,8 +87,8 @@
         <section class="containerFitur bg-agakGelap pt-50 pb-100" id="fitur">
             <div class="container">
                 <div class="title">
-                    <h1>HMJ MI STMIK AKAKOM</h1>
-                    <p>
+                    <h1 class="stagger2">HMJ MI STMIK AKAKOM</h1>
+                    <p class="stagger2">
                         "Organisasi yang komunikatif serta menjujung tinggi
                         profesionalitas dan kekeluargaan"
                     </p>
@@ -94,7 +96,7 @@
 
                 <div class="fitur">
 
-                    <div class="perFitur">
+                    <div class="perFitur stagger2">
                         <div class="icon">
                             <svg class="fa" viewBox="0 0 640 512">
                                 <path
@@ -110,7 +112,7 @@
                         </p>
                     </div>
 
-                    <div class="perFitur">
+                    <div class="perFitur stagger2">
                         <div class="icon">
                             <svg class="fa" viewBox="0 0 512 512">
                                 <path
@@ -125,7 +127,7 @@
                         </p>
                     </div>
 
-                    <div class="perFitur">
+                    <div class="perFitur stagger2">
                         <div class="icon">
                             <svg class="fa" viewBox="0 0 512 512">
                                 <path
@@ -149,8 +151,8 @@
         <section class="containerGaleri pt-50 pb-50">
             <div class="container">
                 <div class="title pb-50">
-                    <h1>Update Tentang Kami</h1>
-                    <p>
+                    <h1 class="stagger2">Update Tentang Kami</h1>
+                    <p class="stagger2">
                         Dapatkan semua informasi terbaru dari kami melalui artikel dan galeri yang sudah kami siapkan
                     </p>
                 </div>
@@ -220,14 +222,14 @@
         <section class="containerFAQ pt-50">
             <div class="container">
                 <div class="title">
-                    <h1>FAQ</h1>
-                    <p>
+                    <h1 class="stagger3">FAQ</h1>
+                    <p class="stagger3">
                         Berikut adalah beberapa pertanyaan yang paling sering ditanyakan.
                     </p>
                 </div>
 
                 <div class="FAQ">
-                    <div class="kanan">
+                    <div class="kanan stagger4">
                         <div class="perFAQ">
                             <div class="pertanyaan">
                                 <p>Yang ngajar siapa ?</p>
@@ -268,7 +270,7 @@
                         </div>
 
                     </div>
-                    <div class="kiri">
+                    <div class="kiri stagger4">
 
                         <div class="perFAQ">
                             <div class="pertanyaan">
@@ -311,14 +313,14 @@
         <section class="containerSosmed pt-50 pb-100">
             <div class="container">
                 <div class="title">
-                    <h1>Social Integration</h1>
-                    <p>
+                    <h1 class="stagger3">Social Integration</h1>
+                    <p class="stagger3">
                         Dapatkan informasi dengan sangat cepat dari beberapa social media.
                     </p>
                 </div>
 
                 <div class="sosmed">
-                    <a href="https://facebook.com" target="blank" class="perSosmed">
+                    <a href="https://facebook.com" target="blank" class="perSosmed stagger5">
                         <div class="icon facebook">
                             <svg class="fa" viewBox="0 0 512 512">
                                 <path
@@ -336,7 +338,7 @@
                         </div>
                     </a>
 
-                    <a href="https://discord.com" target="blank" class="perSosmed">
+                    <a href="https://discord.com" target="blank" class="perSosmed stagger5">
                         <div class="icon discord">
                             <svg class="fa" viewBox="0 0 448 512">
                                 <path
@@ -354,7 +356,7 @@
                         </div>
                     </a>
 
-                    <a href="https://twitter.com" target="blank" class="perSosmed">
+                    <a href="https://twitter.com" target="blank" class="perSosmed stagger5">
                         <div class="icon twitter">
                             <svg class="fa" viewBox="0 0 512 512">
                                 <path
@@ -372,7 +374,7 @@
                         </div>
                     </a>
 
-                    <a href="https://youtube.com" target="blank" class="perSosmed">
+                    <a href="https://youtube.com" target="blank" class="perSosmed stagger6">
                         <div class="icon youtube">
                             <svg class="fa" viewBox="0 0 576 512">
                                 <path
@@ -391,7 +393,7 @@
                     </a>
 
 
-                    <a href="https://instagram.com" target="blank" class="perSosmed">
+                    <a href="https://instagram.com" target="blank" class="perSosmed stagger6">
                         <div class="icon instagram">
                             <svg class="fa" viewBox="0 0 448 512">
                                 <path
@@ -409,7 +411,7 @@
                         </div>
                     </a>
 
-                    <a href="https://telegram.com" target="blank" class="perSosmed">
+                    <a href="https://telegram.com" target="blank" class="perSosmed stagger6">
                         <div class="icon telegram">
                             <svg class="fa" viewBox="0 0 496 512">
                                 <path
@@ -527,6 +529,133 @@
             <p>Created with <span>&hearts;</span> by TasBee</p>
         </div>
     </footer>
+
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from('.hero', {
+            y: "-30%",
+            opacity: 0,
+            duration: 2,
+            ease: Power4.easeOut,
+        })
+        gsap.from('.stagger1', {
+            opacity: 0,
+            y: -50,
+            duration: 2,
+            stagger: .7,
+            ease: Power4.easeOut,
+        }, "-=2.5")
+        gsap.from('.img', {
+            opacity: 0,
+            y: -50,
+            duration: 2,
+            ease: Power4.easeOut,
+        })
+
+
+
+
+        gsap.from('.stagger2', {
+            opacity: 0,
+            y: -20,
+            duration: 2,
+            stagger: .7,
+            ease: Power4.easeOut,
+
+            scrollTrigger: {
+                trigger: ".stagger2",
+                start: "top center",
+                toggleActions: "restart resume pause pause"
+            }
+        })
+
+        gsap.from('.stagger3', {
+            opacity: 0,
+            y: -20,
+            duration: 2,
+            stagger: .7,
+            ease: Power4.easeOut,
+ 
+            scrollTrigger: {
+                trigger: ".stagger3",
+                start: "top center",
+                toggleActions: "restart resume pause pause"
+            }
+        })
+
+        gsap.from('.perArtikel', {
+            opacity: 0,
+            y: -20,
+            duration: 2,
+            stagger: .7,
+            ease: Power4.easeOut,
+
+            scrollTrigger: {
+                trigger: ".perArtikel",
+                start: "top center",
+                toggleActions: "restart resume pause pause"
+            }
+        })
+
+        gsap.from('.stagger4', {
+            opacity: 0,
+            x: -100,
+            duration: 2, 
+            stagger: .7,
+            ease: Power4.easeOut,
+
+            scrollTrigger: {
+                trigger: ".stagger4",
+                start: "top center",
+                toggleActions: "restart resume pause pause"
+            }
+        })
+
+        gsap.from('.stagger5', {
+            opacity: 0,
+            x: 100,
+            duration: 2,
+            stagger: .7,
+            ease: Power4.easeOut,
+
+            scrollTrigger: {
+                trigger: ".stagger5",
+                start: "top center",
+                toggleActions: "restart resume pause pause"
+            }
+        }, "-=2.5")
+
+        gsap.from('.stagger6', {
+            opacity: 0,
+            x: 100,
+            duration: 2,
+            stagger: .7,
+            ease: Power4.easeOut,
+
+            scrollTrigger: {
+                trigger: ".stagger6",
+                start: "top center",
+                toggleActions: "restart resume pause pause"
+            }
+        })
+
+
+
+        gsap.from(".perGaleri", {
+            y: -100,
+            opacity: 0,
+            stagger: .5,
+            ease: Power4.easeOut,
+
+            scrollTrigger: {
+                trigger: ".perGaleri",
+                start: "top center",
+                toggleActions: "restart resume pause pause"
+            }
+        }, "+=10.5")
+    </script>
 
 </body>
 

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/responsive/responsive.css">
 
     <script src="js/script.js" defer></script>
+    <script src="js/gsap.js"></script>
 
     <link rel="apple-touch-icon" href="img/logo HIMARAKSI.png">
     <link rel="shortcut icon" href="img/logo HIMARAKSI.png" type="image/x-icon">
@@ -61,12 +62,12 @@
         <section class="hero pt-15-vh ">
             <div class="container">
                 <div class="caption">
-                    <h1>Increase Your Insights with <span>Our Blog</span></h1>
-                    <p>
+                    <h1 class="stagger1">Increase Your Insights with <span>Our Blog</span></h1>
+                    <p class="stagger1">
                         Baca Blog dari kami untuk menambah wawasan kamu agar semakin kaya akan pengetahuan.
                     </p>
 
-                    <div class="cta">
+                    <div class="cta stagger1">
                         <a href="#artikel" class="btn btn-primary">Lihat Semua Artikel</a>
                     </div>
                 </div>
@@ -289,16 +290,35 @@
         </div>
     </footer>
 
+    <script>
+        gsap.from('.hero', {
+            y: "-30%",
+            opacity: 0,
+            duration: 2,
+            ease: Power4.easeOut,
+        })
+        gsap.from('.stagger1', {
+            opacity: 0,
+            y: -50,
+            duration: 2,
+            stagger: .7,
+            ease: Power4.easeOut,
+        }, "-=2.5")
+        gsap.from('.img', {
+            opacity: 0,
+            y: -50,
+            duration: 2,
+            ease: Power4.easeOut,
+        })
 
-    <!-- <div class="modalContainer">
-        <div class="modal">
-            <div class="modal-title">
-
-            </div>
-            <div class="modal-body"></div>
-            <div class="modal-footer"></div>
-        </div>
-    </div> -->
+        gsap.from('.perArtikel', {
+            opacity: 0,
+            y: -50,
+            duration: 2,
+            stagger: .5,
+            ease: Power4.easeOut,
+        })
+    </script>
 
 </body>
 

@@ -18,6 +18,7 @@
 
     <script src="js/script.js" defer></script>
     <script src="js/event.js" defer></script>
+    <script src="js/gsap.js"></script>
 
     <link rel="apple-touch-icon" href="img/logo HIMARAKSI.png">
     <link rel="shortcut icon" href="img/logo HIMARAKSI.png" type="image/x-icon">
@@ -62,15 +63,15 @@
         <section class="hero pt-15-vh">
             <div class="container">
                 <div class="caption">
-                    <h1>Improve Skills Through <span>Event Now!</span>
+                    <h1 class="stagger1">Improve Skills Through <span>Event Now!</span>
                     </h1>
                     <!-- Tingkatkan Skill Melalui Event Sekarang! -->
-                    <p>
+                    <p class="stagger1">
                         Daftar dan ikuti event untuk meningkatkan skill dan memberikan solusi digital berdasarkan
                         kebutuhan dan permasalahan nyata industri saat ini
                     </p>
 
-                    <div class="cta">
+                    <div class="cta stagger1">
                         <a href="#event" class="btn btn-primary">Lihat Semua Event</a>
                     </div>
                 </div>
@@ -84,9 +85,9 @@
 
         <section class="containerAlesan pt-100 pb-100">
             <div class="container">
-                <h1 class="title">Mengapa Harus Ikuti Event?</h1>
+                <h1 class="title stagger2">Mengapa Harus Ikuti Event?</h1>
                 <div class="alesan">
-                    <div class="perAlesan">
+                    <div class="perAlesan stagger2">
                         <img src="img/event/why-1.svg" alt="img">
                         <h2>Meningkatkan Skill</h2>
                         <p>
@@ -95,7 +96,7 @@
                         </p>
                     </div>
 
-                    <div class="perAlesan">
+                    <div class="perAlesan stagger2">
                         <img src="img/event/why-2.svg" alt="img">
                         <h2>Portofolio</h2>
                         <p>
@@ -104,7 +105,7 @@
                         </p>
                     </div>
 
-                    <div class="perAlesan">
+                    <div class="perAlesan stagger2">
                         <img src="img/event/why-3.svg" alt="img">
                         <h2>Peluang Kerja</h2>
                         <p>
@@ -120,7 +121,7 @@
 
 
         <!-- Event start -->
-        <section class="Event pt-100 pb-100" id="event">
+        <section class="Event pt-100 pb-100 stagger3" id="event">
             <div class="container">
 
                 <div class="sorting">
@@ -629,6 +630,45 @@
             <div class="modal-footer"></div>
         </div>
     </div>
+
+    <script>
+        gsap.from('.hero', {
+            y: "-30%",
+            opacity: 0,
+            duration: 2,
+            ease: Power4.easeOut,
+        })
+        gsap.from('.stagger1', {
+            opacity: 0,
+            y: -50,
+            duration: 2,
+            stagger: .7,
+            ease: Power4.easeOut,
+        }, "-=2.5")
+        gsap.from('.img', {
+            opacity: 0,
+            y: -50,
+            duration: 2,
+            ease: Power4.easeOut,
+        })
+
+
+        gsap.from('.stagger2', {
+            opacity: 0,
+            y: -20,
+            duration: 2,
+            stagger: .7,
+            ease: Power4.easeOut,
+        })
+
+
+        gsap.from('.stagger3', {
+            opacity: 0,
+            y: -100,
+            duration: 2,
+            ease: Power4.easeOut,
+        })
+    </script>
 
 </body>
 

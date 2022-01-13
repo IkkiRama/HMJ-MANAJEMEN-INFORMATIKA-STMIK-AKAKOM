@@ -18,6 +18,7 @@
 
     <script src="js/script.js" defer></script>
     <script src="js/faq.js" defer></script>
+    <script src="js/gsap.js"></script>
 
     <link rel="apple-touch-icon" href="img/logo HIMARAKSI.png">
     <link rel="shortcut icon" href="img/logo HIMARAKSI.png" type="image/x-icon">
@@ -63,15 +64,15 @@
         <section class="containerFAQ pt-15-vh pb-100">
             <div class="container">
                 <div class="title">
-                    <h1>FAQ</h1>
-                    <p>
+                    <h1 class="stagger3">FAQ</h1>
+                    <p class="stagger3">
                         Berikut adalah beberapa pertanyaan yang paling sering ditanyakan.
                     </p>
                 </div>
 
                 <div class="FAQ pageFAQ">
                     <div class="perFAQ">
-                        <div class="pertanyaan">
+                        <div class="pertanyaan stagger4">
                             <p>Apa itu HMJ MI?</p>
 
                             <div class="icon">
@@ -92,7 +93,7 @@
                     </div>
 
                     <div class="perFAQ">
-                        <div class="pertanyaan">
+                        <div class="pertanyaan stagger4">
                             <p>Apa visi & misi dari HMJ MI?</p>
                             <div class="icon">
                                 <svg class="fa" viewBox="0 0 320 512">
@@ -146,7 +147,7 @@
 
 
                     <div class="perFAQ">
-                        <div class="pertanyaan">
+                        <div class="pertanyaan stagger4">
                             <p>Bagaimana cara saya mengapresiasinya ?</p>
                             <div class="icon">
                                 <svg class="fa" viewBox="0 0 320 512">
@@ -163,7 +164,7 @@
                     </div>
 
                     <div class="perFAQ">
-                        <div class="pertanyaan">
+                        <div class="pertanyaan stagger4">
                             <p>Ada sosial media ?</p>
                             <div class="icon">
                                 <svg class="fa" viewBox="0 0 320 512">
@@ -281,15 +282,22 @@
     </footer>
 
 
-    <!-- <div class="modalContainer">
-        <div class="modal">
-            <div class="modal-title">
 
-            </div>
-            <div class="modal-body"></div>
-            <div class="modal-footer"></div>
-        </div>
-    </div> -->
+    <script>
+        gsap.from('.stagger3', {
+            opacity: 0,
+            y: -20,
+            stagger: .7,
+            ease: Power4.easeOut,
+        }, "-=2.5")
+        gsap.from('.stagger4', {
+            opacity: 0,
+            x: -100,
+            stagger: .3,
+            ease: Power4.easeOut,
+
+        })
+    </script>
 
 </body>
 

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/responsive/responsive.css">
 
     <script src="js/script.js" defer></script>
+    <script src="js/gsap.js"></script>
 
     <link rel="apple-touch-icon" href="img/logo HIMARAKSI.png">
     <link rel="shortcut icon" href="img/logo HIMARAKSI.png" type="image/x-icon">
@@ -264,15 +265,15 @@
     </footer>
 
 
-    <!-- <div class="modalContainer">
-        <div class="modal">
-            <div class="modal-title">
-
-            </div>
-            <div class="modal-body"></div>
-            <div class="modal-footer"></div>
-        </div>
-    </div> -->
+    <script>
+        gsap.from('.perComunity', {
+            opacity: 0,
+            y: -20,
+            duration: 2,
+            stagger: .5,
+            ease: Power4.easeOut,
+        })
+    </script>
 
 
 

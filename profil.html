@@ -17,6 +17,7 @@
 
 
     <script src="js/script.js" defer></script>
+    <script src="js/gsap.js"></script>
 
     <link rel="apple-touch-icon" href="img/logo HIMARAKSI.png">
     <link rel="shortcut icon" href="img/logo HIMARAKSI.png" type="image/x-icon">
@@ -211,6 +212,24 @@
             <p>Created with <span>&hearts;</span> by TasBee</p>
         </div>
     </footer>
+
+
+    <script>
+        //profil-orang
+        gsap.from('.profil-orang', {
+            opacity: 0,
+            x: -100,
+            duration: 2,
+            ease: Power4.easeOut,
+        })
+
+        gsap.from('.profil-kelas', {
+            opacity: 0,
+            x: 100,
+            duration: 2,
+            ease: Power4.easeOut,
+        })
+    </script>
 
 </body>
 

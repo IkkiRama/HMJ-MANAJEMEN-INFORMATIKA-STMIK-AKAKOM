@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/responsive/responsive.css">
 
     <script src="js/script.js" defer></script>
+    <script src="js/gsap.js"></script>
 
     <link rel="apple-touch-icon" href="img/logo HIMARAKSI.png">
     <link rel="shortcut icon" href="img/logo HIMARAKSI.png" type="image/x-icon">
@@ -64,9 +65,9 @@
             <div class="container">
 
                 <div class="caption">
-                    <h1>OWDC (Online Web Design Competition)</h1>
+                    <h1 class="stagger1">OWDC (Online Web Design Competition)</h1>
 
-                    <p>
+                    <p class="stagger1">
                         OWDC (Online Web Design Competition) merupakan sebuah kompetisi mendesign
                         sebuah web
                         baru bagi pelajar SMA dan SMK
@@ -75,13 +76,12 @@
                         Teknologi Informasi.
                     </p>
 
-                    <a href="https://bit.ly/Regis-OWDC2021" target="blank" class="btn btn-primary">Daftar</a>
-                    <!-- <div class="btn"></div> -->
+                    <a href="https://bit.ly/Regis-OWDC2021" target="blank" class="btn btn-primary stagger1">Daftar</a>
 
                 </div>
 
                 <!-- <div class="img"></div> -->
-                <img src="img/kelas/belajar-laravel-8-dari-awal-ign7z.jpg" alt="img kelas">
+                <img src="img/kelas/belajar-laravel-8-dari-awal-ign7z.jpg" alt="img kelas" class="img">
             </div>
         </section>
 
@@ -283,6 +283,45 @@
             <p>Created with <span>&hearts;</span> by TasBee</p>
         </div>
     </footer>
+
+
+    <script>
+        gsap.from('.heroDetailKelas', {
+            y: "-30%",
+            opacity: 0,
+            duration: 2,
+            ease: Power4.easeOut,
+        })
+        gsap.from('.stagger1', {
+            opacity: 0,
+            y: -50,
+            duration: 2,
+            stagger: .7,
+            ease: Power4.easeOut,
+        }, "-=2.5")
+        gsap.from('.img', {
+            opacity: 0,
+            y: -50,
+            duration: 2,
+            ease: Power4.easeOut,
+        })
+
+
+        gsap.from('.perTentangKelas', {
+            opacity: 0,
+            x: -50,
+            duration: 2,
+            ease: Power4.easeOut,
+        }, "-=2.5")
+
+        gsap.from('.perInfoKelas', {
+            opacity: 0,
+            x: 50,
+            duration: 2,
+            stagger: .5,
+            ease: Power4.easeOut,
+        })
+    </script>
 
 </body>
 

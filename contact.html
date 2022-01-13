@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/responsive/responsive.css">
 
     <script src="js/script.js" defer></script>
+    <script src="js/gsap.js"></script>
 
     <link rel="apple-touch-icon" href="img/logo HIMARAKSI.png">
     <link rel="shortcut icon" href="img/logo HIMARAKSI.png" type="image/x-icon">
@@ -193,6 +194,20 @@
             <p>Created with <span>&hearts;</span> by TasBee</p>
         </div>
     </footer>
+
+    <script>
+        gsap.from('.kontak img', {
+            opacity: 0,
+            x: -100,
+            duration: 2,
+        })
+
+        gsap.from('.kontak .caption', {
+            opacity: 0,
+            x: 100,
+            duration: 2,
+        })
+    </script>
 
 </body>
 
