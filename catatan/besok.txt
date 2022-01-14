@@ -1,3 +1,0 @@
-1. Membuat Halaman Event & Detail Event Responsive
-2. Membuat Halaman Artikel & Detail Artikel
-3. Membuat Halaman About

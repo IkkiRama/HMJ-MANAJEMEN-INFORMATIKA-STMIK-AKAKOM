@@ -1,3 +1,7 @@
+html {
+  overflow-x: unset !important;
+}
+
 .fa {
   fill: var(--hitam-santai);
   -webkit-transition: .1s;

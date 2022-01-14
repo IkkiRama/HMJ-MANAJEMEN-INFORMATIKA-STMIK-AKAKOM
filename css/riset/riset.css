@@ -61,8 +61,9 @@
 }
 
 body {
+  width: 100% !important;
   background-color: var(--putih);
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 button {

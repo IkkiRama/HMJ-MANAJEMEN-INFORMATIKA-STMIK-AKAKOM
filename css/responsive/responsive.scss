@@ -422,7 +422,7 @@
 
     .footer .container {
         width: 100%;
-        padding: 0 25px;
+        padding: 0 15px;
         background-color: transparent;
     }
 
@@ -813,13 +813,17 @@
 
 @media(max-width:500px) {
 
+
     article,
     header,
     section,
     footer,
-    .containerKerjasama,
-    .footer .container {
+    .containerKerjasama {
         padding: 0 15px;
+    }
+
+.footer .container {
+        padding: 0;
     }
 
     .title p {

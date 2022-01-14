@@ -272,7 +272,7 @@
   }
   .footer .container {
     width: 100%;
-    padding: 0 25px;
+    padding: 0 15px;
     background-color: transparent;
   }
   footer {
@@ -503,9 +503,11 @@
   header,
   section,
   footer,
-  .containerKerjasama,
-  .footer .container {
+  .containerKerjasama {
     padding: 0 15px;
+  }
+  .footer .container {
+    padding: 0;
   }
   .title p {
     font-size: 1rem;
